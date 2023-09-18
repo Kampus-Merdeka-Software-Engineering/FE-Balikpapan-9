@@ -1,0 +1,238 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: #000000;
+}
+
+.navItem {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.Logo {
+    display: flex;
+    margin: 30px;
+    font-weight: 800;
+    font-size: 64px;
+
+}
+
+.itemMenu {
+    justify-content: space-around;
+    align-items: center;
+    text-decoration: none;
+    padding: 30px;
+    font-size: 32px;
+    font-weight: 400px;
+    color: #000000;
+}
+
+.itemLogin {
+    align-items: center;
+    text-decoration: none;
+    padding: 20px 80px;
+    background-color: #3F3F3F;
+    color: #FFFFFF;
+    border-radius: 60px;
+    font-size: 32px;
+    font-weight: 700;
+}
+
+.navTitle {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 120px;
+    margin-left: 100px;
+}
+
+.titleCaption > h1 {
+    font-size: 96px;
+    font-weight: 700;
+    line-height: 110px;
+}
+
+.titleCaption > p {
+    font-size: 40px;
+    font-family: 500px;
+    line-height: 50px;
+}
+
+.navLogo {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: 120px;
+    margin-right: 120px;
+    margin: 60px;
+    padding: 30px 100px;
+    background-color:#D9D9D9;
+    border-radius: 32px;
+    height: 180px;
+}
+
+.navLogo > p {
+    font-size: 48px;
+    font-weight: 700px;
+}
+
+.navLogo > a{
+    font-size: 40px;
+    font-weight: 700px;
+    text-decoration: none;
+    background-color: #3F3F3F;
+    padding: 20px 40px;
+    border-radius: 60px;
+
+}
+
+.mainTitle {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.mainTitle > p {
+    font-size: 24px;
+    font-weight: 400;
+    letter-spacing: 15px;
+    margin-bottom: 30px;
+}
+
+.mainTitle > h3 {
+    font-size: 64px;
+    font-weight: 700;
+    line-height: 80px;
+}
+
+main {
+    display: flex;
+    justify-content: space-between;
+    margin: 60px;
+}
+
+
+.itemCourse {
+    background-color:#D9D9D9;
+    padding: 10px;
+    height: 380px;
+
+}
+
+.itemCourse > h3 {
+    font-size: 40px;
+    font-weight: 700px;
+}
+
+.itemCourse > p {
+    font-size: 32px;
+    font-weight: 400px;
+}
+
+.informationSection {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #D9D9D9;
+    height: 520px;
+}
+
+.informationSection > h3 {
+    font-size: 64px;
+    font-weight: 700;
+}
+
+.informationSection > p {
+    font-size: 20px;
+    font-weight: 400;
+}
+
+.informationSection > a {
+    text-decoration: none;
+    font-size: 24px;
+    font-weight: 700px;
+    background-color: #000000;
+    color: #FFFFFF;
+    border-radius: 50px;
+    padding: 20px 80px;
+    margin-top: 36px;
+}
+
+.comentarSection {
+    background-color:#F6F6F6;
+    padding: 60px;
+    height: 860px;
+}
+
+.comentarSection > h3 {
+    font-size: 64px;
+    font-weight: 700px;
+    margin-bottom: 30px;
+}
+
+.comentar {
+    font-size: 40px;
+    font-weight: 500px;
+}
+
+.comentar > p {
+    margin-bottom: 12px;
+    padding: 20px;
+    align-items: center;
+    background-color: #FFFFFF;
+    border-radius: 40px;
+}
+
+.alumniInformation {
+    display: flex;
+    padding: 100px 75px;
+    background-color: #D9D9D9;
+    border-radius: 65px;
+    margin: 120px 30px;
+}
+
+.alumniInformation > h1 {
+    font-size: 96px;
+    font-weight: 700px;
+}
+
+.profileInformation {
+    display: flex;
+    flex-direction: column;
+}
+
+.alumniProfile > h3 {
+    font-size: 40px;
+    font-weight: 700px;
+}
+
+.alumniProfile > p {
+    font-size: 32px;
+    font-weight: 500px;
+}
+
+.alumniExperience > p {
+    font-size: 28px;
+    font-weight: 500;
+}
+
+footer {
+    display: flex;
+    justify-content: space-between;
+}
+
+.sectionFooter > h4 {
+    font-size: 32px;
+    font-weight: 700;
+}
+
+.sectionFooter > p {
+    font-size: 24px;
+    font-weight: 500px;
+}
