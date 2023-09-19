@@ -34,12 +34,34 @@ nav {
     border-radius: 50px;
 }
 
-/* .navItem {
+.Logo {
     display: flex;
-    justify-content: space-between;
-    align-items: center;
+    margin: 30px;
+    font-weight: 800;
+    font-size: 64px;
+
 }
 
+.itemMenu {
+    justify-content: space-around;
+    align-items: center;
+    text-decoration: none;
+    padding: 30px;
+    font-size: 32px;
+    font-weight: 400px;
+    color: #000000;
+}
+
+.itemLogin {
+    align-items: center;
+    text-decoration: none;
+    padding: 20px 80px;
+    background-color: #3F3F3F;
+    color: #FFFFFF;
+    border-radius: 60px;
+    font-size: 32px;
+    font-weight: 700;
+} */
 .Logo {
     display: flex;
     margin: 30px;
