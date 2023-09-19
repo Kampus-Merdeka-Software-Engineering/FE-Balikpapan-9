@@ -6,7 +6,35 @@
     font-family: 'Inter', sans-serif;
 }
 
-.navItem {
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 25px 100px;
+    background-color: white;
+}
+
+.logo img {
+    width: 70%;
+}
+
+.itemMenu {
+    font-size: 24px;
+    text-decoration: none;
+    padding: 0px 30px;
+}
+
+.login a {
+    font-size: 24px;
+    font-weight: bold;
+    text-decoration: none;
+    color: #FFFFFF;
+    background-color: #FF833D;
+    padding: 10px 50px;
+    border-radius: 50px;
+}
+
+/* .navItem {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -39,7 +67,7 @@
     border-radius: 60px;
     font-size: 32px;
     font-weight: 700;
-}
+} */
 
 .navTitle {
     display: flex;
@@ -312,6 +340,10 @@ footer {
     display: flex;
     justify-content: space-between;
     padding: 0px 100px 100px;
+}
+
+.sectionFooter img {
+    width: 40%;
 }
 
 .sectionFooter > h3 {
