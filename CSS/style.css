@@ -256,6 +256,7 @@ main {
     margin: 72px 30px;
     border-radius: 50px;
     background: linear-gradient(97.69deg, rgba(255, 133, 64, 0.91) 11.67%, rgba(214, 77, 0, 0.9) 49.18%);
+    box-shadow: 3px 4px 10px rgba(0, 0, 0, 0.3);
 }
 
 .alumniInformation-title > h1 {
@@ -303,31 +304,11 @@ main {
     line-height: 1.5;
 }
 
-/* .profileInformation {
-    display: flex;
-    flex-direction: column;
-}
-
-.alumniProfile > h3 {
-    font-size: 40px;
-    font-weight: 700px;
-}
-
-.alumniProfile > p {
-    font-size: 32px;
-    font-weight: 500px;
-}
-
-.alumniExperience > p {
-    font-size: 28px;
-    font-weight: 500;
-} */
-
 
 /* Footer */
 
 footer {
-    margin-top: 600px;
+    margin-top: 650px;
     display: flex;
     justify-content: space-between;
 }
