@@ -113,7 +113,7 @@
     margin-bottom: 40px;
 }
 
-main {
+.course {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
