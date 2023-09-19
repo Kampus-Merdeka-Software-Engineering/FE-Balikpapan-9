@@ -311,14 +311,37 @@ footer {
     margin-top: 650px;
     display: flex;
     justify-content: space-between;
+    padding: 0px 100px 100px;
 }
 
-.sectionFooter > h4 {
-    font-size: 32px;
+.sectionFooter > h3 {
+    font-size: 28px;
     font-weight: 700;
+    line-height: 2;
+}
+
+.sectionFooter > h4{
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.sectionFooter > h5 {
+    font-size: 18px;
+    font-weight: 500;
+    color: #BEBEBE;
 }
 
 .sectionFooter > p {
-    font-size: 24px;
-    font-weight: 500px;
+    font-size: 18px;
+    font-weight: 500;
+    color: #545454;
+    line-height: 2;
+}
+
+.tim > h4 {
+    font-size: 18px;
+    font-weight: 500;
+    margin: 15px 0px;
+    padding: 5px 12px;
+    border-left: 7px solid #D9D9D9;
 }
