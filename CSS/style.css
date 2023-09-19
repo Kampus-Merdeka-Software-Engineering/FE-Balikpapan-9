@@ -104,12 +104,11 @@
     font-size: 24px;
     font-weight: 400;
     font-family: 'Inter', sans-serif;
-    letter-spacing: 15px;
-    margin-bottom: 10px;
+    letter-spacing: 10px;
 }
 
 .mainTitle > h3 {
-    font-size: 64px;
+    font-size: 56px;
     font-weight: 700;
     font-family: 'Inter', sans-serif;
     margin-bottom: 40px;
@@ -119,7 +118,7 @@ main {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    margin: 0px 60px 100px;
+    margin: 0px 50px 100px 50px;
 }
 
 .itemCourse {
@@ -166,17 +165,21 @@ main {
     justify-content: center;
     align-items: center;
     background-color: #D9D9D9;
-    height: 520px;
+    height: 600px;
 }
 
 .informationSection > h3 {
     font-size: 64px;
     font-weight: 700;
+    font-family: 'Inter', sans-serif;
+    color: #FFFFFF;
 }
 
 .informationSection > p {
     font-size: 20px;
     font-weight: 400;
+    font-family: 'Inter', sans-serif;
+    color: #FFFFFF;
 }
 
 .informationSection > a {
