@@ -92,22 +92,22 @@
 }
 
 
-/* Main Section */
+/* Course Section */
 
-.mainTitle {
+.courseTitle {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 }
 
-.mainTitle > p {
+.courseTitle > p {
     font-size: 24px;
     font-weight: 400;
     letter-spacing: 10px;
 }
 
-.mainTitle > h3 {
+.courseTitle > h3 {
     font-size: 56px;
     font-weight: 700;
     margin-bottom: 40px;
