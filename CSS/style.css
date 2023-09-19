@@ -204,9 +204,14 @@ main {
 
 .comentarSection {
     background: linear-gradient(124.24deg, #8E8AD7 29.75%, rgba(142, 138, 215, 0.87) 53.18%, #6663A9 81.45%);
-    height: 600px;
+    height: 650px;
     display: flex;
+    padding: 0px 40px;
     justify-content: space-around;
+}
+
+.comment-img img{
+    height: 100%;
 }
 
 .comment {
@@ -224,13 +229,16 @@ main {
 
 .comment-item p {
     font-family: 'Inter';
-    width: 80%;
+    font-size: 24px;
     margin: 20px 0px;
     padding: 20px;
     align-items: center;
     background-color: #FFFFFF;
     border-radius: 50px;
 }
+
+
+/* Alumni Information */
 
 .alumniInformation {
     display: flex;
@@ -264,6 +272,9 @@ main {
     font-size: 28px;
     font-weight: 500;
 }
+
+
+/* Footer */
 
 footer {
     display: flex;
