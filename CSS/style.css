@@ -209,6 +209,12 @@ main {
     justify-content: space-around;
 }
 
+.comment {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
 .comment h3 {
     font-family: 'Inter';
     font-size: 72px;
@@ -218,11 +224,12 @@ main {
 
 .comment-item p {
     font-family: 'Inter';
-    margin-bottom: 12px;
+    width: 80%;
+    margin: 20px 0px;
     padding: 20px;
     align-items: center;
     background-color: #FFFFFF;
-    border-radius: 40px;
+    border-radius: 50px;
 }
 
 .alumniInformation {
