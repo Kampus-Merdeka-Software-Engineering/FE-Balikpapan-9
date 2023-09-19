@@ -159,6 +159,9 @@ main {
     padding: 20px 30px 20px 30px;
 }
 
+
+/* Information Section */
+
 .informationSection {
     display: flex;
     flex-direction: column;
@@ -196,24 +199,25 @@ main {
     margin-top: 36px;
 }
 
+
+/* Comment Section */
+
 .comentarSection {
-    background-color:#F6F6F6;
-    padding: 60px;
-    height: 860px;
+    background: linear-gradient(124.24deg, #8E8AD7 29.75%, rgba(142, 138, 215, 0.87) 53.18%, #6663A9 81.45%);
+    height: 600px;
+    display: flex;
+    justify-content: space-around;
 }
 
-.comentarSection > h3 {
-    font-size: 64px;
-    font-weight: 700px;
-    margin-bottom: 30px;
-}
-
-.comentar {
-    font-size: 40px;
+.comment h3 {
+    font-family: 'Inter';
+    font-size: 72px;
     font-weight: 500px;
+    color: #FFFFFF;
 }
 
-.comentar > p {
+.comment-item p {
+    font-family: 'Inter';
     margin-bottom: 12px;
     padding: 20px;
     align-items: center;
