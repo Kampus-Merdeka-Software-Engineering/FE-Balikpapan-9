@@ -6,6 +6,9 @@
     font-family: 'Inter', sans-serif;
 }
 
+
+/* Navbar */
+
 nav {
     display: flex;
     justify-content: space-between;
@@ -34,14 +37,6 @@ nav {
     border-radius: 50px;
 }
 
-.Logo {
-    display: flex;
-    margin: 30px;
-    font-weight: 800;
-    font-size: 64px;
-
-}
-
 .itemMenu {
     justify-content: space-around;
     align-items: center;
@@ -50,95 +45,6 @@ nav {
     font-size: 32px;
     font-weight: 400px;
     color: #000000;
-}
-
-.itemLogin {
-    align-items: center;
-    text-decoration: none;
-    padding: 20px 80px;
-    background-color: #3F3F3F;
-    color: #FFFFFF;
-    border-radius: 60px;
-    font-size: 32px;
-    font-weight: 700;
-} */
-.Logo {
-    display: flex;
-    margin: 30px;
-    font-weight: 800;
-    font-size: 64px;
-
-}
-
-.itemMenu {
-    justify-content: space-around;
-    align-items: center;
-    text-decoration: none;
-    padding: 30px;
-    font-size: 32px;
-    font-weight: 400px;
-    color: #000000;
-}
-
-.itemLogin {
-    align-items: center;
-    text-decoration: none;
-    padding: 20px 80px;
-    background-color: #3F3F3F;
-    color: #FFFFFF;
-    border-radius: 60px;
-    font-size: 32px;
-    font-weight: 700;
-} */
-
-.navTitle {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    margin-top: 120px;
-    margin-left: 100px;
-}
-
-.titleCaption > h1 {
-    font-size: 96px;
-    font-weight: 700;
-    line-height: 110px;
-}
-
-.titleCaption > p {
-    font-size: 40px;
-    font-family: 500px;
-    line-height: 50px;
-}
-
-.navLogo {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    margin-left: 120px;
-    margin-right: 120px;
-    margin: 60px;
-    padding: 30px 100px;
-    background-color:#D9D9D9;
-    border-radius: 32px;
-    height: 180px;
-}
-
-.navLogo > p {
-    font-size: 48px;
-    font-weight: 700px;
-}
-
-.navLogo > a{
-    font-size: 40px;
-    font-weight: 700px;
-    text-decoration: none;
-    background-color: #3F3F3F;
-    padding: 20px 40px;
-    border-radius: 60px;
-
 }
 
 
