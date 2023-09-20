@@ -259,6 +259,7 @@ nav {
     position: absolute;
     top:32%;
     right:-65px;
+    cursor: pointer;
 }
 
 
