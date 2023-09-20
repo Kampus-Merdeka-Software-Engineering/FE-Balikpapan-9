@@ -42,6 +42,29 @@ nav {
 }
 
 
+/* Main Section */
+
+.mainTitle {
+    display: flex;
+}
+
+main {
+    padding: 70px 120px;
+}
+
+.mainCaption h1 {
+    font-size: 72px;
+    font-weight: bold;
+}
+
+.mainCaption p {
+    font-size: 30px;
+    font-weight: 500;
+    color: #424242;
+    margin-top: 30px;
+}
+
+
 /* Course Section */
 
 .courseTitle {
