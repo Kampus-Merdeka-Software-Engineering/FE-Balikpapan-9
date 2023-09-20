@@ -254,6 +254,13 @@ nav {
     line-height: 1.5;
 }
 
+.vector img {
+    width: 10%;
+    position: absolute;
+    top:32%;
+    right:-65px;
+}
+
 
 /* Footer */
 
