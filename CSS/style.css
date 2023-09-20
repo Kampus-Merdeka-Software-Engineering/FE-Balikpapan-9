@@ -21,12 +21,6 @@ nav {
     width: 70%;
 }
 
-.itemMenu {
-    font-size: 24px;
-    text-decoration: none;
-    padding: 0px 30px;
-}
-
 .login a {
     font-size: 24px;
     font-weight: bold;
@@ -42,7 +36,7 @@ nav {
     align-items: center;
     text-decoration: none;
     padding: 30px;
-    font-size: 32px;
+    font-size: 24px;
     font-weight: 400px;
     color: #000000;
 }
