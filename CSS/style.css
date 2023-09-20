@@ -10,6 +10,9 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    width: 100%;
+    background-color: #FFF;
+    height: 140px;
 }
 
 .Logo {
@@ -34,20 +37,31 @@
     align-items: center;
     text-decoration: none;
     padding: 20px 80px;
-    background-color: #3F3F3F;
+    background-color: #FF833D;
     color: #FFFFFF;
     border-radius: 60px;
     font-size: 32px;
     font-weight: 700;
+    height: 60px;
 }
 
 .navTitle {
-    display: flex;
-    flex-direction: column;
     justify-content: center;
+    justify-content: space-between;
     align-items: center;
-    margin-top: 120px;
+    width: 100%;
+    background-image: url(/img/Orang1\ 1.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: right;
+    background-size: 800px;
+}
+
+.titleCaption {
+    height: 750px;
+    margin-top: 150px;
     margin-left: 100px;
+    margin-right: 100px;
 }
 
 .titleCaption > h1 {
@@ -58,7 +72,7 @@
 
 .titleCaption > p {
     font-size: 40px;
-    font-family: 500px;
+    font-weight: 500;
     line-height: 50px;
 }
 
@@ -67,30 +81,35 @@
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    margin-left: 120px;
-    margin-right: 120px;
-    margin: 60px;
-    padding: 30px 100px;
-    background-color:#D9D9D9;
+    padding: 30px 30px 30px 80px;
     border-radius: 32px;
-    height: 180px;
+    margin-left: 100px;
+    margin-right: 100px;
+    margin-bottom: 90px;
+    height: 200px;
+    background: linear-gradient(270deg, #5673DD 27.42%, #341FB8 74.25%);
+    filter: drop-shadow(0px 8px 30px rgba(0, 0, 0, 0.25));
 }
 
 .navLogo > p {
-    font-size: 48px;
-    font-weight: 700px;
+    font-size: 42px;
+    font-weight: 700;
+    color: #FFF;
+    line-height: 55px;
+    width: 80%;
 }
 
-.navLogo > a{
+.navLogo > a {
     font-size: 40px;
-    font-weight: 700px;
+    font-weight: 700;
     text-decoration: none;
-    background-color: #3F3F3F;
-    padding: 20px 40px;
+    background: linear-gradient(180deg, #FF965A 0%, #FF650E 100%);
+    color: #FFF;
+    padding: 20px 100px 20px 40px;
+    width: 30%;
     border-radius: 60px;
-
+    float: right;
 }
-
 
 /* Main Section */
 
