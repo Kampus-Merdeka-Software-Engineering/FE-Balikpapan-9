@@ -51,7 +51,7 @@ nav {
     justify-content: center;
     align-items: center;
     text-align: center;
-    margin: 0px 120px 100px 120px;
+    margin: 100px 0px;
 }
 
 .titleAboutUs > h1{
@@ -70,19 +70,19 @@ nav {
 .informationAboutUs {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    text-align: justify;
-    margin: 0px 220px 145px 220px;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin: 120px 80px;
+    gap: 50px;
 }
 
 .left {
+    justify-content: center;
     background-color: #9593FF;
     border-radius: 76px;
-    padding: 85px 46px;
-    width: 48%;
-    height: 550px;
-    margin-right: 40px;
+    padding: 80px 40px;
+    height: 500px;
+    width: 46%;
 }
 
 .left > h4 {
@@ -92,7 +92,7 @@ nav {
     padding: 10px 24px;
     width: 250px;
     border-radius: 76px;
-    font-size: 32px;
+    font-size: 28px;
     font-weight: 700;
 }
 
@@ -100,7 +100,7 @@ nav {
     color: #F5F4FF;
     padding: 30px;
     border-radius: 76px;
-    font-size: 26px;
+    font-size: 22px;
     font-weight: 600;
     margin-bottom: 32px;
 }
@@ -108,10 +108,15 @@ nav {
 .right {
     background-color: #F5F4FF;
     border-radius: 76px;
-    padding: 85px 46px;
-    width: 48%;
-    height: 550px;
+    width: 46%;
 }
+
+.right > img {
+    align-items: center;
+    width: 96%;
+}
+
+
 
 /*  Member Profile */
 
@@ -121,7 +126,7 @@ nav {
     justify-content: space-between;
     align-items: center;
     text-align: center;
-    margin: 0px 500px 0px 500px;
+    margin: 0px 80px 40px 80px;
 }
 
 .titleMenber > h1 {
@@ -145,21 +150,21 @@ nav {
     flex-wrap: wrap;
     text-align: center;
     align-items: center;
-    margin: 0px 200px 0px 200px;
+    margin: 0px 80px 40px 80px;
 }
 
 .dataProfile {
     background-color: #F5F4FF;
     border-radius: 48px;
-    height: 360px;
-    width: 360px;
+    height: 380px;
+    width: 320px;
     padding: 140px 26px 70px 26px;
     margin: 0px 10px 180px 10px;
     box-shadow: 2.70026px 5.40053px 8.10079px 0px rgba(61, 37, 131, 0.12);
 }
 
 .dataProfile > h2 {
-    font-size: 32px;
+    font-size: 30px;
     font-weight: 700;
     color: #815DAF;
     margin-bottom: 6px;
