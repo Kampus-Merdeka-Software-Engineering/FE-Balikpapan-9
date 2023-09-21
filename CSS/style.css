@@ -8,119 +8,107 @@
 
 
 /* Navbar */
-.navItem {
+nav {
     display: flex;
-    flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    height: 140px;
     position: sticky;
+    z-index: 10;
     top: 0;
-    background-color: #FFFFFF;
+    background-color: rgba(255, 255, 255, 0.75);
+    padding: 10px 100px;
 }
 
-.Logo {
-    display: flex;
-    margin: 30px;
-    font-weight: 800;
-    font-size: 64px;
+.Logo img {
+    width: 80%;
 }
 
 .itemMenu {
     justify-content: space-around;
     align-items: center;
     text-decoration: none;
-    padding: 30px;
-    font-size: 32px;
-    font-weight: 400;
-    color: #000000;
+    padding: 0px 30px;
+    font-size: 24px;
+    font-weight: 500;
 }
 
 .itemLogin {
     align-items: center;
     text-decoration: none;
-    width: 200px;
-    height: 60px;
-    padding: 20px 80px;
+    padding: 15px 70px;
     background-color: #FF833D;
     color: #FFFFFF;
     border-radius: 60px;
-    font-size: 32px;
+    font-size: 24px;
     font-weight: 700;
 }
 
-.navTitle {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    margin: 120px 100px 100px 100px;
-    height: 800px;
-    background-image: url(/img/Orang1\ 1.png);
-    background-repeat: no-repeat;
-    background-position: right;
-    background-size: 800px;
+
+/* Main Section */
+
+.mainImage img {
+    position: absolute;
+    z-index: -1;
+    width: 100%;
+    margin-top: 70px;
+}
+
+.main {
+    margin: 90px 100px;
 }
 
 .titleCaption > h1 {
-    font-size: 96px;
+    font-size: 78px;
     font-weight: 700;
+    padding-bottom: 30px;   
 }
 
 .titleCaption > p {
-    font-size: 40px;
+    font-size: 28px;
     font-weight: 500;
-    line-height: 50px;
+    line-height: 1.35;
+    color: #424242;
+    margin-bottom: 270px;
 }
 
-.navLogo {
+.test {
     display: flex;
     flex-direction: row;
     align-items: center;
-    padding: 30px 30px 30px 100px;
+    padding: 25px 70px;
     border-radius: 32px;
-    height: 200px;
-    width: 100%;
     background: linear-gradient(270deg, #5673DD 27.42%, #341FB8 74.25%);
     filter: drop-shadow(0px 8px 30px rgba(0, 0, 0, 0.25));
 }
 
-.navLogo > p {
-    font-size: 48px;
+.test > p {
+    font-size: 38px;
     font-weight: 700;
-    color: #FFF;
-    line-height: 80px;
+    color: #FFFFFF;
+    line-height: 1.2;
+    width: 70%;
 }
 
 .itemTest {
-    font-size: 40px;
-    font-weight: 700;
-    text-decoration: none;
     background: linear-gradient(180deg, #FF965A 0%, #FF650E 100%);
-    color: #FFF;
     padding: 20px 40px;
     border-radius: 60px;
+    text-align: left;
+    width: 30%;
 }
 
-/* Main Section */
-
-.mainTitle {
-    display: flex;
+.itemTest a {
+    font-size: 32px;
+    font-weight: 700;
+    text-decoration: none;
+    color: #FFFFFF;
 }
 
-main {
-    padding: 70px 120px;
-}
-
-.mainCaption h1 {
-    font-size: 72px;
-    font-weight: bold;
-}
-
-.mainCaption p {
-    font-size: 30px;
-    font-weight: 500;
-    color: #424242;
-    margin-top: 30px;
+.test img {
+    width: 7.3%;
+    position: absolute;
+    top: 15%;
+    right:40px;
 }
 
 
