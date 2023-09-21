@@ -1,0 +1,246 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: #000000;
+    font-family: 'Inter', sans-serif;
+}
+
+
+/* Navbar */
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    z-index: 10;
+    top: 0;
+    background-color: rgba(255, 255, 255, 0.75);
+    padding: 10px 100px;
+}
+
+.Logo img {
+    width: 80%;
+}
+
+.itemMenu {
+    justify-content: space-around;
+    align-items: center;
+    text-decoration: none;
+    padding: 0px 30px;
+    font-size: 24px;
+    font-weight: 500;
+}
+
+.itemLogin {
+    align-items: center;
+    text-decoration: none;
+    padding: 15px 70px;
+    background-color: #FF833D;
+    color: #FFFFFF;
+    border-radius: 60px;
+    font-size: 24px;
+    font-weight: 700;
+}
+
+
+/* Course Information */
+
+.informationCourse {
+    display: flex;
+    justify-content: space-between;
+    margin: 80px 160px 100px 160px;
+}
+
+.leftImages > img {
+    margin-bottom: 40px;
+}
+
+.dateInformation {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+}
+
+.dateInformation > p{
+    font-size: 26px;
+    font-weight: 500;
+    color: #909090;
+}
+
+.rightTitleInformation > p {
+    font-size: 24px;
+    font-weight: 500;
+    color: #B3B3B3;
+    margin-bottom: 20px;
+}
+
+.rightTitleInformation > h1 {
+    font-size: 64px;
+    font-weight: 700;
+}
+
+.rightTitleInformation > h4 {
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 40px;
+    margin-bottom: 50px;
+}
+
+.rightTitleInformation > a {
+    font-size: 26px;
+    font-weight: 700;
+    background-color: #8B79F9;
+    color: #FFFFFF;
+    border-radius: 48px;
+    text-align: center;
+    text-decoration: none;
+    padding: 18px 32px;
+}
+
+/* Benefit & Profile */
+
+main {
+    display: flex;
+    justify-content: space-between;
+    margin: 80px 160px 100px 160px;
+}
+
+.materialCourse > p {
+    font-size: 24px;
+    font-weight: 500;
+    color: #B3B3B3;
+    margin-bottom: 20px;
+}
+
+.materialCourse > h1 {
+    font-size: 48px;
+    font-weight: 700;
+    margin-bottom: 22px;
+}
+
+.materialCourse > ul {
+    font-size: 32px;
+    font-weight: 500;
+    line-height: 50px;
+    margin-left: 30px;
+}
+
+.instructorProfile {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.instructorProfile > p{
+    font-size: 34px;
+    font-weight: 500;
+    color: #B3B3B3;
+    text-align: end;
+    margin-bottom: 22px;
+}
+
+.instructor {
+    display: flex;
+    align-items: start;
+    background-color: #FBFBFB ;
+    box-shadow: 0px 4.13439px 7.23518px 0px rgba(0, 0, 0, 0.07);
+    border-radius: 100px;
+    padding: 30px;
+    margin: 10px;
+    width: 600px;
+}
+
+.dataProfile {
+    text-align: start;
+    align-items: center;
+    margin-left: 30px;
+}
+
+.dataProfile > h3 {
+    font-size: 32px;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+.dataProfile > p {
+    font-size: 24px;
+    font-weight: 500;
+    color: #A3A3A3;
+}
+
+/* Point Benefit */
+
+.benefitCourse {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin: 80px 160px 100px 160px;
+}
+
+.benefit {
+    display: flex;
+    background-color: #F7F5FF;
+    border-radius: 50px;
+    padding: 22px 40px;
+    width: 380px;
+}
+
+.benefit > img {
+    background-blend-mode: color-burn;
+}
+
+.benefit > p {
+    text-align: start;
+    align-items: center;
+    font-size: 32px;
+    font-weight: 500;
+    color: #6C73BB;
+    margin: 10px 0px 0px 30px;
+}
+
+/* Footer */
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    padding: 0px 100px 100px;
+}
+
+.sectionFooter img {
+    width: 40%;
+}
+
+.sectionFooter > h3 {
+    font-size: 28px;
+    font-weight: 700;
+    line-height: 2;
+}
+
+.sectionFooter > h4{
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.sectionFooter > h5 {
+    font-size: 18px;
+    font-weight: 500;
+    color: #BEBEBE;
+}
+
+.sectionFooter > p {
+    font-size: 18px;
+    font-weight: 500;
+    color: #545454;
+    line-height: 2;
+}
+
+.tim > h4 {
+    font-size: 18px;
+    font-weight: 500;
+    margin: 15px 0px;
+    padding: 5px 12px;
+    border-left: 7px solid #D9D9D9;
+}
