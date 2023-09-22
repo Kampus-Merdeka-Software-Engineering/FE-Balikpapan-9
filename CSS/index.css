@@ -195,7 +195,7 @@ nav {
     justify-content: center;
     align-items: center;
     text-align: center;
-    background-image: url(/img/InformationSection.png);
+    background-image: url(../img/InformationSection.png);
     background-repeat: no-repeat;
     background-size: cover;
     margin: 0;
