@@ -16,7 +16,7 @@ nav {
     z-index: 10;
     top: 0;
     background-color: rgba(255, 255, 255, 0.75);
-    padding: 10px 100px;
+    padding: 20px 150px;
 }
 
 .Logo img {
@@ -137,7 +137,7 @@ nav {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    margin: 0px 50px 100px 50px;
+    margin: 0px 90px 100px 90px;
 }
 
 .itemCourse {
@@ -332,7 +332,7 @@ footer {
     margin-top: 650px;
     display: flex;
     justify-content: space-between;
-    padding: 0px 100px 100px;
+    padding: 150px 100px 80px;
 }
 
 .sectionFooter img {
@@ -340,33 +340,34 @@ footer {
 }
 
 .sectionFooter > h3 {
-    font-size: 28px;
+    font-size: 32px;
     font-weight: 700;
     line-height: 2;
 }
 
 .sectionFooter > h4{
-    font-size: 18px;
+    font-size: 20px;
     font-weight: 500;
 }
 
 .sectionFooter > h5 {
-    font-size: 18px;
+    font-size: 20px;
     font-weight: 500;
     color: #BEBEBE;
 }
 
 .sectionFooter > p {
-    font-size: 18px;
+    font-size: 20px;
     font-weight: 500;
     color: #545454;
-    line-height: 2;
+    line-height: 2.2;
 }
 
 .tim > h4 {
-    font-size: 18px;
+    font-size: 20px;
     font-weight: 500;
     margin: 15px 0px;
     padding: 5px 12px;
+    margin: 20px 0px;
     border-left: 7px solid #D9D9D9;
 }
