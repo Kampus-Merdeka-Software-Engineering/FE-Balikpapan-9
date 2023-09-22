@@ -62,7 +62,7 @@ nav {
 }
 
 .main {
-    margin: 90px 170px;
+    margin: 90px 150px;
 }
 
 .titleCaption > h1 {
@@ -82,7 +82,7 @@ nav {
     display: flex;
     flex-direction: row;
     align-items: center;
-    padding: 30px 100px;
+    padding: 30px 100px 30px 50px;
     margin-top: 370px;
     border-radius: 32px;
     background: linear-gradient(270deg, #5673DD 27.42%, #341FB8 74.25%);
@@ -95,27 +95,29 @@ nav {
     color: #FFFFFF;
     line-height: 1.2;
     width: 70%;
+    width: 800px;
 }
 
 .itemTest {
     background: linear-gradient(180deg, #FF965A 0%, #FF650E 100%);
-    padding: 20px 90px;
+    padding: 20px 70px;
     border-radius: 60px;
     text-align: left;
     width: 30%;
 }
 
 .itemTest a {
-    font-size: 40px;
+    font-size: 36px;
     font-weight: 700;
     text-decoration: none;
     color: #FFFFFF;
+    text-align: start;
 }
 
 .test img {
-    width: 7.3%;
+    width: 7%;
     position: absolute;
-    top: 12%;
+    top: 20%;
     right:70px;
 }
 
@@ -294,6 +296,7 @@ nav {
     border-radius: 50px;
     background: linear-gradient(97.69deg, rgba(255, 133, 64, 0.91) 11.67%, rgba(214, 77, 0, 0.9) 49.18%);
     box-shadow: 3px 4px 10px rgba(0, 0, 0, 0.3);
+    width: 1400px;
 }
 
 .alumniInformation-title > h1 {
@@ -308,7 +311,11 @@ nav {
     background-color: #FFFFFF;
     border-radius: 50px;
     padding: 50px 70px;
-    width: 130%;
+    width: 120%;
+}
+
+.testimonials {
+    display: none;
 }
 
 .alumniProfile {
