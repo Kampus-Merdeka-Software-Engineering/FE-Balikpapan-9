@@ -268,15 +268,14 @@ nav {
     z-index: 2;
     display: flex;
     justify-content: space-between;
-    width: 85%; 
-    margin: 72px 30px;
+    margin: 100px 200px;
     border-radius: 50px;
     background: linear-gradient(97.69deg, rgba(255, 133, 64, 0.91) 11.67%, rgba(214, 77, 0, 0.9) 49.18%);
     box-shadow: 3px 4px 10px rgba(0, 0, 0, 0.3);
 }
 
 .alumniInformation-title > h1 {
-    font-size: 76px;
+    font-size: 80px;
     font-weight: 700px;
     color: #FFFFFF;
     padding: 50px 70px;
@@ -286,7 +285,7 @@ nav {
 .profileInformation {
     background-color: #FFFFFF;
     border-radius: 50px;
-    padding: 40px;
+    padding: 50px 70px;
     width: 130%;
 }
 
@@ -297,7 +296,7 @@ nav {
 }
 
 .alumniProfile img {
-    width: 12%;
+    width: 13%;
 }
 
 .alumniProfile-title {
@@ -305,17 +304,17 @@ nav {
 }
 
 .alumniProfile-title h3 {
-    font-size: 36px;
+    font-size: 42px;
     font-weight: 700;
 }
 
 .alumniProfile-title p {
-    font-size: 24px;
+    font-size: 26px;
     font-weight: 500;
 }
 
 .alumniExperience p {
-    font-size: 22px;
+    font-size: 24px;
     font-weight: 500;
     line-height: 1.5;
 }
