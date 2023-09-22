@@ -16,7 +16,7 @@ nav {
     z-index: 10;
     top: 0;
     background-color: rgba(255, 255, 255, 0.75);
-    padding: 10px 100px;
+    padding: 20px 150px;
 }
 
 .Logo img {
@@ -27,9 +27,17 @@ nav {
     justify-content: space-around;
     align-items: center;
     text-decoration: none;
-    padding: 0px 30px;
+    padding: 20px 30px;
+    margin: 0 10px;
     font-size: 24px;
     font-weight: 500;
+    border-radius: 50px;
+    transition-duration: 200ms;
+}
+
+.itemMenu:hover {
+    background-color: #FF833D;
+    border-radius: 50px;
 }
 
 .itemLogin {
