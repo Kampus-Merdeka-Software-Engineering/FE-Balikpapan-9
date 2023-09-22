@@ -153,12 +153,11 @@ nav {
 
 .profileMember {
     display: flex;
-    flex-direction: row;
     justify-content: space-around;
     flex-wrap: wrap;
     text-align: center;
     align-items: center;
-    margin: 0px 80px 40px 80px;
+    margin: 0px 100px 40px 100px;
 }
 
 .dataProfile {
@@ -244,18 +243,18 @@ footer {
 }
 
 .sectionFooter > h3 {
-    font-size: 28px;
+    font-size: 32px;
     font-weight: 700;
     line-height: 2;
 }
 
 .sectionFooter > h4{
-    font-size: 18px;
+    font-size: 22px;
     font-weight: 500;
 }
 
 .sectionFooter > h5 {
-    font-size: 18px;
+    font-size: 22px;
     font-weight: 500;
     color: #BEBEBE;
 }
@@ -263,7 +262,7 @@ footer {
 .sectionFooter > a {
     display: flex;
     flex-direction: column;
-    font-size: 18px;
+    font-size: 22px;
     font-weight: 500;
     color: #545454;
     line-height: 2;
@@ -276,7 +275,7 @@ footer {
 }
 
 .tim > h4 {
-    font-size: 18px;
+    font-size: 22px;
     font-weight: 500;
     margin: 15px 0px;
     padding: 5px 12px;
