@@ -54,35 +54,35 @@ nav {
 }
 
 .main {
-    margin: 90px 100px;
+    margin: 90px 170px;
 }
 
 .titleCaption > h1 {
-    font-size: 78px;
+    font-size: 90px;
     font-weight: 700;
     padding-bottom: 30px;   
 }
 
 .titleCaption > p {
-    font-size: 28px;
+    font-size: 32px;
     font-weight: 500;
-    line-height: 1.35;
+    line-height: 1.5;
     color: #424242;
-    margin-bottom: 270px;
 }
 
 .test {
     display: flex;
     flex-direction: row;
     align-items: center;
-    padding: 25px 70px;
+    padding: 30px 100px;
+    margin-top: 370px;
     border-radius: 32px;
     background: linear-gradient(270deg, #5673DD 27.42%, #341FB8 74.25%);
     filter: drop-shadow(0px 8px 30px rgba(0, 0, 0, 0.25));
 }
 
 .test > p {
-    font-size: 38px;
+    font-size: 40px;
     font-weight: 700;
     color: #FFFFFF;
     line-height: 1.2;
@@ -91,14 +91,14 @@ nav {
 
 .itemTest {
     background: linear-gradient(180deg, #FF965A 0%, #FF650E 100%);
-    padding: 20px 40px;
+    padding: 20px 90px;
     border-radius: 60px;
     text-align: left;
     width: 30%;
 }
 
 .itemTest a {
-    font-size: 32px;
+    font-size: 40px;
     font-weight: 700;
     text-decoration: none;
     color: #FFFFFF;
@@ -107,8 +107,8 @@ nav {
 .test img {
     width: 7.3%;
     position: absolute;
-    top: 15%;
-    right:40px;
+    top: 12%;
+    right:70px;
 }
 
 
@@ -181,17 +181,18 @@ nav {
     background-repeat: no-repeat;
     background-size: cover;
     margin: 0;
-    height: 500px
+    height: 600px
 }
 
 .informationSection > h3 {
-    font-size: 64px;
+    font-size: 72px;
     font-weight: 700;
     color: #FFFFFF;
 }
 
 .informationSection > p {
-    font-size: 18px;
+    font-size: 22px;
+    line-height: 1.5;
     font-weight: 400;
     color: #FFFFFF;
     margin-top: 15px;
@@ -199,7 +200,7 @@ nav {
 
 .informationSection > a {
     text-decoration: none;
-    font-size: 24px;
+    font-size: 28px;
     font-weight: bold;
     background-color: #FF650E;
     color: #FFFFFF;
@@ -213,7 +214,7 @@ nav {
 
 .comentarSection {
     background: linear-gradient(124.24deg, #8E8AD7 29.75%, rgba(142, 138, 215, 0.87) 53.18%, #6663A9 81.45%);
-    height: 650px;
+    height: 750px;
     display: flex;
     padding: 0px 40px;
     margin: 0;
@@ -231,16 +232,18 @@ nav {
 }
 
 .comment h3 {
-    font-size: 72px;
+    font-size: 86px;
     font-weight: 500px;
     color: #FFFFFF;
+    text-align: center;
 }
 
 .comment-item p {
-    font-size: 24px;
+    font-size: 28px;
+    font-weight: 500;
     margin: 20px 0px;
     padding: 20px;
-    align-items: center;
+    text-align: center;
     color: #686868;
     background-color: #FFFFFF;
     border-radius: 50px;
