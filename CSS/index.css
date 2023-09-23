@@ -82,7 +82,7 @@ nav {
     display: flex;
     flex-direction: row;
     align-items: center;
-    padding: 30px 100px 30px 50px;
+    padding: 30px 100px 30px 100px;
     margin-top: 370px;
     border-radius: 32px;
     background: linear-gradient(270deg, #5673DD 27.42%, #341FB8 74.25%);
@@ -94,8 +94,7 @@ nav {
     font-weight: 700;
     color: #FFFFFF;
     line-height: 1.2;
-    width: 70%;
-    width: 800px;
+    width: 85%;
 }
 
 .itemTest {
@@ -117,7 +116,7 @@ nav {
 .test img {
     width: 7%;
     position: absolute;
-    top: 20%;
+    top: 13%;
     right:70px;
 }
 
