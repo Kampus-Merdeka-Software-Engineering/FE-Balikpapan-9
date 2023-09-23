@@ -154,7 +154,7 @@ nav {
 
 .profileMember {
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
     flex-wrap: wrap;
     text-align: center;
     align-items: center;
@@ -166,8 +166,8 @@ nav {
     border-radius: 48px;
     height: 380px;
     width: 320px;
-    padding: 140px 26px 70px 26px;
-    margin: 0px 10px 180px 10px;
+    padding: 140px 25px 70px 25px;
+    margin: 0px 25px 180px 25px;
     box-shadow: 2.70026px 5.40053px 8.10079px 0px rgba(61, 37, 131, 0.12);
 }
 
