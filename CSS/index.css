@@ -94,7 +94,7 @@ nav {
     padding: 30px 100px 30px 100px;
     margin-top: 250px;
     border-radius: 32px;
-    background-color: #5673DD;
+    background: linear-gradient(269.68deg, #5673DD 27.42%, #341FB8 74.25%);
     filter: drop-shadow(0px 8px 30px rgba(0, 0, 0, 0.25));
 }
 
@@ -530,28 +530,13 @@ footer {
         color: #424242;
         margin-right: 0;
     }
-
-
-    .join {
-        margin-top: 640px;
-    }
-
-    .join > a > button{
-        font-size: 26px;
-        font-weight: 700;
-        color: white;
-        background: linear-gradient(180deg, #FF965A 0%, #FF650E 100%);
-        border: none;
-        border-radius: 40px;
-        padding: 20px 40px;
-    }
     
     .test {
         display: flex;
         justify-content: center;
         align-items: center;
         margin-top: 600px;
-        background-color: transparent;
+        background: transparent;
         box-shadow: none;
     }
 
