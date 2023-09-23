@@ -46,10 +46,18 @@ nav {
     text-decoration: none;
     padding: 15px 70px;
     background-color: #FF833D;
-    color: #FFFFFF;
     border-radius: 60px;
     font-size: 24px;
     font-weight: 700;
+}
+
+.itemLogin > a {
+    text-decoration: none;
+    color: #FFFFFF;
+}
+
+.itemLogin:hover {
+    background-color: #973C09 ;
 }
 
 /* Title Informatiaon Styling */

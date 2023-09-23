@@ -8,6 +8,7 @@
     <link rel="icon" type="img" href="img/edu9 logo.png">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
 </head>
 <body>
@@ -21,19 +22,22 @@
             <a href="course.html" class="itemMenu">Course</a>
             <a href="aboutus.html" class="itemMenu">About Us</a>
         </div>
+        <div class="itemLogin">
+            <a href="#">Log In</a>
+        </div>
     </nav>
 
     <!-- Introduction Course -->
 
     <section class="informationCourse">
-        <div class="leftImages">
+        <div class="leftImages" data-aos="fade-right" data-aos-anchor="#example-anchor" data-aos-offset="500" data-aos-duration="500">
             <img src="img/Backend.png" alt="IU/UX">
             <div class="dateInformation">
                 <img src="img/CalendarCheck.png" alt="Icon">
                 <p>12 November 2023 - 12 Desember 2023 (16 Sesi Live)</p>
             </div>
         </div>
-        <div class="rightTitleInformation">
+        <div class="rightTitleInformation" data-aos="fade-left" data-aos-anchor="#example-anchor" data-aos-offset="500" data-aos-duration="500">
             <p>EduNine Course</p>
             <h1>Back End Developer</h1>
             <h4>Jadilah Back End Developer yang kamu impikan. <br>
@@ -47,7 +51,7 @@
 
     <!-- Benefit & Instructor-->
 
-    <main>
+    <main data-aos="zoom-in-up" data-aos-duration="800">
         <div class="materialCourse">
             <p>Lesson Material</p>
             <h1>Materi Yang Akan Diajarkan</h1>
@@ -89,7 +93,7 @@
 
     <!-- Point Benefit -->
 
-    <section class="benefitCourse">
+    <section class="benefitCourse" data-aos="flip-down">
         <div class="benefit">
             <img src="img/benefit1.png" alt="Icon">
             <p>Learn from expertize</p>
@@ -110,7 +114,7 @@
 
     <!-- Footer -->
 
-    <footer>
+    <footer >
         <div class="sectionFooter">
             <img src="img/logo.png" alt="Logo">
             <h3>PT. Group 9 Balikpapan</h3>
@@ -138,4 +142,10 @@
             <a href="aboutus.html">About Us</a>
         </div>
     </footer>
+
+    <!-- Javascript AOS -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
 </body>
