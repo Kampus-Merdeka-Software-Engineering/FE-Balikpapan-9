@@ -961,7 +961,7 @@ footer {
         position: absolute;
         z-index: -1;
         width: 70%;
-        margin-top: 370px;
+        margin-top: 200px;
     }
 
     .main {
@@ -1007,9 +1007,11 @@ footer {
 
     .itemTest {
         background: linear-gradient(180deg, #FF965A 0%, #FF650E 100%);
+        margin-left: 60px;
+        margin-top: 200px;
         border-radius: 60px;
         text-align: center;
-        width: 90%;
+        width: 60%;
         transform: scale(0.8);
         transition-duration: 200ms;
     }
@@ -1038,7 +1040,7 @@ footer {
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        margin-top: -50px;
+        margin-top: 0px;
     }
     
     .courseTitle > p {
@@ -1167,12 +1169,13 @@ footer {
     .comment-img {
         position: absolute;
         z-index: 3;
-        margin-top: 410px;
-        margin-left: 200px;
+        margin-top: 330px;
+        margin-left: 230px;
     }
 
     .comment-img img{
-        height: 330px;
+        width: auto;
+        height: 320px;
     }
 
     .comment {
@@ -1182,7 +1185,7 @@ footer {
         align-items: center;
         justify-content: center;
         top: 70px;
-        left: 100px;
+        left: -15px;
     }
 
     .comment h3 {
@@ -1219,14 +1222,14 @@ footer {
         display: flex;
         justify-content: center;
         transform: scale(0.5);
-        margin-top: -300px;
+        margin-top: -100px;
     }
 
     .alumniSection-img{
         display: flex;
         justify-content: center;
         align-items: center;
-        margin-top: 280px;
+        margin-top: 285px;
     }
 
     .alumniSection-img img {
@@ -1317,7 +1320,7 @@ footer {
         display: flex;
         justify-content: space-between;
         padding: 0px 50px 120px;
-        margin-top: 700px;
+        margin-top: 450px;
         margin-left: 0;
     }
 
@@ -1355,7 +1358,7 @@ footer {
         font-weight: 500;
         color: #545454;
         line-height: 2;
-        text-decoration: none;
+        text-decoration: none;  
     }
 
     .sectionFooter > a:hover {
