@@ -459,7 +459,9 @@ footer {
         font-family: 'Inter', sans-serif;
     }
 
-
+    body {
+        overflow-x: hidden;
+    }
 
     /* Navbar */
 
@@ -586,6 +588,11 @@ footer {
         text-align: center;
         width: 90%;
         transform: scale(0.8);
+        transition-duration: 200ms;
+    }
+
+    .itemTest:hover {
+        transform: scale(0.85);
     }
     
     .itemTest a {
@@ -756,11 +763,11 @@ footer {
     }
 
     .comment h3 {
-        font-size: 40px;
+        font-size: 45px;
         font-weight: 500px;
         color: #FFFFFF;
         text-align: center;
-        margin-bottom: 20px;
+        margin-bottom: 15px;
     }
 
     .comment-item {
@@ -770,7 +777,7 @@ footer {
     }
 
     .comment-item p {
-        font-size: 16px;
+        font-size: 18px;
         font-weight: 500;
         padding: 10px;
         margin: 7px;
@@ -779,5 +786,165 @@ footer {
         background-color: #FFFFFF;
         border-radius: 50px;
         width: 100%;
+    }
+
+    
+
+    /* Alumni Information */
+
+    .alumniSection {
+        display: flex;
+        justify-content: center;
+        transform: scale(0.5);
+        margin-top: -300px;
+    }
+
+    .alumniSection-img{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 280px;
+    }
+
+    .alumniSection-img img {
+        position: absolute  ;
+        z-index: -1;
+        width: 200%;
+    }
+
+    .alumniInformation {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 150%;
+        padding: 50px;
+        background: transparent;
+        box-shadow: none;
+    }
+    
+    
+    .alumniInformation-title > h1 {
+        font-size: 60px;
+        font-weight: 700px;
+        color: #FFFFFF;
+        padding: 40px 100px;
+        background: linear-gradient(97.69deg, rgba(255, 133, 64, 0.91) 11.67%, rgba(214, 77, 0, 0.9) 49.18%);;
+        border-radius: 50px;
+        margin-bottom: 50px;
+
+    }
+
+    .profileInformation {
+        display: flex;
+        justify-content: flex-start;
+        background-color: #FFFFFF;
+        border-radius: 50px;
+        padding: 50px 100px;
+        width: 105%;
+    }
+
+    .testimonials {
+        display: none;
+    }
+
+    .alumniProfile {
+        display: flex;
+        align-items: center;
+        margin-bottom: 30px;
+    }
+
+    .alumniProfile img {
+        width: 14%;
+    }
+
+    .alumniProfile-title {
+        padding-left: 40px;
+    }
+
+    .alumniProfile-title h3 {
+        font-size: 46px;
+        font-weight: 700;
+    }
+
+    .alumniProfile-title p {
+        font-size: 30px;
+        font-weight: 500;
+    }
+
+    .alumniExperience p {
+        font-size: 28px;
+        font-weight: 500;
+        line-height: 1.5;
+    }
+
+    .vector img {
+        width: 13%;
+        position: absolute;
+        top: 50%;
+        right: -50px;
+        cursor: pointer;
+    }
+
+
+
+    /* Footer */
+
+    footer {
+        display: flex;
+        justify-content: space-between;
+        padding: 0px 50px 120px;
+        margin-top: 700px;
+        margin-left: 0;
+    }
+
+    .lastChild {
+        position: absolute;
+        top: 60%;
+        right: 140px;
+    }
+
+    .sectionFooter img {
+        width: 40%;
+    }
+
+    .sectionFooter > h3 {
+        font-size: 24px;
+        font-weight: 700;
+        line-height: 2;
+    }
+
+    .sectionFooter > h4{
+        font-size: 18px;
+        font-weight: 500;
+    }
+
+    .sectionFooter > h5 {
+        font-size: 18px;
+        font-weight: 500;
+        color: #BEBEBE;
+    }
+
+    .sectionFooter > a {
+        display: flex;
+        flex-direction: column;
+        font-size: 18px;
+        font-weight: 500;
+        color: #545454;
+        line-height: 2;
+        text-decoration: none;
+    }
+
+    .sectionFooter > a:hover {
+        color: #FF833D;
+        text-decoration-line: underline;
+    }
+
+    .tim > h4 {
+        font-size: 18px;
+        font-weight: 500;
+        margin: 15px 0px;
+        padding: 5px 12px;
+        border-left: 7px solid #D9D9D9;
     }
 }

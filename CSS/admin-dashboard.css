@@ -121,9 +121,9 @@ a:hover{
   float: right;
 }
 .main-banner .card img{
-   width: 200px;
-   height: 200px;
-   float: left;
+  width: 200px;
+  height: 200px;
+  float: left;
   }
 
 /* Container Data Pendaftar Course */
@@ -196,7 +196,7 @@ a:hover{
   color: rgb(28, 98, 179);
 }
 
-@media screen and (max-width: 1150px) {
+@media screen and (max-width: 992px) {
     div.main-banner .card h1{
       font-size: 35px;
     }
@@ -209,7 +209,7 @@ a:hover{
     }
   }
 
-  @media screen and (max-width: 600px) {
+  @media screen and (max-width: 768px) {
     div.main-banner .card h1{
       font-size: 20px;
     }
@@ -248,9 +248,9 @@ a:hover{
     float: right;
   }
   .main-banner-data .card-data img{
-     width: 200px;
-     height: 200px;
-     float: left;
+    width: 200px;
+    height: 200px;
+    float: left;
     }
     
       @media screen and (max-width: 800px) {
@@ -291,10 +291,10 @@ a:hover{
     background-color: transparent;
 }
 .left-btn{
-   float: left;
+  float: left;
 }
 .right-btn{
-   margin-left: 200px;
+  margin-left: 200px;
 }
 .boxtb{
     width: 100%;
