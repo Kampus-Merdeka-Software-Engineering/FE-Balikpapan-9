@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>EduNine | Admin Dashboard</title>
+  <link rel="stylesheet" href="CSS/admin-dashboard.css" />
+
+    <!-- Ini Chart -->
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/charts.css/dist/charts.min.css">
+
+  <!-- Ini Import Icon -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"/>
+</head>
+<body>
+  <div class="container">
+    <nav>
+      <ul>
+        <li><a href="#" class="logo">
+          <img src="img/logo.png" alt="">
+          <span class="nav-logo">DashBoard</span>
+        </a></li>
+        <li><a href="admin-dashboard.html">
+          <i class="fas fa-home"></i>
+          <span class="nav-item">Home</span>
+        </a></li>
+        <li><a href="datauser.html">
+          <i class="fas fa-user"></i>
+          <span class="nav-item">Data User</span>
+        </a></li>
+        <li><a href="datadaftar.html">
+          <i class="fas fa-database"></i>
+          <span class="nav-item">Data Pendaftaran</span>
+        </a></li>
+        <li><a href="datacourse.html">
+          <i class="fas fa-graduation-cap"></i>
+          <span class="nav-item">Data Course</span>
+        </a></li>
+        <li><a href="" class="logout">
+          <i class="fas fa-sign-out-alt"></i>
+          <span class="nav-item">Log out</span>
+        </a></li>
+      </ul>
+    </nav>
+
+    <section class="main">
+      <div class="main-banner">
+        <div class="card">
+          <i class="fas fa-hand-paper"></i>
+          <img src="img/personcommenSection.png">
+          <h1>Welcome, Admin!</h1>
+          <p>💖 Daily reminder : Smile & Stay Hydrated</p>
+        </div>
+      </div>
+
+      <section class="main-course">
+        <h1>Chart Data</h1>
+        <div class="course-box">
+          <h2>Jumlah Pendaftar Tiap Course</h2>
+          <button onclick="window.location.href='datadaftar.html'">Show Data</button>
+          <div class="course">
+            <div class="box">
+              <table class="charts-css column show-data-on-hover show-labels data-spacing-5" id="my-chart">
+                  <tbody>
+                    <tr>
+                      <th scope="row">UI/UX Designer</th>
+                      <td style="--size: calc( 90 / 100 )"> <span class="data"> 800 Orang </span> </td>
+                    </tr>
+                    <tr>
+                      <th scope="row">Front End Developer</th>
+                      <td style="--size: calc( 60 / 100 )"> <span class="data"> 450 Orang </span> </td>
+                    </tr>
+                    <tr>
+                      <th scope="row">Back End Developer</th>
+                      <td style="--size: calc( 75 / 100 )"> <span class="data"> 700 Orang </span> </td>
+                    </tr>
+                    <tr>
+                      <th scope="row">Data Analyst</th>
+                      <td style="--size: calc( 90 / 100 )"> <span class="data"> 800 Orang </span> </td>
+                    </tr>
+                  </tbody>
+              </table>
+            </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </section>
+  </div>
+</body>
+</html>

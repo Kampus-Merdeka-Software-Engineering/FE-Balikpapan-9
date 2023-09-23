@@ -1,0 +1,324 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700");
+*{
+  margin: 0;
+  padding: 0;
+  outline: none;
+  border: none;
+  text-decoration: none;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+body{
+  background: #f7efff;
+}
+.container{
+  display: flex;
+}
+nav{
+  position: relative;
+  top: 0;
+  bottom: 0;
+  height: 100vh;
+  left: 0;
+  background: #fff;
+  width: 330px;
+  overflow: hidden;
+  box-shadow: 0 20px 35px rgba(0, 0, 0, 0.1);
+}
+.logo{
+  text-align: center;
+  display: flex;
+  margin: 10px 0 0 10px;
+}
+.logo img{
+  width: 20%;
+  padding: 10 10 10 10;
+  margin-right: -15px;
+}
+.logo span{
+  font-weight: bold;
+  padding-left: 15px;
+  font-size: 18px;
+  text-transform: uppercase;
+}
+a{
+  position: relative;
+  color: rgb(85, 83, 83);
+  font-size: 14px;
+  display: table;
+  width: 280px;
+  padding: 10px;
+}
+nav .fas{
+  position: relative;
+  width: 70px;
+  height: 40px;
+  top: 14px;
+  font-size: 20px;
+  text-align: center;
+}
+.nav-logo{
+    position: relative;
+    top: 8px;
+    margin-left: 10px;
+  }
+.nav-item{
+  position: relative;
+  top: 12px;
+  margin-left: 10px;
+}
+a:hover{
+  background: #eee;
+}
+.logout{
+  position: absolute;
+  bottom: 0;
+}
+
+/* Main Section */
+.main{
+  position: relative;
+  padding: 20px;
+  width: 100%;
+}
+.main-top{
+  display: flex;
+  width: 100%;
+}
+.main-top i{
+  position: absolute;
+  right: 0;
+  margin: 10px 30px;
+  color: rgb(110, 109, 109);
+  cursor: pointer;
+}
+.main-banner{
+  display: flex;
+  margin-top: 20px;
+}
+.main-banner .card{
+  width: 100%;
+  margin: 10px;
+  background: #fff;
+  text-align: right;
+  border-radius: 20px;
+  padding: 30px 40px 30px 30px;
+  box-shadow: 0 20px 35px rgba(73, 48, 141, 0.1);
+}
+.main-banner .card h1{
+  text-transform: capitalize;
+  margin: 60px 20px 0px 0px;
+  font-size: 50px;
+  float: right;
+}
+.main-banner .card p{
+  font-size: 25px;
+  margin: 140px 0px 40px 40px;
+}
+.main-banner .card i{
+  margin-top: 65px;
+  font-size: 50px;
+  float: right;
+}
+.main-banner .card img{
+   width: 200px;
+   height: 200px;
+   float: left;
+  }
+
+/* Container Data Pendaftar Course */
+.main-course{
+  margin-top:20px ;
+  text-transform: capitalize;
+}
+.course-box{
+  width: 100%;
+  height: 450px;
+  padding: 20px 50px 40px 50px;
+  margin: auto;
+  background: #fff;
+  border-radius: 20px;
+  box-shadow: 0 20px 35px rgba(0, 0, 0, 0.1);
+}
+.course-box h2{
+    color: #000000;
+    margin-top: 1rem;
+    cursor: pointer;
+    float: left;
+  }
+.course-box button{
+    background: #000;
+    color: #fff;
+    padding: 7px 10px;
+    border-radius: 10px;
+    margin-top: 1rem;
+    float: right;
+    cursor: pointer;
+  }
+#my-chart.column {
+    height: 90%;
+    max-width: auto;
+    margin: 0 auto;
+    --labels-size: 4rem;
+  }
+  #my-chart.column .data{
+    margin-top: 5px;
+  }
+.box{
+  width: 100%;
+  padding: 60px;
+  border-radius: 20px;
+  padding: 30px 40px 30px 30px;
+  background: rgb(255, 255, 255);
+  box-shadow: 0 10px 35px rgba(0, 0, 0, 0.1);
+  margin-top: 90px;
+  height: 300px;
+}
+.box p{
+  font-size: 12px;
+  margin-top: 5px;
+}
+.box button:hover{
+  background: rgba(0, 0, 0, 0.842);
+}
+.box i{
+  font-size: 7rem;
+  float: right;
+  margin: -20px 20px 20px 0;
+}
+.html{
+  color: rgb(25, 94, 54);
+}
+.css{
+  color: rgb(104, 179, 35);
+}
+.js{
+  color: rgb(28, 98, 179);
+}
+
+@media screen and (max-width: 1150px) {
+    div.main-banner .card h1{
+      font-size: 35px;
+    }
+    div.main-banner .card p{
+        font-size: 15px;
+        margin-top: 120px;
+      }
+    div.main-banner .card i{
+        font-size: 35px;
+    }
+  }
+
+  @media screen and (max-width: 600px) {
+    div.main-banner .card h1{
+      font-size: 20px;
+    }
+    div.main-banner .card p{
+        font-size: 15px;
+        margin-top: 120px;
+      }
+    div.main-banner .card i{
+        font-size: 30px;
+    }
+  }
+
+/*Data Tabel*/
+
+.main-banner-data{
+    display: flex;
+    margin-top: 20px;
+  }
+  .main-banner-data .card-data{
+    width: 100%;
+    margin: 10px;
+    background: #fff;
+    text-align: right;
+    border-radius: 20px;
+    padding: 30px 40px 30px 30px;
+    box-shadow: 0 20px 35px rgba(73, 48, 141, 0.1);
+  }
+  .main-banner-data .card-data h1{
+    text-transform: capitalize;
+    font-size: 45px;
+    margin-right: 40px;
+    float: right;
+  }
+  .main-banner-data .card-data i{
+    font-size: 50px;
+    float: right;
+  }
+  .main-banner-data .card-data img{
+     width: 200px;
+     height: 200px;
+     float: left;
+    }
+    
+      @media screen and (max-width: 800px) {
+        .main-banner-data .card-data h1{
+          font-size: 20px;
+          margin-right: 20px;
+        }
+        .main-banner-data .card-data i{
+            font-size: 30px;
+        }
+      }
+
+.table-container{
+    width: 100%;
+    margin: 0px 0px 0px 20px;
+}
+.table-btn{
+    margin: 20px;
+}
+.table-btn button{
+        background: #175cf1;
+        color: #fff;
+        padding: 7px 10px;
+        border-radius: 10px;
+        cursor: pointer;
+  }
+.table-btn button:hover{
+    background: rgba(68, 127, 255, 0.842);
+  }
+.table-btn input{
+    width: 20%;
+    padding: 13px;
+    outline: none;
+    border: none;
+    border-bottom: 3px solid #292929;
+}
+.table-btn input, textarea{
+    background-color: transparent;
+}
+.left-btn{
+   float: left;
+}
+.right-btn{
+   margin-left: 200px;
+}
+.boxtb{
+    width: 100%;
+    border-radius: 20px;
+    padding: 30px;
+    background: rgb(255, 255, 255);
+    box-shadow: 0 10px 35px rgba(0, 0, 0, 0.1);
+    margin-top: 30px;
+    height: 600px;
+  }
+.table-box table{
+    width: 100%;
+    table-layout: fixed;
+}
+.table-box table tr th{
+    width: 100%;
+    padding: 30px 0px 0px;
+    background-color: #fff3eb;
+}
+.table-box table tr td{
+    width: 100%;
+    padding: 10px 0px 10px;
+    text-align: center;
+    background-color: #f5f4ff;
+}
+
+
