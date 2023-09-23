@@ -38,6 +38,7 @@ nav {
 .itemMenu:hover {
     background-color: #FF833D;
     border-radius: 50px;
+    color: white;
 }
 
 .itemLogin {
