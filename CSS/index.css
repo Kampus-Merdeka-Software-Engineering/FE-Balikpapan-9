@@ -114,7 +114,7 @@ nav {
     width: 30%;
 }
 
-.itemTest a {
+.itemTest > a {
     font-size: 36px;
     font-weight: 700;
     text-decoration: none;
@@ -141,7 +141,7 @@ nav {
 }
 
 .courseTitle > p {
-    font-size: 24px;
+    font-size: 30px;
     font-weight: 400;
     letter-spacing: 10px;
 }
@@ -149,21 +149,21 @@ nav {
 .courseTitle > h3 {
     font-size: 56px;
     font-weight: 700;
-    margin-bottom: 40px;
 }
 
 .course {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    margin: 0px 90px 100px 90px;
+    margin: 50px 50px 100px;
 }
 
 .itemCourse {
     text-decoration: none;
+    min-width: 280px;
     background-color:#f1f1fd;
     width: 22%;
-    margin: 10px;
+    margin: 20px;
     border-radius: 50px;
     text-align: center;
     transition-duration: 300ms;
@@ -182,7 +182,7 @@ nav {
 }
 
 .itemCourse > h3 {
-    font-size: 32px;
+    font-size: 36px;
     font-weight: 700px;
     padding: 0px 30px 10px 30px;
     text-decoration: none;
@@ -566,5 +566,71 @@ footer {
 
     .test img {
         display: none;
+    }
+
+
+    /* Course Section */
+
+    .courseTitle {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-top: -50px;
+    }
+    
+    .courseTitle > p {
+        font-size: 20px;
+        font-weight: 400;
+        letter-spacing: 10px;
+    }
+    
+    .courseTitle > h3 {
+        font-size: 46px;
+        font-weight: 700;
+    }
+    
+    .course {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        margin: 30px 50px;
+    }
+    
+    .itemCourse {
+        text-decoration: none;
+        min-width: 280px;
+        background-color:#f1f1fd;
+        width: 22%;
+        margin: 20px;
+        border-radius: 50px;
+        text-align: center;
+        transition-duration: 300ms;
+        box-shadow: 4px 4px 15px rgba(0, 0, 0, 0.15);
+    }
+    
+    .itemCourse:hover {
+        box-shadow: 4px 4px 15px rgba(0, 0, 0, 0.2);
+        transform: scale(1.07);
+    }
+    
+    .itemCourse img {
+        width: 100%;
+        border-radius: 50px;
+        padding-bottom: 20px;
+    }
+    
+    .itemCourse > h3 {
+        font-size: 28px;
+        font-weight: 700px;
+        padding: 0px 30px 10px 30px;
+        text-decoration: none;
+    }
+    
+    .itemCourse h6 {
+        font-size: 20px;
+        font-weight: 700px;
+        color: #717BAC;
+        padding: 0px 30px 20px 30px;
     }
 }
