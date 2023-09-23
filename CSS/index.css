@@ -55,15 +55,20 @@ nav {
 
 /* Main Section */
 
+.mainImage {
+    display: flex;
+    justify-content: right;
+    margin-top: 30px;
+}
+
 .mainImage img {
     position: absolute;
     z-index: -1;
-    width: 100%;
-    margin-top: 70px;
+    width: 50%;
 }
 
 .main {
-    margin: 90px 150px;
+    margin: 100px 150px;
 }
 
 .titleCaption > h1 {
@@ -84,7 +89,7 @@ nav {
     flex-direction: row;
     align-items: center;
     padding: 30px 100px 30px 100px;
-    margin-top: 370px;
+    margin-top: 250px;
     border-radius: 32px;
     background: linear-gradient(270deg, #5673DD 27.42%, #341FB8 74.25%);
     filter: drop-shadow(0px 8px 30px rgba(0, 0, 0, 0.25));
@@ -242,17 +247,32 @@ nav {
     display: flex;
     padding: 0px 40px;
     margin: 0;
-    justify-content: space-around;
+    justify-content: space-between;
+}
+
+.background {
+    width: 30%;
+    background-color: #5452C8;
+    margin-left: 150px;
+}
+
+.comment-img {
+    position: absolute;
+    z-index: 2;
+    margin-left: 30px;
+    padding-top: 10px;
 }
 
 .comment-img img{
-    height: 100%;
+    height: 740px;
 }
 
 .comment {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    padding-left: 50px;
+    width: 70%;
 }
 
 .comment h3 {
@@ -265,7 +285,7 @@ nav {
 .comment-item p {
     font-size: 28px;
     font-weight: 500;
-    margin: 20px 0px;
+    margin: 20px 160px;
     padding: 20px;
     text-align: center;
     color: #686868;
@@ -408,4 +428,132 @@ footer {
     margin: 15px 0px;
     padding: 5px 12px;
     border-left: 7px solid #D9D9D9;
+}
+
+
+
+/* Mobile */
+
+@media only screen and (max-width:768px) {
+
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        color: #000000;
+        font-family: 'Inter', sans-serif;
+    }
+
+
+    /* Navbar */
+
+    nav {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: sticky;
+        z-index: 10;
+        top: 0;
+        background-color: rgba(255, 255, 255, 0.75);
+        padding: 20px;
+    }
+
+    .Logo {
+        padding-right: 60px;
+    }
+    
+    .Logo img {
+        width: 60%;
+    }
+
+    .navItem {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .itemMenu {
+        text-decoration: none;
+        padding: 20px 30px;
+        margin: 0 10px;
+        font-size: 18px;
+        font-weight: 500;
+        border-radius: 50px;
+        transition-duration: 200ms;
+    }
+    
+    .itemMenu:hover {
+        background-color: #FF833D;
+        border-radius: 50px;
+        color: white;
+    }
+
+
+    /* Main Section */
+
+    .mainImage img {
+        position: absolute;
+        z-index: -1;
+        width: 100%;
+        margin-top: 50px;
+    }
+
+    .main {
+        margin: 90px px;
+    }
+
+    .titleCaption > h1 {
+        font-size: 56px;
+        font-weight: 700;
+        padding-bottom: 30px;   
+    }
+
+    .titleCaption > p {
+        font-size: 32px;
+        font-weight: 500;
+        line-height: 1.5;
+        color: #424242;
+    }
+
+    .test {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        padding: 30px 100px 30px 100px;
+        margin-top: 370px;
+        border-radius: 32px;
+        background: linear-gradient(270deg, #5673DD 27.42%, #341FB8 74.25%);
+        filter: drop-shadow(0px 8px 30px rgba(0, 0, 0, 0.25));
+    }
+
+    .test > p {
+        font-size: 40px;
+        font-weight: 700;
+        color: #FFFFFF;
+        line-height: 1.2;
+        width: 85%;
+    }
+
+    .itemTest {
+        background: linear-gradient(180deg, #FF965A 0%, #FF650E 100%);
+        padding: 20px 70px;
+        border-radius: 60px;
+        text-align: left;
+        width: 30%;
+    }
+
+    .itemTest a {
+        font-size: 36px;
+        font-weight: 700;
+        text-decoration: none;
+        color: #FFFFFF;
+        text-align: start;
+    }
+
+    .test img {
+        width: 7%;
+        position: absolute;
+        top: 13%;
+        right:70px;
+    }
 }
