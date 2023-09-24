@@ -1,3 +1,5 @@
+// Slide Home Alumni
+
 var slideIndex = 1;
 showDivs(slideIndex);
 
@@ -15,6 +17,16 @@ function showDivs(n) {
   }
 
   x[slideIndex-1].style.display = "block";
+}
+
+// Navbar Side
+
+function openNav() {
+  document.getElementById("sideNav").style.width = "380px";
+}
+
+function closeNav() {
+  document.getElementById("sideNav").style.width = "0";
 }
 
 
