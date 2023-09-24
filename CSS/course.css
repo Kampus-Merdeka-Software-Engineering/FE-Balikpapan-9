@@ -94,7 +94,8 @@ main > p {
 .course {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: center;
+    gap: 20px;
     margin: 0px 90px 150px 90px;
 }
 
@@ -107,7 +108,7 @@ main > p {
     text-align: center;
     transition-duration: 300ms;
     box-shadow: 4px 4px 15px rgba(0, 0, 0, 0.15);
-    min-width: 300px;
+    min-width: 270px;
 }
 
 .itemCourse:hover {
