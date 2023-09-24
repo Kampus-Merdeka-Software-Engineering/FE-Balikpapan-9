@@ -375,13 +375,24 @@ footer {
 
 
 
+    /* Course Section */
+
+    .course {
+        margin: 0px;
+    }
+
+    .date > h6 {
+        font-size: 18px;
+    }
+
+
     /* Footer */
 
     footer {
         display: flex;
         justify-content: space-between;
         padding: 0px 50px 120px;
-        margin-top: 450px;
+        margin-top: 170px;
         margin-left: 0;
     }
 
