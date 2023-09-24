@@ -1170,7 +1170,7 @@ footer {
         position: absolute;
         z-index: 3;
         margin-top: 330px;
-        margin-left: 230px;
+        margin-left: 30%;
     }
 
     .comment-img img{
@@ -1229,7 +1229,7 @@ footer {
         display: flex;
         justify-content: center;
         align-items: center;
-        margin-top: 285px;
+        margin-top: 280px;
     }
 
     .alumniSection-img img {
