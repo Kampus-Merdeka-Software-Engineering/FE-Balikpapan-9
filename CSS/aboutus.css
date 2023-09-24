@@ -7,6 +7,11 @@
 }
 
 
+body {
+    overflow-x: hidden;
+}
+
+
 /* Navbar */
 nav {
     display: flex;
@@ -16,11 +21,11 @@ nav {
     z-index: 10;
     top: 0;
     background-color: rgba(255, 255, 255, 0.75);
-    padding: 20px 150px;
+    padding: 15px 150px;
 }
 
 .Logo img {
-    width: 80%;
+    width: 70%;
 }
 
 .itemMenu {
@@ -29,7 +34,7 @@ nav {
     text-decoration: none;
     padding: 20px 30px;
     margin: 0 10px;
-    font-size: 24px;
+    font-size: 20px;
     font-weight: 500;
     border-radius: 50px;
     transition-duration: 200ms;
@@ -47,8 +52,9 @@ nav {
     padding: 15px 70px;
     background-color: #FF833D;
     border-radius: 60px;
-    font-size: 16px;
+    font-size: 20px;
     font-weight: 700;
+    transition-duration: 200ms;
 }
 
 .itemLogin > a {
@@ -57,8 +63,11 @@ nav {
 }
 
 .itemLogin:hover {
-    background-color: #973C09 ;
-}
+    background-color: #ffa672 ;
+    cursor: pointer;
+}   
+
+
 
 /* Title Informatiaon Styling */
 
@@ -78,7 +87,7 @@ nav {
 }
 
 .titleAboutUs > h3{
-    font-size: 26px;
+    font-size: 24px;
     font-weight: 500;
     padding: 30px;
     color: #767676;
@@ -89,7 +98,7 @@ nav {
     flex-direction: row;
     justify-content: space-around;
     flex-wrap: wrap;
-    margin: 120px 80px;
+    margin: 120px 100px;
     gap: 30px;
 }
 
@@ -109,7 +118,7 @@ nav {
     padding: 10px 24px;
     width: 250px;
     border-radius: 76px;
-    font-size: 26px;
+    font-size: 22px;
     font-weight: 700;
 }
 
@@ -117,7 +126,7 @@ nav {
     color: #F5F4FF;
     padding: 30px;
     border-radius: 76px;
-    font-size: 24px;
+    font-size: 22px;
     font-weight: 600;
     margin-bottom: 32px;
 }
@@ -163,7 +172,7 @@ nav {
     flex-wrap: wrap;
     text-align: center;
     align-items: center;
-    margin: 0px 50px;
+    margin: 0px 10px;
 }
 
 .dataProfile {
@@ -245,22 +254,22 @@ footer {
 }
 
 .sectionFooter img {
-    width: 30%;
+    width: 40%;
 }
 
 .sectionFooter > h3 {
-    font-size: 26px;
+    font-size: 30px;
     font-weight: 700;
     line-height: 2;
 }
 
 .sectionFooter > h4{
-    font-size: 22px;
+    font-size: 20px;
     font-weight: 500;
 }
 
 .sectionFooter > h5 {
-    font-size: 22px;
+    font-size: 20px;
     font-weight: 500;
     color: #BEBEBE;
 }
@@ -268,7 +277,7 @@ footer {
 .sectionFooter > a {
     display: flex;
     flex-direction: column;
-    font-size: 22px;
+    font-size: 20px;
     font-weight: 500;
     color: #545454;
     line-height: 2;
@@ -281,7 +290,7 @@ footer {
 }
 
 .tim > h4 {
-    font-size: 22px;
+    font-size: 20px;
     font-weight: 500;
     margin: 15px 0px;
     padding: 5px 12px;
