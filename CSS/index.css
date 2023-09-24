@@ -569,14 +569,24 @@ footer {
         display: none;
     }
     
+    
     /* Course Section */
+
+    .titleCaption h1 {
+        font-size: 60px;
+    }
+
+    .titleCaption p {
+        font-size: 20px;
+        padding-right: 500px;
+    }
 
     .courseTitle {
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        margin-top: -200px;
+        margin-top: -150px;
     }
 
     .courseTitle > p {
@@ -647,7 +657,7 @@ footer {
         background-size: cover;
         background-position: center;
         margin: 0;
-        height: 360px
+        height: 300px
     }
     
     .informationSection > h3 {
@@ -987,11 +997,12 @@ footer {
     }
 
     .titleCaption > p {
-        font-size: 23px;
+        font-size: 20px;
         font-weight: 500;
         line-height: 1.5;
         color: #424242;
         margin-right: 0;
+        padding-right: 0;
     }
     
     .test {
@@ -1344,18 +1355,18 @@ footer {
     }
 
     .sectionFooter > h3 {
-        font-size: 24px;
+        font-size: 22px;
         font-weight: 700;
         line-height: 2;
     }
 
     .sectionFooter > h4{
-        font-size: 18px;
+        font-size: 16px;
         font-weight: 500;
     }
 
     .sectionFooter > h5 {
-        font-size: 18px;
+        font-size: 16px;
         font-weight: 500;
         color: #BEBEBE;
     }
@@ -1363,7 +1374,7 @@ footer {
     .sectionFooter > a {
         display: flex;
         flex-direction: column;
-        font-size: 18px;
+        font-size: 16px;
         font-weight: 500;
         color: #545454;
         line-height: 2;
@@ -1376,7 +1387,7 @@ footer {
     }
 
     .tim > h4 {
-        font-size: 18px;
+        font-size: 16px;
         font-weight: 500;
         margin: 15px 0px;
         padding: 5px 12px;

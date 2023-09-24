@@ -376,8 +376,9 @@ footer {
 
     .informationAboutUs {
         display: flex;
-        justify-content: space-evenly;
+        justify-content: center;
         flex-wrap: wrap;
+        margin: 50px 0px;
     }
 
     .left {
@@ -446,13 +447,14 @@ footer {
     .profileMember {
         display: flex;
         flex-direction: row;
-        justify-content: space-around;
+        justify-content: center;
+        margin: 0;
 
     }
 
     .dataProfile {
         background-color: #F5F4FF;
-        border-radius: 28px;
+        border-radius: 30px;
         height: 240px;
         width: 200px;
         padding: 80px 15px 50px 15px;
@@ -467,14 +469,14 @@ footer {
     }
 
     .dataProfile > h4 {
-        font-size: 10px;
+        font-size: 12px;
         font-weight: 400;
         color: #A1A1A1;
         margin-bottom: 14px;
     }
 
     .dataProfile > p {
-        font-size: 8px;
+        font-size: 10px;
         font-weight: 400;
         color: #9589AD;
     }
@@ -761,7 +763,7 @@ footer {
 
     .Leader {
         position: absolute;
-        top: 1200px;
+        top: 1300px;
     }
 
     .dataProfile > h2 {
@@ -823,12 +825,15 @@ footer {
         color: #4C3D3D;
     }
 
+
+
     /* Footer */
 
     footer {
         display: flex;
         justify-content: space-between;
         padding: 0px 50px 120px;
+        margin-top: 50px;
         margin-left: 0;
     }
 
@@ -843,18 +848,18 @@ footer {
     }
 
     .sectionFooter > h3 {
-        font-size: 24px;
+        font-size: 22px;
         font-weight: 700;
         line-height: 2;
     }
 
     .sectionFooter > h4{
-        font-size: 18px;
+        font-size: 16px;
         font-weight: 500;
     }
 
     .sectionFooter > h5 {
-        font-size: 18px;
+        font-size: 16px;
         font-weight: 500;
         color: #BEBEBE;
     }
@@ -862,7 +867,7 @@ footer {
     .sectionFooter > a {
         display: flex;
         flex-direction: column;
-        font-size: 18px;
+        font-size: 16px;
         font-weight: 500;
         color: #545454;
         line-height: 2;
@@ -875,7 +880,7 @@ footer {
     }
 
     .tim > h4 {
-        font-size: 18px;
+        font-size: 16px;
         font-weight: 500;
         margin: 15px 0px;
         padding: 5px 12px;

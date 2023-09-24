@@ -263,7 +263,7 @@ footer {
 
     main {
         text-align: center;
-        margin: 70px 0px;
+        margin: 0px 0px 70px;
     }
 
     main > h2 {
@@ -295,7 +295,7 @@ footer {
         min-height: 280px;
         background-color:#FFF;
         width: 20%;
-        margin: 6px;
+        margin: 0px;
         border-radius: 22px;
         text-align: center;
         transition-duration: 300ms;
@@ -400,8 +400,6 @@ footer {
 }
 
 
-/* Mobile */
-
 @media (max-width:768px) {
 
     * {
@@ -482,84 +480,16 @@ footer {
 
     /* Main Section */
 
-    .mainImage {
-        display: flex;
-        justify-content: center;
+    main {
+        margin-bottom: 0;
     }
 
-    .mainImage img {
-        position: absolute;
-        z-index: -1;
-        width: 70%;
-        margin-top: 25%;
+    main > h2 {
+        font-size: 42px;
     }
 
-    .main {
-        margin: 100px;
-        text-align: center;
-    }
-
-    .titleCaption {
-        margin-top: -60px;
-    }
-
-    .titleCaption > h1 {
-        font-size: 56px;
-        font-weight: 700;
-        padding-bottom: 30px;
-    }
-
-    .titleCaption > p {
-        font-size: 23px;
-        font-weight: 500;
-        line-height: 1.5;
-        color: #424242;
-        margin-right: 0;
-    }
-    
-    .test {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        margin-top: 600px;
-        background: transparent;
-        box-shadow: none;
-    }
-
-    .test > p {
-        display: none;
-        font-size: 40px;
-        font-weight: 700;
-        color: #FFFFFF;
-        line-height: 1.2;
-        width: 85%;
-    }
-
-    .itemTest {
-        background: linear-gradient(180deg, #FF965A 0%, #FF650E 100%);
-        margin-left: 60px;
-        margin-top: 30%;
-        border-radius: 60px;
-        text-align: center;
-        width: 60%;
-        transform: scale(0.7);
-        transition-duration: 200ms;
-    }
-
-    .itemTest:hover {
-        transform: scale(0.85);
-    }
-    
-    .itemTest a {
-        font-size: 34px;
-        font-weight: 700;
-        text-decoration: none;
-        color: #FFFFFF;
-        width: 100%;
-    }
-
-    .test img {
-        display: none;
+    main > p {
+        font-size: 18px;
     }
 
 
@@ -567,11 +497,19 @@ footer {
     /* Course Section */
 
     .course {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
         margin: 0px;
+        gap: 50px;
+    }
+
+    .itemCourse {
+        min-width: 220px;
     }
 
     .date > h6 {
-        font-size: 18px;
+        font-size: 16px;
     }
 
 
@@ -581,7 +519,7 @@ footer {
         display: flex;
         justify-content: space-between;
         padding: 0px 50px 120px;
-        margin-top: 170px;
+        margin-top: 100px;
         margin-left: 0;
     }
 
@@ -596,18 +534,18 @@ footer {
     }
 
     .sectionFooter > h3 {
-        font-size: 24px;
+        font-size: 22px;
         font-weight: 700;
         line-height: 2;
     }
 
     .sectionFooter > h4{
-        font-size: 18px;
+        font-size: 16px;
         font-weight: 500;
     }
 
     .sectionFooter > h5 {
-        font-size: 18px;
+        font-size: 16px;
         font-weight: 500;
         color: #BEBEBE;
     }
@@ -615,7 +553,7 @@ footer {
     .sectionFooter > a {
         display: flex;
         flex-direction: column;
-        font-size: 18px;
+        font-size: 16px;
         font-weight: 500;
         color: #545454;
         line-height: 2;
@@ -628,7 +566,7 @@ footer {
     }
 
     .tim > h4 {
-        font-size: 18px;
+        font-size: 16px;
         font-weight: 500;
         margin: 15px 0px;
         padding: 5px 12px;
