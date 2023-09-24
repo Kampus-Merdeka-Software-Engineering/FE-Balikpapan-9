@@ -206,3 +206,232 @@ footer {
     padding: 5px 12px;
     border-left: 7px solid #D9D9D9;
 }
+
+
+
+
+
+/* Mobile */
+
+@media (max-width:768px) {
+
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        color: #000000;
+        font-family: 'Inter', sans-serif;
+    }
+
+    body {
+        overflow-x: hidden;
+    }
+
+    /* Navbar */
+
+    nav {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: sticky;
+        z-index: 10;
+        top: 0;
+        background-color: rgba(255, 255, 255, 0.75);
+        padding: 20px;
+    }
+
+    .Logo {
+        padding-right: 60px;
+    }
+    
+    .Logo img {
+        width: 60%;
+    }
+
+    .navItem {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .itemMenu {
+        text-decoration: none;
+        padding: 20px 30px;
+        margin: 0 10px;
+        font-size: 18px;
+        font-weight: 500;
+        border-radius: 50px;
+        transition-duration: 200ms;
+    }
+    
+    .itemMenu:hover {
+        background-color: #FF833D;
+        border-radius: 50px;
+        color: white;
+    }
+
+    .itemLogin {
+        align-items: center;
+        text-decoration: none;
+        padding: 15px 70px;
+        background-color: #FF833D;
+        border-radius: 60px;
+        font-size: 24px;
+        font-weight: 700;
+    }
+    
+    .itemLogin > a {
+        text-decoration: none;
+        color: #FFFFFF;
+    }
+    
+    .itemLogin:hover {
+        background-color: #973C09 ;
+    }  
+
+
+
+    /* Main Section */
+
+    .mainImage {
+        display: flex;
+        justify-content: center;
+    }
+
+    .mainImage img {
+        position: absolute;
+        z-index: -1;
+        width: 70%;
+        margin-top: 25%;
+    }
+
+    .main {
+        margin: 100px;
+        text-align: center;
+    }
+
+    .titleCaption {
+        margin-top: -60px;
+    }
+
+    .titleCaption > h1 {
+        font-size: 56px;
+        font-weight: 700;
+        padding-bottom: 30px;
+    }
+
+    .titleCaption > p {
+        font-size: 23px;
+        font-weight: 500;
+        line-height: 1.5;
+        color: #424242;
+        margin-right: 0;
+    }
+    
+    .test {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 600px;
+        background: transparent;
+        box-shadow: none;
+    }
+
+    .test > p {
+        display: none;
+        font-size: 40px;
+        font-weight: 700;
+        color: #FFFFFF;
+        line-height: 1.2;
+        width: 85%;
+    }
+
+    .itemTest {
+        background: linear-gradient(180deg, #FF965A 0%, #FF650E 100%);
+        margin-left: 60px;
+        margin-top: 30%;
+        border-radius: 60px;
+        text-align: center;
+        width: 60%;
+        transform: scale(0.7);
+        transition-duration: 200ms;
+    }
+
+    .itemTest:hover {
+        transform: scale(0.85);
+    }
+    
+    .itemTest a {
+        font-size: 34px;
+        font-weight: 700;
+        text-decoration: none;
+        color: #FFFFFF;
+        width: 100%;
+    }
+
+    .test img {
+        display: none;
+    }
+
+
+
+    /* Footer */
+
+    footer {
+        display: flex;
+        justify-content: space-between;
+        padding: 0px 50px 120px;
+        margin-top: 450px;
+        margin-left: 0;
+    }
+
+    .lastChild {
+        position: absolute;
+        top: 60%;
+        right: 140px;
+    }
+
+    .sectionFooter img {
+        width: 40%;
+    }
+
+    .sectionFooter > h3 {
+        font-size: 24px;
+        font-weight: 700;
+        line-height: 2;
+    }
+
+    .sectionFooter > h4{
+        font-size: 18px;
+        font-weight: 500;
+    }
+
+    .sectionFooter > h5 {
+        font-size: 18px;
+        font-weight: 500;
+        color: #BEBEBE;
+    }
+
+    .sectionFooter > a {
+        display: flex;
+        flex-direction: column;
+        font-size: 18px;
+        font-weight: 500;
+        color: #545454;
+        line-height: 2;
+        text-decoration: none;  
+    }
+
+    .sectionFooter > a:hover {
+        color: #FF833D;
+        text-decoration-line: underline;
+    }
+
+    .tim > h4 {
+        font-size: 18px;
+        font-weight: 500;
+        margin: 15px 0px;
+        padding: 5px 12px;
+        border-left: 7px solid #D9D9D9;
+    }
+}
