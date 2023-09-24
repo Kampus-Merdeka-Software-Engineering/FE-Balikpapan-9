@@ -7,6 +7,11 @@
 }
 
 
+body {
+    overflow-x: hidden;
+}
+
+
 /* Navbar */
 nav {
     display: flex;
@@ -16,11 +21,11 @@ nav {
     z-index: 10;
     top: 0;
     background-color: rgba(255, 255, 255, 0.75);
-    padding: 20px 150px;
+    padding: 10px 150px;
 }
 
 .Logo img {
-    width: 80%;
+    width: 70%;
 }
 
 .itemMenu {
@@ -29,7 +34,7 @@ nav {
     text-decoration: none;
     padding: 20px 30px;
     margin: 0 10px;
-    font-size: 24px;
+    font-size: 20px;
     font-weight: 500;
     border-radius: 50px;
     transition-duration: 200ms;
@@ -47,8 +52,9 @@ nav {
     padding: 15px 70px;
     background-color: #FF833D;
     border-radius: 60px;
-    font-size: 24px;
+    font-size: 20px;
     font-weight: 700;
+    transition-duration: 200ms;
 }
 
 .itemLogin > a {
@@ -57,21 +63,31 @@ nav {
 }
 
 .itemLogin:hover {
-    background-color: #973C09 ;
+    background-color: #ffa672 ;
+    cursor: pointer;
 }
+
+
 
 /* Course Information */
 
 .informationCourse {
     display: flex;
     flex-direction: row;
-    justify-content: space-evenly;
+    justify-content: space-between;
     flex-wrap: wrap;
     margin: 100px 80px;
 }
 
+.leftImages {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
 .leftImages > img {
-    margin-bottom: 40px;
+    margin-bottom: 30px;
     width: 680px;
 }
 
@@ -82,33 +98,34 @@ nav {
 }
 
 .dateInformation > p{
-    font-size: 24px;
+    font-size: 20px;
     font-weight: 500;
     color: #909090;
     margin-left: 20px;
 }
 
 .rightTitleInformation > p {
-    font-size: 22px;
+    font-size: 18px;
     font-weight: 500;
     color: #B3B3B3;
     margin-bottom: 20px;
 }
 
 .rightTitleInformation > h1 {
-    font-size: 60px;
+    font-size: 48px;
     font-weight: 700;
+    margin-bottom: 15px;
 }
 
 .rightTitleInformation > h4 {
-    font-size: 22px;
+    font-size: 20px;
     font-weight: 500;
     line-height: 2;
     margin-bottom: 50px;
 }
 
 .rightTitleInformation > a {
-    font-size: 22px;
+    font-size: 20px;
     font-weight: 700;
     background-color: #8B79F9;
     color: #FFFFFF;
@@ -123,12 +140,14 @@ nav {
     background-color: #9e8ffe;
 }
 
+
+
 /* Benefit & Profile */
 
 main {
     display: flex;
     justify-content: space-between;
-    margin: 0px 180px 120px;
+    margin: 0px 120px 120px;
 }
 
 .materialCourse > p {
@@ -139,13 +158,13 @@ main {
 }
 
 .materialCourse > h1 {
-    font-size: 42px;
+    font-size: 36px;
     font-weight: 700;
     margin-bottom: 22px;
 }
 
 .materialCourse > ul {
-    font-size: 26px;
+    font-size: 22px;
     font-weight: 500;
     line-height: 50px;
     margin-left: 30px;
@@ -158,7 +177,7 @@ main {
 }
 
 .instructorProfile > p{
-    font-size: 28px;
+    font-size: 24px;
     font-weight: 500;
     color: #B3B3B3;
     text-align: end;
@@ -169,12 +188,14 @@ main {
 .instructor {
     display: flex;
     align-items: center;
+    justify-content: left;
     background-color: #FBFBFB ;
     box-shadow: 0px 4.13439px 7.23518px 0px rgba(0, 0, 0, 0.07);
     border-radius: 100px;
-    padding: 20px;
+    padding: 10px;
+    padding-right: 100px;
     margin: 10px;
-    width: 580px;
+    width: 100%;
 }
 
 
@@ -185,7 +206,7 @@ main {
 }
 
 .dataProfile > h3 {
-    font-size: 28px;
+    font-size: 24px;
     font-weight: 700;
     margin-bottom: 10px;
 }
@@ -207,22 +228,23 @@ main {
 
 .benefit {
     display: flex;
+    justify-content: center;
+    align-items: center;
     background-color: #F7F5FF;
     border-radius: 50px;
-    padding: 22px 40px;
-    width: 300px;
-    height: 100px;
+    padding: 15px 40px;
+    width: 23%;
 }
 
 .benefit > img {
-    background-blend-mode: color-burn;
+    width: 25%;
 }
 
 .benefit > p {
-    text-align: start;
+    text-align: center;
     align-items: center;
     text-align: left;
-    font-size: 24px;
+    font-size: 20px;
     font-weight: 500;
     color: #6C73BB;
     margin-left: 20px;
@@ -233,7 +255,7 @@ main {
 footer {
     display: flex;
     justify-content: space-between;
-    padding: 0px 100px 100px;
+    padding: 0px 100px 70px;
 }
 
 .sectionFooter img {
@@ -241,18 +263,18 @@ footer {
 }
 
 .sectionFooter > h3 {
-    font-size: 32px;
+    font-size: 28px;
     font-weight: 700;
     line-height: 2;
 }
 
 .sectionFooter > h4{
-    font-size: 22px;
+    font-size: 18px;
     font-weight: 500;
 }
 
 .sectionFooter > h5 {
-    font-size: 22px;
+    font-size: 18px;
     font-weight: 500;
     color: #BEBEBE;
 }
@@ -260,7 +282,7 @@ footer {
 .sectionFooter > a {
     display: flex;
     flex-direction: column;
-    font-size: 22px;
+    font-size: 18px;
     font-weight: 500;
     color: #545454;
     line-height: 2;
@@ -273,7 +295,7 @@ footer {
 }
 
 .tim > h4 {
-    font-size: 22px;
+    font-size: 18px;
     font-weight: 500;
     margin: 15px 0px;
     padding: 5px 12px;
