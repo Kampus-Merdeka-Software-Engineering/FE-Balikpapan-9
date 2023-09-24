@@ -6,6 +6,10 @@
     font-family: 'Inter', sans-serif;
 }
 
+body {
+    overflow-x: hidden;
+}
+
 
 /* Navbar */
 nav {
@@ -16,11 +20,11 @@ nav {
     z-index: 10;
     top: 0;
     background-color: rgba(255, 255, 255, 0.75);
-    padding: 20px 150px;
+    padding: 10px 150px;
 }
 
 .Logo img {
-    width: 80%;
+    width: 70%;
 }
 
 .itemMenu {
@@ -29,7 +33,7 @@ nav {
     text-decoration: none;
     padding: 20px 30px;
     margin: 0 10px;
-    font-size: 24px;
+    font-size: 20px;
     font-weight: 500;
     border-radius: 50px;
     transition-duration: 200ms;
@@ -47,8 +51,9 @@ nav {
     padding: 15px 70px;
     background-color: #FF833D;
     border-radius: 60px;
-    font-size: 24px;
+    font-size: 20px;
     font-weight: 700;
+    transition-duration: 200ms;
 }
 
 .itemLogin > a {
@@ -57,24 +62,25 @@ nav {
 }
 
 .itemLogin:hover {
-    background-color: #973C09 ;
+    background-color: #ffa672 ;
+    cursor: pointer;
 }
 
 /* Main Section */
 
 main {
     text-align: center;
-    padding: 70px 100px;
+    padding: 70px 120px;
 }
 
 main > h2 {
-    font-size: 50px;
+    font-size: 46px;
     font-weight: bold;
     margin-bottom: 30px;
 }
 
 main > p {
-    font-size: 24px;
+    font-size: 22px;
     font-weight: 500;
     color: #767676;
     line-height: 1.7;
@@ -87,7 +93,7 @@ main > p {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    margin: 0px 90px 100px 90px;
+    margin: 0px 90px 150px 90px;
 }
 
 .itemCourse {
@@ -99,6 +105,7 @@ main > p {
     text-align: center;
     transition-duration: 300ms;
     box-shadow: 4px 4px 15px rgba(0, 0, 0, 0.15);
+    min-width: 300px;
 }
 
 .itemCourse:hover {
@@ -113,16 +120,16 @@ main > p {
 }
 
 .itemCourse > h3 {
-    font-size: 32px;
+    font-size: 28px;
     font-weight: 700px;
     padding: 0px 30px 10px 30px;
 }
 
 .itemCourse > h5 {
-    font-size: 24px;
+    font-size: 20px;
     font-weight: 700px;
     color: #717BAC;
-    padding: 0px 30px 20px 30px;
+    padding: 0px 30px;
 }
 
 .date {
@@ -137,18 +144,20 @@ main > p {
 }
 
 .date > h6 {
-    font-size: 22px;
+    font-size: 20px;
     font-weight: 500;
     color: #909090;
     padding-left: 15px;
 }
+
+
 
 /* Footer */
 
 footer {
     display: flex;
     justify-content: space-between;
-    padding: 0px 100px 100px;
+    padding: 0px 100px 70px;
 }
 
 .sectionFooter img {
@@ -156,18 +165,18 @@ footer {
 }
 
 .sectionFooter > h3 {
-    font-size: 32px;
+    font-size: 28px;
     font-weight: 700;
     line-height: 2;
 }
 
 .sectionFooter > h4{
-    font-size: 22px;
+    font-size: 18px;
     font-weight: 500;
 }
 
 .sectionFooter > h5 {
-    font-size: 22px;
+    font-size: 18px;
     font-weight: 500;
     color: #BEBEBE;
 }
@@ -175,7 +184,7 @@ footer {
 .sectionFooter > a {
     display: flex;
     flex-direction: column;
-    font-size: 22px;
+    font-size: 18px;
     font-weight: 500;
     color: #545454;
     line-height: 2;
@@ -188,7 +197,7 @@ footer {
 }
 
 .tim > h4 {
-    font-size: 22px;
+    font-size: 18px;
     font-weight: 500;
     margin: 15px 0px;
     padding: 5px 12px;
