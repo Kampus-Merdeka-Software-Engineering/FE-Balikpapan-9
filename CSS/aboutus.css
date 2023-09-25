@@ -365,6 +365,10 @@ footer {
         flex-direction: column;
     }
 
+    .closeBtn {
+        margin-right: 20px;
+    }
+
     .hamburgerBtn > img {
         position: absolute;
         top: 80px;
@@ -509,7 +513,6 @@ footer {
         flex-direction: row;
         justify-content: center;
         margin: 0;
-
     }
 
     .dataProfile {
@@ -824,7 +827,7 @@ footer {
 
     .Leader {
         position: absolute;
-        top: 1200px;
+        top: 84%;
     }
 
     .dataProfile > h2 {

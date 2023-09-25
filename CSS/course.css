@@ -66,7 +66,9 @@ nav {
     cursor: pointer;
 }
 
-
+header {
+    display: none;
+}
 
 /* Main Section */
 
@@ -241,24 +243,8 @@ footer {
     }
     
     .itemLogin {
-        align-items: center;
-        text-decoration: none;
-        padding: 15px 70px;
-        background-color: #FF833D;
-        border-radius: 60px;
-        font-size: 24px;
-        font-weight: 700;
+        display: none;
     }
-    
-    .itemLogin > a {
-        text-decoration: none;
-        color: #FFFFFF;
-    }
-    
-    .itemLogin:hover {
-        background-color: #973C09 ;
-    } 
-
 
     /* Hamburger Button */
 
@@ -284,6 +270,10 @@ footer {
         padding-top: 200px;
         display: flex;
         flex-direction: column;
+    }
+
+    .closeBtn {
+        margin-right: 20px;
     }
 
     .hamburgerBtn > img {

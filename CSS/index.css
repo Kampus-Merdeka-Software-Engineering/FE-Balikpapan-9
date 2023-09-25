@@ -68,6 +68,9 @@ nav {
     cursor: pointer;
 }   
 
+header {
+    display: none;
+}
 
 /* Main Section */
 
@@ -90,15 +93,16 @@ nav {
 .titleCaption > h1 {
     font-size: 72px;
     font-weight: 700;
-    padding-bottom: 30px;   
+    padding-bottom: 40px;  
+    width: 60%; 
 }
 
 .titleCaption > p {
     font-size: 24px;
     font-weight: 500;
-    line-height: 1.5;
+    line-height: 38px;
     color: #424242;
-    margin-right: 800px;
+    width: 40%; 
 }
 
 .test {
@@ -389,7 +393,7 @@ nav {
     line-height: 1.5;
 }
 
-.vector img {
+.plus {
     width: 10%;
     position: absolute;
     top:32%;
@@ -397,6 +401,9 @@ nav {
     cursor: pointer;
 }
 
+.minus {
+    display: none;
+}
 
 /* Footer */
 
@@ -515,6 +522,10 @@ footer {
         flex-direction: column;
     }
 
+    .closeBtn {
+        margin-right: 20px;
+    }
+
     .hamburgerBtn > img {
         position: absolute;
         top: 80px;
@@ -575,6 +586,7 @@ footer {
         z-index: -1;
         width: 42%;
         top: 300px;
+        object-fit: cover;
     }
     
     .main {
@@ -1299,20 +1311,18 @@ footer {
         display: flex;
         justify-content: center;
         transform: scale(0.5);
-        margin-top: -100px;
+        margin-top: 140px;
     }
 
     .alumniSection-img{
         display: flex;
-        justify-content: center;
-        align-items: center;
-        margin-top: 280px;
     }
 
     .alumniSection-img img {
-        position: absolute  ;
-        z-index: -1;
-        width: 200%;
+        position: absolute;
+        width: 100%;
+        height: 80%;
+        object-fit: cover;
     }
 
     .alumniInformation {
@@ -1382,11 +1392,23 @@ footer {
     }
 
     .vector img {
-        width: 13%;
+        width: 14%;
+        top: 70%;
+    }
+
+    .plus {
+        display: block;
         position: absolute;
-        top: 53%;
-        right: -50px;
+        right: -60px;
         cursor: pointer;
+    }
+
+    .minus {
+        display: block;
+        position: absolute;
+        cursor: pointer;
+        left: -60px;
+        transform: scaleX(-1);
     }
 
 

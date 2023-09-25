@@ -67,7 +67,9 @@ nav {
     cursor: pointer;
 }
 
-
+header {
+    display: none;
+}
 
 /* Course Information */
 
@@ -369,6 +371,10 @@ footer {
         flex-direction: column;
     }
 
+    .closeBtn {
+        margin-right: 20px;
+    }
+    
     .hamburgerBtn > img {
         position: absolute;
         top: 80px;
