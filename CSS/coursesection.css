@@ -76,7 +76,7 @@ header {
 .informationCourse {
     display: flex;
     justify-content: space-between;
-    margin: 0px 120px 120px;
+    margin: 70px 120px 120px;
     gap: 50px;
 }
 
