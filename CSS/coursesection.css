@@ -75,22 +75,22 @@ header {
 
 .informationCourse {
     display: flex;
-    flex-direction: row;
     justify-content: space-between;
-    flex-wrap: wrap;
-    margin: 100px 80px;
+    margin: 0px 120px 120px;
+    gap: 50px;
 }
 
 .leftImages {
     display: flex;
     flex-direction: column;
+    flex-wrap: wrap;
     align-items: center;
     justify-content: center;
 }
 
 .leftImages > img {
     margin-bottom: 30px;
-    width: 680px;
+    width: 560px;
 }
 
 .dateInformation {
@@ -100,41 +100,41 @@ header {
 }
 
 .dateInformation > p{
-    font-size: 20px;
+    font-size: 14px;
     font-weight: 500;
     color: #909090;
     margin-left: 20px;
 }
 
 .rightTitleInformation > p {
-    font-size: 18px;
+    font-size: 14px;
     font-weight: 500;
     color: #B3B3B3;
     margin-bottom: 20px;
 }
 
 .rightTitleInformation > h1 {
-    font-size: 48px;
+    font-size: 36px;
     font-weight: 700;
     margin-bottom: 15px;
 }
 
 .rightTitleInformation > h4 {
-    font-size: 20px;
+    font-size: 18px;
     font-weight: 500;
     line-height: 2;
     margin-bottom: 50px;
 }
 
 .rightTitleInformation > a {
-    font-size: 20px;
+    font-size: 16px;
     font-weight: 700;
     background-color: #8B79F9;
     color: #FFFFFF;
     border-radius: 48px;
     text-align: center;
     text-decoration: none;
-    padding: 16px 30px;
+    padding: 10px 20px;
     transition-duration: 200ms;
 }
 
@@ -247,7 +247,7 @@ main {
     text-align: center;
     align-items: center;
     text-align: left;
-    font-size: 20px;
+    font-size: 18px;
     font-weight: 500;
     color: #6C73BB;
     margin-left: 20px;
@@ -311,14 +311,6 @@ footer {
 /* Tablet */
 
 @media (max-width:992px) {
-    * {
-        margin: 0;
-        padding: 0;
-        box-sizing: border-box;
-        color: #000000;
-        font-family: 'Inter', sans-serif;
-    }
-    
     
     /* Navbar */
     nav {
@@ -395,6 +387,11 @@ footer {
         color: #DB7979;
     }
 
+    .hamburgerBtn > a:hover {
+        color: #EEAF8C;
+        transform: scale(1.02);
+    }
+
     .hamburgerBtn > div {
         width: 250px;
         height: 2px;
@@ -424,23 +421,13 @@ footer {
     /* Course Information */
 
     .informationCourse {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-        align-items: center;
-        gap: 20px;
-        margin-top: 50px;
+        gap: 50px;
+        margin: 50px 80px 60px;
     }
 
     .leftImages > img {
         margin-bottom: 20px;
-        width: 380px;
-    }
-
-    .dateInformation {
-        display: flex;      
-        justify-content: center;
-        align-items: center;
+        width: 350px;
     }
 
     .dateInformation > img {
@@ -449,96 +436,58 @@ footer {
 
     .dateInformation > p{
         font-size: 12px;
-        font-weight: 500;
-        color: #909090;
         margin-left: 20px;
     }
 
     .rightTitleInformation > p {
         font-size: 12px;
-        font-weight: 500;
-        color: #B3B3B3;
         margin-bottom: 20px;
     }
 
     .rightTitleInformation > h1 {
         font-size: 32px;
-        font-weight: 700;
     }
 
     .rightTitleInformation > h4 {
         font-size: 14px;
-        font-weight: 500;
-        line-height: 2;
         margin-bottom: 30px;
     }
 
     .rightTitleInformation > a {
         font-size: 14px;
         font-weight: 700;
-        background-color: #8B79F9;
-        color: #FFFFFF;
         border-radius: 48px;
-        text-align: center;
-        text-decoration: none;
         padding: 8px 18px;
-        transition-duration: 200ms;
     }
-
-    .rightTitleInformation > a:hover {
-        background-color: #9e8ffe;
-    }
-
-
 
     /* Benefit & Profile */
 
     main {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-        margin: -50px 80px 60px;
+        margin: 50px 80px 60px;
     }
 
     .materialCourse > p {
         font-size: 14px;
-        font-weight: 500;
-        color: #B3B3B3;
         margin: 40px 0px 20px;
     }
 
     .materialCourse > h1 {
         font-size: 24px;
-        font-weight: 700;
         margin-bottom: 14px;
     }
 
     .materialCourse > ul {
         font-size: 16px;
-        font-weight: 500;
         line-height: 32px;
         margin-left: 30px;
     }
 
-    .instructorProfile {
-        display: flex;
-        flex-direction: column;
-        justify-content: space-around;
-    }
-
     .instructorProfile > p{
         font-size: 18px;
-        font-weight: 500;
-        color: #B3B3B3;
-        text-align: end;
         margin-bottom: 14px;
     }
 
     .instructor {
-        display: flex;
-        align-items: center;
-        background-color: #FBFBFB ;
-        box-shadow: 0px 4.13439px 7.23518px 0px rgba(0, 0, 0, 0.07);
         border-radius: 100px;
         padding: 20px;
         margin-bottom: 10px;
@@ -546,71 +495,54 @@ footer {
     }
 
     .instructor > img {
-        width: 56px;
-        height: 54px;
+        width: 60px;
+        height: 60px;
     }
 
     .dataProfile {
-        text-align: start;
-        align-items: center;
-        margin-left: 30px;
+        margin-left: 20px;
     }
 
     .dataProfile > h3 {
         font-size: 18px;
-        font-weight: 700;
         margin-bottom: 10px;
     }
 
     .dataProfile > p {
         font-size: 14px;
-        font-weight: 500;
-        color: #A3A3A3;
     }
 
     /* Benefit */
 
     .benefitCourse {
-        display: flex;
-        justify-content: space-around;
-        flex-wrap: wrap;
         margin: 40px;
     }
 
     .benefit {
-        display: flex;
-        background-color: #F7F5FF;
-        border-radius: 50px;
         padding: 20px 40px;
         width: 220px;
         height: 90px;
     }
 
     .benefit > img {
-        background-blend-mode: color-burn;
         width: 50px;
         height: 50px;
         margin-left: -10px;
     }
 
     .benefit > p {
-        text-align: start;
-        align-items: center;
-        text-align: left;
         font-size: 16px;
-        font-weight: 500;
-        color: #6C73BB;
         margin-left: 10px;
         margin-top: 5px;
         width: 100px;
     }
 
-    /* Footer */
+        /* Footer */
 
     footer {
         display: flex;
         justify-content: space-between;
-        padding: 50px 80px 50px;
+        padding: 0px 80px 50px;
     }
 
     .sectionFooter img {
@@ -619,43 +551,26 @@ footer {
 
     .sectionFooter > h3 {
         font-size: 16px;
-        font-weight: 700;
         line-height: 2;
     }
 
     .sectionFooter > h4{
         font-size: 12px;
-        font-weight: 500;
     }
 
     .sectionFooter > h5 {
         font-size: 12px;
-        font-weight: 500;
-        color: #BEBEBE;
     }
 
     .sectionFooter > a {
-        display: flex;
-        flex-direction: column;
         font-size: 12px;
-        font-weight: 500;
-        color: #545454;
-        line-height: 2;
-        text-decoration: none;
-    }
-
-    .sectionFooter > a:hover {
-        color: #FF833D;
-        text-decoration-line: underline;
     }
 
     .tim > h4 {
         font-size: 12px;
-        font-weight: 500;
         margin: 15px 0px;
         padding: 5px 12px;
-        border-left: 7px solid #D9D9D9;
-    }  
+    } 
 }
 
 
@@ -666,75 +581,30 @@ footer {
 
 @media (max-width:768px) {
 
-    /* Navbar */
-
-    nav {
-        display: flex;
-        justify-content: space-around;
-        align-items: center;
-        position: sticky;
-        z-index: 10;
-        top: 0;
-        background-color: rgba(255, 255, 255, 0.75);
-        padding: 20px;
-    }
-
-    .Logo {
-        padding-right: 60px;
-    }
-    
-    .Logo img {
-        width: 60%;
-    }
-
-    .navItem {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-    
-    .itemMenu {
-        display: none;
-    }
-
-    .itemLogin {
-        display: none;
-    }
-
-
-
     /* Course Information */
 
     .informationCourse {
-        display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
     }
 
+    .leftImages {
+        width: 86%;
+    }
 
     .leftImages > img {
+        margin-bottom: 20px;
         width: 100%;
     }
 
-    .dateInformation {
-        display: flex;      
-        justify-content: center;
-        align-items: center;
-    }
-
     .dateInformation > p{
-        font-size: 18px;
-        font-weight: 500;
-        color: #909090;
+        font-size: 16px;
         margin-left: 20px;
     }
 
     .rightTitleInformation {
-        margin-top: 50px;
-        display: flex;
-        flex-direction: column;
-        align-items: flex-start;
+        margin-top: 30px;
     }
 
     .rightTitleInformation > p {
@@ -742,128 +612,80 @@ footer {
     }
 
     .rightTitleInformation > h1 {
-        font-size: 40px;
-        font-weight: 700;
+        font-size: 38px;
         margin-bottom: 15px;
     }
 
     .rightTitleInformation > h4 {
-        font-size: 18px;
-        font-weight: 500;
-        line-height: 2;
+        font-size: 20px;
         margin-bottom: 30px;
+        text-align: justify;
     }
 
     .rightTitleInformation > a {
-        font-size: 18px;
-        font-weight: 700;
-        background-color: #8B79F9;
-        color: #FFFFFF;
+        font-size: 20px;
         border-radius: 48px;
-        text-align: center;
-        text-decoration: none;
         padding: 15px 30px;
-        transition-duration: 200ms;
     }
-
-    .rightTitleInformation > a:hover {
-        background-color: #9e8ffe;
-    }
-    
-
 
     /* Benefit & Profile */
 
     main {
-        display: flex;
         flex-direction: column;
         justify-content: center;
     }
 
     .materialCourse > p {
         font-size: 18px;
-        font-weight: 500;
-        color: #B3B3B3;
         margin-bottom: 20px;
     }
 
     .materialCourse > h1 {
         font-size: 36px;
-        font-weight: 700;
         margin-bottom: 22px;
     }
 
     .materialCourse > ul {
         font-size: 20px;
-        font-weight: 500;
-        line-height: 1.7;
+        line-height: 2;
         margin-left: 30px;
     }
 
     .instructorProfile {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
         margin-top: 50px;
     }
 
     .instructorProfile > p{
         font-size: 20px;
-        font-weight: 500;
-        color: #B3B3B3;
-        text-align: end;
         margin-bottom: 22px;
         padding-right: 20px;
     }
 
     .instructor {
-        display: flex;
-        align-items: center;
-        justify-content: left;
-        background-color: #FBFBFB ;
-        box-shadow: 0px 4.13439px 7.23518px 0px rgba(0, 0, 0, 0.07);
-        border-radius: 100px;
-        padding: 10px;
+        padding: 20px;
         padding-right: 100px;
         margin: 10px 0px;
         width: 100%;
     }
 
-
-    .dataProfile {
-        text-align: start;
-        align-items: center;
-        margin-left: 30px;
-    }
-
     .dataProfile > h3 {
         font-size: 20px;
-        font-weight: 700;
         margin-bottom: 10px;
     }
 
     .dataProfile > p {
         font-size: 18px;
-        font-weight: 500;
-        color: #A3A3A3;
     }
-
     
     /* Benefit */
 
     .benefitCourse {
-        display: flex;
         justify-content: center;
-        flex-wrap: wrap;
         margin: 100px 0px;
         gap: 30px;
     }
 
     .benefit {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        background-color: #F7F5FF;
         border-radius: 50px;
         padding: 15px 40px;
         min-width: 250px;
@@ -871,27 +693,19 @@ footer {
     }
 
     .benefit > img {
-        width: 25%;
+        width: 28%;
     }
 
     .benefit > p {
-        text-align: center;
-        align-items: center;
-        text-align: left;
         font-size: 18px;
-        font-weight: 500;
-        color: #6C73BB;
         margin-left: 20px;
     }
-
 
     /* Footer */
 
     footer {
-        display: flex;
-        justify-content: space-between;
         padding: 0px 50px 120px;
-        margin-top: 150px;
+        margin-top: 100px;
         margin-left: 0;
     }
 
@@ -907,41 +721,23 @@ footer {
 
     .sectionFooter > h3 {
         font-size: 22px;
-        font-weight: 700;
-        line-height: 2;
     }
 
     .sectionFooter > h4{
         font-size: 16px;
-        font-weight: 500;
     }
 
     .sectionFooter > h5 {
         font-size: 16px;
-        font-weight: 500;
-        color: #BEBEBE;
     }
 
     .sectionFooter > a {
-        display: flex;
-        flex-direction: column;
         font-size: 16px;
-        font-weight: 500;
-        color: #545454;
-        line-height: 2;
-        text-decoration: none;  
-    }
-
-    .sectionFooter > a:hover {
-        color: #FF833D;
-        text-decoration-line: underline;
     }
 
     .tim > h4 {
         font-size: 16px;
-        font-weight: 500;
         margin: 15px 0px;
         padding: 5px 12px;
-        border-left: 7px solid #D9D9D9;
     }
 }

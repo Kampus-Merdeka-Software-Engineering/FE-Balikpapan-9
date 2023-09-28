@@ -10,7 +10,6 @@ body {
     overflow-x: hidden;
 }
 
-
 /* Navbar */
 nav {
     display: flex;
@@ -74,12 +73,12 @@ header {
 
 main {
     text-align: center;
-    padding: 70px 120px;
+    margin: 120px;
 }
 
-main > h2 {
+main > h1 {
     font-size: 46px;
-    font-weight: bold;
+    font-weight: 700;
     margin-bottom: 30px;
 }
 
@@ -89,7 +88,6 @@ main > p {
     color: #767676;
     line-height: 1.7;
 }
-
 
 /* Course Section */
 
@@ -103,14 +101,14 @@ main > p {
 
 .itemCourse {
     text-decoration: none;
-    background-color:#f1f1fd;
-    width: 22%;
-    margin: 10px;
-    border-radius: 50px;
+    background-color:#FFF;
+    width: 20%;
+    margin: auto;
+    border-radius: 32px;
     text-align: center;
     transition-duration: 300ms;
     box-shadow: 4px 4px 15px rgba(0, 0, 0, 0.15);
-    min-width: 270px;
+    min-width: 260px;
 }
 
 .itemCourse:hover {
@@ -120,18 +118,18 @@ main > p {
 
 .itemCourse > img {
     width: 100%;
-    border-radius: 50px;
+    border-radius: 32px;
     padding-bottom: 20px;
 }
 
 .itemCourse > h3 {
-    font-size: 28px;
+    font-size: 24px;
     font-weight: 700px;
     padding: 0px 30px 10px 30px;
 }
 
 .itemCourse > h5 {
-    font-size: 20px;
+    font-size: 18px;
     font-weight: 700px;
     color: #717BAC;
     padding: 0px 30px;
@@ -149,13 +147,11 @@ main > p {
 }
 
 .date > h6 {
-    font-size: 20px;
+    font-size: 12px;
     font-weight: 500;
     color: #909090;
     padding-left: 15px;
 }
-
-
 
 /* Footer */
 
@@ -213,15 +209,7 @@ footer {
 /* Tablet */
 
 @media (max-width:992px) {
-    * {
-        margin: 0;
-        padding: 0;
-        box-sizing: border-box;
-        color: #000000;
-        font-family: 'Inter', sans-serif;
-    }
-    
-    
+
     /* Navbar */
     nav {
         display: flex;
@@ -241,7 +229,7 @@ footer {
     .itemMenu {
         display: none;
     }
-    
+
     .itemLogin {
         display: none;
     }
@@ -296,6 +284,11 @@ footer {
         color: #DB7979;
     }
 
+    .hamburgerBtn > a:hover {
+        color: #EEAF8C;
+        transform: scale(1.02);
+    }
+
     .hamburgerBtn > div {
         width: 250px;
         height: 2px;
@@ -321,53 +314,23 @@ footer {
         color: #E5ADAD;
     }
 
-
     /* Main Section */
-
-    main {
-        text-align: center;
-        margin: 0px 0px 70px;
-    }
 
     main > h2 {
         font-size: 32px;
-        font-weight: bold;
-        margin-bottom: 30px;
     }
 
     main > p {
         font-size: 16px;
-        font-weight: 500;
-        color: #767676;
-        line-height: 1.7;
     }
-
 
     /* Course Section */
 
-    .course {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: space-around;
-        margin-top: -50px;
-    }
-
     .itemCourse {
-        text-decoration: none;
         min-width: 180px;
         min-height: 280px;
-        background-color:#FFF;
         width: 20%;
-        margin: 0px;
         border-radius: 22px;
-        text-align: center;
-        transition-duration: 300ms;
-        box-shadow: 4px 4px 15px rgba(0, 0, 0, 0.15);
-    }
-
-    .itemCourse:hover {
-        box-shadow: 4px 4px 15px rgba(0, 0, 0, 0.2);
-        transform: scale(1.07);
     }
 
     .itemCourse img {
@@ -378,7 +341,6 @@ footer {
 
     .itemCourse > h3 {
         font-size: 18px;
-        font-weight: 700px;
         padding: 0px 18px;
         margin-bottom: 8px;
         text-decoration: none;
@@ -386,16 +348,8 @@ footer {
 
     .itemCourse > h5 {
         font-size: 10px;
-        font-weight: 700px;
         color: #717BAC;
         padding: 0px 16px;
-    }
-
-    .date {
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        align-items: center;
     }
     
     .date > img {
@@ -404,7 +358,6 @@ footer {
     
     .date > h6 {
         font-size: 10px;
-        font-weight: 500;
         color: #909090;
         margin-top: -14px;
     }
@@ -423,114 +376,33 @@ footer {
 
     .sectionFooter > h3 {
         font-size: 16px;
-        font-weight: 700;
         line-height: 2;
     }
 
     .sectionFooter > h4{
         font-size: 12px;
-        font-weight: 500;
     }
 
     .sectionFooter > h5 {
         font-size: 12px;
-        font-weight: 500;
         color: #BEBEBE;
     }
 
     .sectionFooter > a {
-        display: flex;
-        flex-direction: column;
         font-size: 12px;
-        font-weight: 500;
-        color: #545454;
-        line-height: 2;
-        text-decoration: none;
-    }
-
-    .sectionFooter > a:hover {
-        color: #FF833D;
-        text-decoration-line: underline;
     }
 
     .tim > h4 {
         font-size: 12px;
-        font-weight: 500;
         margin: 15px 0px;
         padding: 5px 12px;
-        border-left: 7px solid #D9D9D9;
     }  
 }
 
 
 @media (max-width:768px) {
 
-    * {
-        margin: 0;
-        padding: 0;
-        box-sizing: border-box;
-        color: #000000;
-        font-family: 'Inter', sans-serif;
-    }
-
-    body {
-        overflow-x: hidden;
-    }
-
-    /* Navbar */
-
-    nav {
-        display: flex;
-        justify-content: space-around;
-        align-items: center;
-        position: sticky;
-        z-index: 10;
-        top: 0;
-        background-color: rgba(255, 255, 255, 0.75);
-        padding: 10px;
-    }
-
-    .Logo {
-        padding-right: 60px;
-    }
-    
-    .Logo img {
-        width: 60%;
-    }
-
-    .navItem {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-    
-    .itemMenu {
-        text-decoration: none;
-        padding: 20px 30px;
-        margin: 0 10px;
-        font-size: 18px;
-        font-weight: 500;
-        border-radius: 50px;
-        transition-duration: 200ms;
-    }
-    
-    .itemMenu:hover {
-        background-color: #FF833D;
-        border-radius: 50px;
-        color: white;
-    }
-
-    .itemLogin {
-        display: none;
-    }
-
-
-
     /* Main Section */
-
-    main {
-        margin-bottom: 0;
-    }
 
     main > h2 {
         font-size: 42px;
@@ -540,32 +412,41 @@ footer {
         font-size: 18px;
     }
 
-
-
     /* Course Section */
 
-    .course {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-        margin: 0px;
-        gap: 50px;
-    }
-
     .itemCourse {
-        min-width: 220px;
+        min-width: 240px;
+        height: auto;
+        width: 22%;
+        margin: 20px;
+        border-radius: 34px;
     }
 
-    .date > h6 {
-        font-size: 16px;
+    .itemCourse img {
+        width: 100%;
+        border-radius: 34px;
+        margin-bottom: 20px;
+    }
+    
+    .itemCourse > h3 {
+        font-size: 24px;
+        margin-bottom: 16px;
+    }
+    
+    .itemCourse h5 {
+        font-size: 20px;
+        color: #717BAC;
+        margin-bottom: 26px;
+    }
+
+    .date{
+        display: none;
     }
 
 
     /* Footer */
 
     footer {
-        display: flex;
-        justify-content: space-between;
         padding: 0px 50px 120px;
         margin-top: 100px;
         margin-left: 0;
@@ -583,41 +464,23 @@ footer {
 
     .sectionFooter > h3 {
         font-size: 22px;
-        font-weight: 700;
-        line-height: 2;
     }
 
     .sectionFooter > h4{
         font-size: 16px;
-        font-weight: 500;
     }
 
     .sectionFooter > h5 {
         font-size: 16px;
-        font-weight: 500;
-        color: #BEBEBE;
     }
 
     .sectionFooter > a {
-        display: flex;
-        flex-direction: column;
         font-size: 16px;
-        font-weight: 500;
-        color: #545454;
-        line-height: 2;
-        text-decoration: none;  
-    }
-
-    .sectionFooter > a:hover {
-        color: #FF833D;
-        text-decoration-line: underline;
     }
 
     .tim > h4 {
         font-size: 16px;
-        font-weight: 500;
         margin: 15px 0px;
         padding: 5px 12px;
-        border-left: 7px solid #D9D9D9;
     }
 }

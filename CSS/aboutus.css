@@ -102,7 +102,7 @@ header {
     flex-direction: row;
     justify-content: space-around;
     flex-wrap: wrap;
-    margin: 120px 100px;
+    margin: 120px 20px;
     gap: 30px;
 }
 
@@ -111,8 +111,9 @@ header {
     background-color: #9593FF;
     border-radius: 76px;
     padding: 80px 40px;
-    height: 500px;
+    height: auto;
     width: 46%;
+    
 }
 
 .left > h4 {
@@ -132,17 +133,17 @@ header {
     border-radius: 76px;
     font-size: 22px;
     font-weight: 600;
-    margin-bottom: 32px;
 }
 
 .right {
     background-color: #F5F4FF;
     border-radius: 76px;
     width: 46%;
+    align-items: center;
 }
 
 .right > img {
-    width: 100%;
+    width:90%;
 }
 
 /*  Member Profile */
@@ -304,16 +305,6 @@ footer {
 /* Tablet */
 
 @media (max-width:992px) {
-
-    * {
-        margin: 0;
-        padding: 0;
-        box-sizing: border-box;
-        color: #000000;
-        font-family: 'Inter', sans-serif;
-    }
-    
-    
     /* Navbar */
     nav {
         display: flex;
@@ -389,6 +380,11 @@ footer {
         color: #DB7979;
     }
 
+    .hamburgerBtn > a:hover {
+        color: #EEAF8C;
+        transform: scale(1.02);
+    }
+
     .hamburgerBtn > div {
         width: 250px;
         height: 2px;
@@ -417,53 +413,35 @@ footer {
     /* Title Informatiaon Styling */
 
     .titleAboutUs {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        text-align: center;
         margin: 100px 0px 0px 0px;
     }
 
     .titleAboutUs > h1{
-        font-size: 61px;
-        font-weight: 700;
+        font-size: 62px;
         margin-bottom: 30px;
     }
 
     .titleAboutUs > h3{
         font-size: 20px;
-        font-weight: 500;
         padding: 30px;
         color: #767676;
     }
 
     .informationAboutUs {
-        display: flex;
-        justify-content: center;
-        flex-wrap: wrap;
-        margin: 50px 0px;
+        margin: 50px;
     }
 
     .left {
-        text-align: start;
-        background-color: #9593FF;
         border-radius: 42px;
         padding: 44px 10px;
-        height: 320px;
-        width: 390px;
     }
 
     .left > h4 {
-        text-align: center;
-        background-color: #F5F4FF;
-        color: #7145B9;
         padding: 6px 14px;
         width: 150px;
         margin: 0px 20px;
         border-radius: 76px;
         font-size: 18px;
-        font-weight: 700;
     }
 
     .left > p {
@@ -478,70 +456,47 @@ footer {
     .right {
         background-color: #F5F4FF;
         border-radius: 42px;
-        align-items: center;
-        height: 320px;
-        width: 390px;
+    }
+    
+    .right > img {
+        margin: 60px 10px 0px;
     }
 
     /*  Member Profile */
 
     .titleMenber {
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-        align-items: center;
-        text-align: center;
         margin-bottom: 80px;
     }
 
     .titleMenber > h1 {
         font-size: 58px;
-        font-weight: 600;
         margin-bottom: 20px;
     }
 
     .titleMenber > h3 {
         font-size: 20px;
-        font-weight: 500;
-        line-height: 30px;
         margin-bottom: 60px;
-        color: #767676;
-    }
-
-    .profileMember {
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        margin: 0;
     }
 
     .dataProfile {
-        background-color: #F5F4FF;
         border-radius: 30px;
         height: 240px;
         width: 200px;
         padding: 80px 15px 50px 15px;
-        box-shadow: 2.70026px 5.40053px 8.10079px 0px rgba(61, 37, 131, 0.12);
     }
 
     .dataProfile > h2 {
         font-size: 18px;
-        font-weight: 700;
-        color: #815DAF;
         margin-bottom: 6px;
     }
 
     .dataProfile > h4 {
         font-size: 12px;
-        font-weight: 400;
-        color: #A1A1A1;
         margin-bottom: 14px;
     }
 
     .dataProfile > p {
         font-size: 10px;
-        font-weight: 400;
-        color: #9589AD;
     }
 
     .dataProfile > img {
@@ -552,38 +507,8 @@ footer {
     }
 
     .Sosmed {
-        display: flex;
-        flex-direction: row;
         gap: 30px;
-        justify-content: center;
-        padding: 20px;
     }
-
-    .fa {
-        padding: 10px;
-        font-size: 80px;
-        width: 40px;
-        text-align: center;
-        text-decoration: none;
-        margin: 5px 2px;
-        border-radius: 50%;
-    }
-
-    .fa:hover {
-        background-color: #815DAF;
-        color: #F5F4FF;
-    }
-
-    .fa-linkedin {
-        background: white;
-        color: #4C3D3D;
-    }
-
-    .fa-github {
-        background: white;
-        color: #4C3D3D;
-    }
-
 
     /* Footer */
 
@@ -599,42 +524,25 @@ footer {
 
     .sectionFooter > h3 {
         font-size: 16px;
-        font-weight: 700;
         line-height: 2;
     }
 
     .sectionFooter > h4{
         font-size: 12px;
-        font-weight: 500;
     }
 
     .sectionFooter > h5 {
         font-size: 12px;
-        font-weight: 500;
-        color: #BEBEBE;
     }
 
     .sectionFooter > a {
-        display: flex;
-        flex-direction: column;
         font-size: 12px;
-        font-weight: 500;
-        color: #545454;
-        line-height: 2;
-        text-decoration: none;
-    }
-
-    .sectionFooter > a:hover {
-        color: #FF833D;
-        text-decoration-line: underline;
     }
 
     .tim > h4 {
         font-size: 12px;
-        font-weight: 500;
         margin: 15px 0px;
         padding: 5px 12px;
-        border-left: 7px solid #D9D9D9;
     }  
 }
 
@@ -642,104 +550,22 @@ footer {
 /* Mobile */
 
 @media (max-width:768px) {
-    * {
-        margin: 0;
-        padding: 0;
-        box-sizing: border-box;
-        color: #000000;
-        font-family: 'Inter', sans-serif;
-    }
-
-    body {
-        overflow-x: hidden;
-    }
-
-    /* Navbar */
-
-    nav {
-        display: flex;
-        justify-content: space-around;
-        align-items: center;
-        position: sticky;
-        z-index: 10;
-        top: 0;
-        background-color: rgba(255, 255, 255, 0.75);
-        padding: 10px;
-    }
-
-    .Logo {
-        padding-right: 60px;
-    }
-    
-    .Logo img {
-        width: 60%;
-    }
-
-    .navItem {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-    
-    .itemMenu {
-        text-decoration: none;
-        padding: 20px 30px;
-        margin: 0 10px;
-        font-size: 18px;
-        font-weight: 500;
-        border-radius: 50px;
-        transition-duration: 200ms;
-    }
-    
-    .itemMenu:hover {
-        background-color: #FF833D;
-        border-radius: 50px;
-        color: white;
-    }
-
-    .itemLogin {
-        align-items: center;
-        text-decoration: none;
-        padding: 15px 70px;
-        background-color: #FF833D;
-        border-radius: 60px;
-        font-size: 24px;
-        font-weight: 700;
-    }
-    
-    .itemLogin > a {
-        text-decoration: none;
-        color: #FFFFFF;
-    }
-    
-    .itemLogin:hover {
-        background-color: #973C09 ;
-    }  
     
     /* Title Informatiaon Styling */
 
     .titleAboutUs {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        text-align: center;
         margin: 100px 40px 20px 40px;
     }
 
     .titleAboutUs > h1{
         font-size: 65px;
-        font-weight: 700;
         margin-bottom: 26px;
     }
 
     .titleAboutUs > h3{
         font-size: 20px;
-        font-weight: 500;
-        line-height: 30px;
         padding: 30px;
         margin: 0px 50px;
-        color: #767676;
     }
 
     .informationAboutUs {
@@ -747,33 +573,21 @@ footer {
     }
 
     .left {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        text-align: center;
-        align-items: center;
-        background-color: #9593FF;
         border-radius: 46px;
-        padding-top: 80px;
+        margin: 50px 100px;
         width: 100%;
     }
 
     .left > h4 {
-        text-align: center;
-        background-color: #F5F4FF;
-        color: #7145B9;
         padding: 8px 16px;
         width: 160px;
         border-radius: 46px;
         font-size: 18px;
-        font-weight: 700;
     }
 
     .left > p {
-        color: #F5F4FF;
         padding: 16px;
         font-size: 16px;
-        font-weight: 600;
         margin-bottom: 32px;
     }
 
@@ -784,26 +598,17 @@ footer {
     /*  Member Profile */
 
     .titleMenber {
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-        align-items: center;
-        text-align: center;
         margin: 0px 80px 40px 80px;
     }
 
     .titleMenber > h1 {
         font-size: 58px;
-        font-weight: 600;
         margin-bottom: 38px;
     }
 
     .titleMenber > h3 {
         font-size: 20px;
-        font-weight: 500;
-        line-height: 30px;
         margin-bottom: 140px;
-        color: #767676;
     }
 
     .profileMember {
@@ -816,38 +621,30 @@ footer {
     }
 
     .dataProfile {
-        background-color: #F5F4FF;
         border-radius: 48px;
         height: 320px;
         width: 280px;
         padding: 100px 10px;
         margin: 0px 20px 100px 20px;
-        box-shadow: 2.70026px 5.40053px 8.10079px 0px rgba(61, 37, 131, 0.12);
     }
 
     .Leader {
         position: absolute;
-        top: 84%;
+        top: 1440px;
     }
 
     .dataProfile > h2 {
         font-size: 26px;
-        font-weight: 700;
-        color: #815DAF;
         margin-bottom: 6px;
     }
 
     .dataProfile > h4 {
         font-size: 14px;
-        font-weight: 400;
-        color: #A1A1A1;
         margin-bottom: 18px;
     }
 
     .dataProfile > p {
         font-size: 14px;
-        font-weight: 400;
-        color: #9589AD;
     }
 
     .dataProfile > img {
@@ -857,47 +654,15 @@ footer {
     }
 
     .Sosmed {
-        display: flex;
-        flex-direction: row;
         gap: 30px;
-        justify-content: center;
         padding: 20px;
     }
-
-    .fa {
-        padding: 10px;
-        font-size: 80px;
-        width: 40px;
-        text-align: center;
-        text-decoration: none;
-        margin: 5px 2px;
-        border-radius: 50%;
-    }
-
-    .fa:hover {
-        background-color: #815DAF;
-        color: #F5F4FF;
-    }
-
-    .fa-linkedin {
-        background: white;
-        color: #4C3D3D;
-    }
-
-    .fa-github {
-        background: white;
-        color: #4C3D3D;
-    }
-
-
 
     /* Footer */
 
     footer {
-        display: flex;
-        justify-content: space-between;
         padding: 0px 50px 120px;
-        margin-top: 50px;
+        margin-top: 100px;
         margin-left: 0;
     }
 
@@ -913,41 +678,23 @@ footer {
 
     .sectionFooter > h3 {
         font-size: 22px;
-        font-weight: 700;
-        line-height: 2;
     }
 
     .sectionFooter > h4{
         font-size: 16px;
-        font-weight: 500;
     }
 
     .sectionFooter > h5 {
         font-size: 16px;
-        font-weight: 500;
-        color: #BEBEBE;
     }
 
     .sectionFooter > a {
-        display: flex;
-        flex-direction: column;
         font-size: 16px;
-        font-weight: 500;
-        color: #545454;
-        line-height: 2;
-        text-decoration: none;  
-    }
-
-    .sectionFooter > a:hover {
-        color: #FF833D;
-        text-decoration-line: underline;
     }
 
     .tim > h4 {
         font-size: 16px;
-        font-weight: 500;
         margin: 15px 0px;
         padding: 5px 12px;
-        border-left: 7px solid #D9D9D9;
     }
 }

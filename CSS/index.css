@@ -173,7 +173,7 @@ header {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    margin: 50px 50px 100px;
+    margin: 100px 50px;
 }
 
 .itemCourse {
@@ -181,7 +181,7 @@ header {
     min-width: 280px;
     background-color:#f1f1fd;
     width: 22%;
-    margin: 20px;
+    margin: auto;
     border-radius: 50px;
     text-align: center;
     transition-duration: 300ms;
@@ -200,19 +200,18 @@ header {
 }
 
 .itemCourse > h3 {
-    font-size: 36px;
+    font-size: 26px;
     font-weight: 700px;
     padding: 0px 30px 10px 30px;
     text-decoration: none;
 }
 
 .itemCourse h6 {
-    font-size: 24px;
+    font-size: 20px;
     font-weight: 700px;
     color: #717BAC;
     padding: 0px 30px 20px 30px;
 }
-
 
 /* Information Section */
 
@@ -243,6 +242,7 @@ header {
     font-weight: 400;
     color: #FFFFFF;
     margin-top: 20px;
+    width: 30%;
 }
 
 .informationSection > a {
@@ -463,6 +463,17 @@ footer {
 
 @media (max-width:992px) {
 
+
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        color: #000000;
+        font-family: 'Inter', sans-serif;
+    }
+    
+    
+    
     * {
         margin: 0;
         padding: 0;
@@ -546,6 +557,11 @@ footer {
         color: #DB7979;
     }
 
+    .hamburgerBtn > a:hover {
+        color: #EEAF8C;
+        transform: scale(1.02);
+    }
+
     .hamburgerBtn > div {
         width: 250px;
         height: 2px;
@@ -571,12 +587,9 @@ footer {
         color: #E5ADAD;
     }
 
-
     /* Main Section */
     
     .mainImage {
-        display: flex;
-        justify-content: right;
         margin-top: 30px;
         margin-right: 40px;
     }
@@ -595,15 +608,11 @@ footer {
     
     .titleCaption > h1 {
         font-size: 64px;
-        font-weight: 700;
         padding-bottom: 30px;   
     }
     
     .titleCaption > p {
         font-size: 24px;
-        font-weight: 500;
-        line-height: 1.5;
-        color: #424242;
         width: 100%;
     }
     
@@ -618,11 +627,8 @@ footer {
 
     .itemTest {
         position: absolute;
-        background: linear-gradient(180deg, #FF965A 0%, #FF650E 100%);
-        border-radius: 60px;
         text-align: center;
         width: 280px;
-        transform: scale(1);
         top: -180px;
         left: 40px;
     }
@@ -638,7 +644,6 @@ footer {
         display: none;
     }
     
-    
     /* Course Section */
 
     .titleCaption h1 {
@@ -651,129 +656,78 @@ footer {
     }
 
     .courseTitle {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
         margin-top: -150px;
     }
 
     .courseTitle > p {
         font-size: 20px;
-        font-weight: 400;
         letter-spacing: 10px;
     }
 
     .courseTitle > h3 {
         font-size: 52px;
-        font-weight: 700;
     }
 
     .course {
-        display: flex;
         flex-wrap: wrap;
         justify-content: space-between;
         margin: 50px 20px 80px 30px;
     }
 
     .itemCourse {
-        text-decoration: none;
         min-width: 200px;
-        background-color:#f1f1fd;
         width: 20%;
         margin: 6px;
         border-radius: 24px;
-        text-align: center;
-        transition-duration: 300ms;
-        box-shadow: 4px 4px 15px rgba(0, 0, 0, 0.15);
-    }
-
-    .itemCourse:hover {
-        box-shadow: 4px 4px 15px rgba(0, 0, 0, 0.2);
-        transform: scale(1.07);
     }
 
     .itemCourse img {
-        width: 100%;
         border-radius: 24px;
         padding-bottom: 20px;
     }
 
     .itemCourse > h3 {
         font-size: 20px;
-        font-weight: 700px;
         padding: 14px 20px;
-        text-decoration: none;
     }
 
     .itemCourse h6 {
         font-size: 14px;
-        font-weight: 700px;
-        color: #717BAC;
         padding: 0px 16px 20px 16px;
     }
 
     /* Information Section */
 
     .informationSection {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        text-align: center;
-        background-image: url(../img/InformationSection.png);
-        background-repeat: no-repeat;
-        background-size: cover;
-        background-position: center;
         margin: 0;
         height: 300px
     }
     
     .informationSection > h3 {
         font-size: 40px;
-        font-weight: 700;
-        color: #FFFFFF;
     }
     
     .informationSection > p {
         font-size: 12px;
-        line-height: 1.5;
-        font-weight: 400;
-        color: #FFFFFF;
         margin-top: 15px;
     }
     
     .informationSection > a {
-        text-decoration: none;
         font-size: 20px;
-        font-weight: bold;
-        background-color: #FF650E;
-        color: #FFFFFF;
         border-radius: 50px;
         padding: 10px 26px;
         margin-top: 36px;
-        transition-duration: 200ms;
-    }
-    
-    .informationSection > a:hover {
-        transform: scale(1.05);
-        background-color: #ff7525;
     }
 
     /* Comment Section */
 
     .comentarSection {
-        background: linear-gradient(124.24deg, #8E8AD7 29.75%, rgba(142, 138, 215, 0.87) 53.18%, #6663A9 81.45%);
         height: 500px;
-        display: flex;
         padding: 0px 40px;
-        margin: 0;
-        justify-content: space-between;
     }
 
     .background {
         width: 50%;
-        background-color: #5452C8;
         margin-left: 100px;
     }
 
@@ -792,38 +746,23 @@ footer {
     }
 
     .comment {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
         padding-left: 50px;
         width: 100%;
     }
 
     .comment h3 {
         font-size: 34px;
-        font-weight: 500px;
-        color: #FFFFFF;
-        text-align: center;
         margin-bottom: 20px;
     }
 
     .comment-item p {
         font-size: 20px;
-        font-weight: 500;
         margin: 10px;
         padding: 10px 18px;
-        text-align: center;
-        color: #686868;
-        background-color: #FFFFFF;
         border-radius: 50px;
     }
 
     /* Alumni Information */
-
-    .alumniSection {
-        display: flex;
-        justify-content: center;
-    }
 
     .alumniSection-img img {
         position: absolute  ;
@@ -832,28 +771,19 @@ footer {
     }
 
     .alumniInformation {
-        position: absolute;
         z-index: 2;
-        display: flex;
-        justify-content: space-between;
         margin: 40px 60px;
         border-radius: 50px;
-        background: linear-gradient(97.69deg, rgba(255, 133, 64, 0.91) 11.67%, rgba(214, 77, 0, 0.9) 49.18%);
-        box-shadow: 3px 4px 10px rgba(0, 0, 0, 0.3);
         width: 880px;
         height: 240px;
     }
 
     .alumniInformation-title > h1 {
         font-size: 40px;
-        font-weight: 700px;
-        color: #FFFFFF;
         padding: 38px 48px;
-
     }
 
     .profileInformation {
-        background-color: #FFFFFF;
         border-radius: 50px;
         padding: 26px 40px;
         width: 140%;
@@ -864,8 +794,6 @@ footer {
     }
 
     .alumniProfile {
-        display: flex;
-        align-items: center;
         margin-bottom: 30px;
     }
 
@@ -879,17 +807,14 @@ footer {
 
     .alumniProfile-title h3 {
         font-size: 22px;
-        font-weight: 700;
     }
 
     .alumniProfile-title p {
         font-size: 18px;
-        font-weight: 500;
     }
 
     .alumniExperience p {
         font-size: 16px;
-        font-weight: 500;
         line-height: 22px;
     }
 
@@ -904,8 +829,6 @@ footer {
     /* Footer */
 
     footer {
-        display: flex;
-        justify-content: space-between;
         padding: 0px 80px 50px;
         margin-top: 400px;
     }
@@ -916,125 +839,33 @@ footer {
 
     .sectionFooter > h3 {
         font-size: 16px;
-        font-weight: 700;
         line-height: 2;
     }
 
     .sectionFooter > h4{
         font-size: 12px;
-        font-weight: 500;
     }
 
     .sectionFooter > h5 {
         font-size: 12px;
-        font-weight: 500;
         color: #BEBEBE;
     }
 
     .sectionFooter > a {
-        display: flex;
-        flex-direction: column;
         font-size: 12px;
-        font-weight: 500;
-        color: #545454;
-        line-height: 2;
-        text-decoration: none;
-    }
-
-    .sectionFooter > a:hover {
-        color: #FF833D;
-        text-decoration-line: underline;
     }
 
     .tim > h4 {
         font-size: 12px;
-        font-weight: 500;
         margin: 15px 0px;
         padding: 5px 12px;
-        border-left: 7px solid #D9D9D9;
-    }  
+    }
 }
 
 
 /* Mobile */
 
 @media (max-width:768px) {
-
-    * {
-        margin: 0;
-        padding: 0;
-        box-sizing: border-box;
-        color: #000000;
-        font-family: 'Inter', sans-serif;
-    }
-
-    body {
-        overflow-x: hidden;
-    }
-
-    /* Navbar */
-
-    nav {
-        display: flex;
-        justify-content: space-around;
-        align-items: center;
-        position: sticky;
-        z-index: 10;
-        top: 0;
-        background-color: rgba(255, 255, 255, 0.75);
-        padding: 10px;
-    }
-
-    .Logo {
-        padding-right: 60px;
-    }
-    
-    .Logo img {
-        width: 60%;
-    }
-
-    .navItem {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-    
-    .itemMenu {
-        text-decoration: none;
-        padding: 20px 30px;
-        margin: 0 10px;
-        font-size: 18px;
-        font-weight: 500;
-        border-radius: 50px;
-        transition-duration: 200ms;
-    }
-    
-    .itemMenu:hover {
-        background-color: #FF833D;
-        border-radius: 50px;
-        color: white;
-    }
-
-    .itemLogin {
-        align-items: center;
-        text-decoration: none;
-        padding: 15px 70px;
-        background-color: #FF833D;
-        border-radius: 60px;
-        font-size: 24px;
-        font-weight: 700;
-    }
-    
-    .itemLogin > a {
-        text-decoration: none;
-        color: #FFFFFF;
-    }
-    
-    .itemLogin:hover {
-        background-color: #973C09 ;
-    }  
-
-
 
     /* Main Section */
 
@@ -1060,16 +891,14 @@ footer {
     }
 
     .titleCaption > h1 {
+        text-align: center;
         font-size: 56px;
-        font-weight: 700;
         padding-bottom: 30px;
+        width: auto;
     }
 
     .titleCaption > p {
         font-size: 20px;
-        font-weight: 500;
-        line-height: 1.5;
-        color: #424242;
         margin-right: 0;
         padding-right: 0;
     }
@@ -1085,33 +914,17 @@ footer {
 
     .test > p {
         display: none;
-        font-size: 40px;
-        font-weight: 700;
-        color: #FFFFFF;
-        line-height: 1.2;
-        width: 85%;
     }
 
     .itemTest {
-        background: linear-gradient(180deg, #FF965A 0%, #FF650E 100%);
         margin-left: 60px;
         margin-top: 30%;
         border-radius: 60px;
-        text-align: center;
         width: 60%;
-        transform: scale(0.7);
-        transition-duration: 200ms;
-    }
-
-    .itemTest:hover {
-        transform: scale(0.85);
     }
     
     .itemTest a {
         font-size: 34px;
-        font-weight: 700;
-        text-decoration: none;
-        color: #FFFFFF;
         width: 100%;
     }
 
@@ -1119,52 +932,29 @@ footer {
         display: none;
     }
 
-
-
     /* Course Section */
 
     .courseTitle {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        margin-top: 0px;
+        margin-top: 20px;
     }
     
     .courseTitle > p {
         font-size: 20px;
-        font-weight: 400;
-        letter-spacing: 10px;
     }
     
     .courseTitle > h3 {
         font-size: 46px;
-        font-weight: 700;
-        text-align: center;
     }
     
     .course {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
         margin: 30px 50px;
     }
     
     .itemCourse {
-        text-decoration: none;
         min-width: 280px;
-        background-color:#f1f1fd;
         width: 22%;
         margin: 20px;
         border-radius: 50px;
-        text-align: center;
-        transition-duration: 300ms;
-        box-shadow: 4px 4px 15px rgba(0, 0, 0, 0.15);
-    }
-    
-    .itemCourse:hover {
-        box-shadow: 4px 4px 15px rgba(0, 0, 0, 0.2);
-        transform: scale(1.07);
     }
     
     .itemCourse img {
@@ -1175,62 +965,45 @@ footer {
     
     .itemCourse > h3 {
         font-size: 28px;
-        font-weight: 700px;
         padding: 0px 30px 10px 30px;
-        text-decoration: none;
     }
     
     .itemCourse h6 {
         font-size: 20px;
-        font-weight: 700px;
-        color: #717BAC;
         padding: 0px 30px 20px 30px;
     }
-
-
 
     /* Information Section */
 
     .informationSection {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        text-align: center;
-        background-image: url(../img/InformationSection.png);
-        background-repeat: no-repeat;
-        background-size: cover;
-        margin: 0;
         height: 230px;
-        background-color: #424242;
     }
     
     .informationSection > h3 {
         font-size: 30px;
-        font-weight: 700;
-        color: #FFFFFF;
     }
     
     .informationSection > p {
         font-size: 12px;
-        line-height: 1.5;
-        font-weight: 400;
-        color: #FFFFFF;
         margin-top: 10px;
     }
     
     .informationSection > a {
-        text-decoration: none;
         font-size: 14px;
-        font-weight: bold;
-        background-color: #FF650E;
-        color: #FFFFFF;
         border-radius: 50px;
         padding: 10px 30px;
         margin-top: 22px;
-        transition-duration: 200ms;
     }
     
+    
+    .informationSection > a:hover {
+        transform: scale(1.05);
+        background-color: #ff7525;
+    }
+
+
+
+
     .informationSection > a:hover {
         transform: scale(1.05);
         background-color: #ff7525;
@@ -1241,7 +1014,6 @@ footer {
     /* Comment Section */
 
     .comentarSection {
-        background: linear-gradient(124.24deg, #8E8AD7 29.75%, rgba(142, 138, 215, 0.87) 53.18%, #6663A9 81.45%);
         height: 800px;
         margin: 0;
         display: flex;
@@ -1251,7 +1023,6 @@ footer {
     .background {
         margin: 50px;
         width: 800px;
-        background-color: #5452C8;
         border-radius: 50px;
     }
 
@@ -1280,30 +1051,16 @@ footer {
     .comment h3 {
         font-size: 45px;
         font-weight: 500px;
-        color: #FFFFFF;
-        text-align: center;
         margin-bottom: 15px;
-    }
-
-    .comment-item {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
     }
 
     .comment-item p {
         font-size: 18px;
-        font-weight: 500;
         padding: 10px;
         margin: 7px;
-        text-align: center;
-        color: #686868;
-        background-color: #FFFFFF;
         border-radius: 50px;
         width: 100%;
     }
-
-    
 
     /* Alumni Information */
 
@@ -1321,7 +1078,7 @@ footer {
     .alumniSection-img img {
         position: absolute;
         width: 100%;
-        height: 80%;
+        height: 60%;
         object-fit: cover;
     }
 
@@ -1336,22 +1093,15 @@ footer {
         box-shadow: none;
     }
     
-    
     .alumniInformation-title > h1 {
         font-size: 60px;
-        font-weight: 700px;
-        color: #FFFFFF;
         padding: 40px 100px;
         background: linear-gradient(97.69deg, rgba(255, 133, 64, 0.91) 11.67%, rgba(214, 77, 0, 0.9) 49.18%);;
         border-radius: 50px;
         margin-bottom: 50px;
-
     }
 
     .profileInformation {
-        display: flex;
-        justify-content: flex-start;
-        background-color: #FFFFFF;
         border-radius: 50px;
         padding: 50px 100px;
         width: 105%;
@@ -1377,17 +1127,14 @@ footer {
 
     .alumniProfile-title h3 {
         font-size: 46px;
-        font-weight: 700;
     }
 
     .alumniProfile-title p {
         font-size: 30px;
-        font-weight: 500;
     }
 
     .alumniExperience p {
         font-size: 28px;
-        font-weight: 500;
         line-height: 1.5;
     }
 
@@ -1408,7 +1155,6 @@ footer {
         position: absolute;
         cursor: pointer;
         left: -60px;
-        transform: scaleX(-1);
     }
 
 
@@ -1416,10 +1162,8 @@ footer {
     /* Footer */
 
     footer {
-        display: flex;
-        justify-content: space-between;
         padding: 0px 50px 120px;
-        margin-top: 450px;
+        margin-top: 500px;
         margin-left: 0;
     }
 
@@ -1435,41 +1179,23 @@ footer {
 
     .sectionFooter > h3 {
         font-size: 22px;
-        font-weight: 700;
-        line-height: 2;
     }
 
     .sectionFooter > h4{
         font-size: 16px;
-        font-weight: 500;
     }
 
     .sectionFooter > h5 {
         font-size: 16px;
-        font-weight: 500;
-        color: #BEBEBE;
     }
 
     .sectionFooter > a {
-        display: flex;
-        flex-direction: column;
         font-size: 16px;
-        font-weight: 500;
-        color: #545454;
-        line-height: 2;
-        text-decoration: none;  
-    }
-
-    .sectionFooter > a:hover {
-        color: #FF833D;
-        text-decoration-line: underline;
     }
 
     .tim > h4 {
         font-size: 16px;
-        font-weight: 500;
         margin: 15px 0px;
         padding: 5px 12px;
-        border-left: 7px solid #D9D9D9;
     }
 }

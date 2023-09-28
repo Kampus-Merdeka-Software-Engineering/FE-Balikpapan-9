@@ -19,7 +19,8 @@ function showDivs(n) {
   x[slideIndex-1].style.display = "block";
 }
 
-// Navbar Side
+
+// Hamburger Button
 
 function openNav() {
   document.getElementById("sideNav").style.width = "380px";
@@ -28,8 +29,3 @@ function openNav() {
 function closeNav() {
   document.getElementById("sideNav").style.width = "0";
 }
-
-
-
-
-
