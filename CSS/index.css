@@ -947,11 +947,12 @@ footer {
     }
     
     .course {
-        margin: 30px 50px;
+        justify-content: center;
+        gap: 20px;
     }
     
     .itemCourse {
-        min-width: 280px;
+        min-width: 230px;
         width: 22%;
         margin: 20px;
         border-radius: 50px;
@@ -964,12 +965,12 @@ footer {
     }
     
     .itemCourse > h3 {
-        font-size: 28px;
+        font-size: 22px;
         padding: 0px 30px 10px 30px;
     }
     
     .itemCourse h6 {
-        font-size: 20px;
+        font-size: 16px;
         padding: 0px 30px 20px 30px;
     }
 
