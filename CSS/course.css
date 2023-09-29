@@ -73,7 +73,7 @@ header {
 
 main {
     text-align: center;
-    margin: 120px;
+    margin: 70px 120px 120px;
 }
 
 main > h1 {
@@ -404,7 +404,7 @@ footer {
 
     /* Main Section */
 
-    main > h2 {
+    main > h1 {
         font-size: 42px;
     }
 
@@ -415,7 +415,7 @@ footer {
     /* Course Section */
 
     .itemCourse {
-        min-width: 240px;
+        min-width: 200px;
         height: auto;
         width: 22%;
         margin: 20px;
@@ -425,16 +425,16 @@ footer {
     .itemCourse img {
         width: 100%;
         border-radius: 34px;
-        margin-bottom: 20px;
+        margin-bottom: 10px;
     }
     
     .itemCourse > h3 {
-        font-size: 24px;
+        font-size: 20px;
         margin-bottom: 16px;
     }
     
     .itemCourse h5 {
-        font-size: 20px;
+        font-size: 14px;
         color: #717BAC;
         margin-bottom: 26px;
     }
