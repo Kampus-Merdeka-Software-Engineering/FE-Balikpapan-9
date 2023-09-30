@@ -296,6 +296,29 @@ footer {
         background-color: #F8DED3;
     }
 
+    .hamburgerLogin {
+        display: contents;
+        justify-content: center;
+    }
+    
+    .hamburgerLogin > a {
+        padding: 20px 30px;
+        text-decoration: none;
+        text-align: center;
+        font-size: 24px;
+        font-weight: 700;
+        letter-spacing: 10px;
+        background-color: #4C3D3D;
+        color: #FFFFFF;
+        border-radius: 30px;
+        margin: 40px 60px;
+    }
+
+    .hamburgerLogin > a:hover{
+        background-color: #DB7979;
+        transform: scale(1.02);
+    }
+
     .hamburgerBtn > p {
         font-size: 12px;
         font-weight: 600;

@@ -141,13 +141,11 @@ header {
 }
 
 .test img {
-    width: 7%;
+    width: 6%;
     position: absolute;
-    top: 13%;
+    top: 12%;
     right: 6%;
 }
-
-
 
 /* Course Section */
 
@@ -182,7 +180,7 @@ header {
     background-color:#f1f1fd;
     width: 22%;
     margin: auto;
-    border-radius: 50px;
+    border-radius: 24px;
     text-align: center;
     transition-duration: 300ms;
     box-shadow: 4px 4px 15px rgba(0, 0, 0, 0.15);
@@ -195,7 +193,7 @@ header {
 
 .itemCourse img {
     width: 100%;
-    border-radius: 50px;
+    border-radius: 24px;
     padding-bottom: 20px;
 }
 
@@ -463,26 +461,6 @@ footer {
 
 @media (max-width:992px) {
 
-
-    * {
-        margin: 0;
-        padding: 0;
-        box-sizing: border-box;
-        color: #000000;
-        font-family: 'Inter', sans-serif;
-    }
-    
-    
-    
-    * {
-        margin: 0;
-        padding: 0;
-        box-sizing: border-box;
-        color: #000000;
-        font-family: 'Inter', sans-serif;
-    }
-    
-    
     /* Navbar */
     nav {
         display: flex;
@@ -567,6 +545,29 @@ footer {
         height: 2px;
         margin: 0px 50px;
         background-color: #F8DED3;
+    }
+
+    .hamburgerLogin {
+        display: contents;
+        justify-content: center;
+    }
+    
+    .hamburgerLogin > a {
+        padding: 20px 30px;
+        text-decoration: none;
+        text-align: center;
+        font-size: 24px;
+        font-weight: 700;
+        letter-spacing: 10px;
+        background-color: #4C3D3D;
+        color: #FFFFFF;
+        border-radius: 30px;
+        margin: 40px 60px;
+    }
+
+    .hamburgerLogin > a:hover{
+        background-color: #DB7979;
+        transform: scale(1.02);
     }
 
     .hamburgerBtn > p {
@@ -678,22 +679,16 @@ footer {
         min-width: 200px;
         width: 20%;
         margin: 6px;
-        border-radius: 24px;
-    }
-
-    .itemCourse img {
-        border-radius: 24px;
-        padding-bottom: 20px;
     }
 
     .itemCourse > h3 {
         font-size: 20px;
-        padding: 14px 20px;
+        padding: 0px 20px 10px 20px;
     }
 
     .itemCourse h6 {
         font-size: 14px;
-        padding: 0px 16px 20px 16px;
+        padding: 0px 20px 16px 20px;
     }
 
     /* Information Section */
@@ -955,12 +950,12 @@ footer {
         min-width: 230px;
         width: 22%;
         margin: 20px;
-        border-radius: 50px;
+        border-radius: 30px;
     }
     
     .itemCourse img {
         width: 100%;
-        border-radius: 50px;
+        border-radius: 30px;
         padding-bottom: 20px;
     }
     
