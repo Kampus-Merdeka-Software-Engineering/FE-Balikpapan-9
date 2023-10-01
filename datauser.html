@@ -3,98 +3,78 @@
 <head>
   <meta charset="UTF-8" />
   <title>EduNine | Admin Dashboard</title>
+  <link rel="icon" type="img" href="img/edu9 logo.png">
   <link rel="stylesheet" href="CSS/admin-dashboard.css" />
-
-  <!-- Ini Chart -->
-
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/charts.css/dist/charts.min.css">
-
-  <!-- Ini Import Icon -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"/>
 </head>
 <body>
   <div class="container">
     <nav>
-      <ul>
-        <li><a href="index.html" class="logo">
-          <img src="img/logo.png" alt="">
-          <span class="nav-logo">DashBoard</span>
-        </a></li>
-        <li><a href="admin-dashboard.html">
-          <i class="fas fa-home"></i>
-          <span class="nav-item">Home</span>
-        </a></li>
-        <li><a href="datauser.html">
-          <i class="fas fa-user"></i>
-          <span class="nav-item">Data User</span>
-        </a></li>
-        <li><a href="datadaftar.html">
-          <i class="fas fa-database"></i>
-          <span class="nav-item">Data Pendaftaran</span>
-        </a></li>
-        <li><a href="datacourse.html">
-          <i class="fas fa-graduation-cap"></i>
-          <span class="nav-item">Data Course</span>
-        </a></li>
-        <li><a href="" class="logout">
-          <i class="fas fa-sign-out-alt"></i>
-          <span class="nav-item">Log out</span>
-        </a></li>
-      </ul>
+        <ul>
+            <li>
+                <img src="img/logo.png" alt="EduNine" class="logo">
+                <a href="index.html" class="logo">DASHBOARD</a>
+            </li>
+            <li>
+                <i class="fas fa-home"></i>
+                <a href="admin-dashboard.html">Home</a>
+            </li>
+            <li>
+                <i class="fas fa-user"></i>
+                <a href="datauser.html">Data User</a>
+            </li>
+            <li>
+                <i class="fas fa-database"></i>
+                <a href="datapeserta.html">Data Peserta</a>
+            </li>
+            <li>
+                <i class="fas fa-graduation-cap"></i>
+                <a href="datacourse.html">Data Course</a>
+            </li>
+            <li class="logout"> 
+                <i class="fas fa-sign-out-alt"></i>
+                <a href="index.html">Log out</a>
+            </li>
+        </ul>
     </nav>
 
     <section class="main">
-      <div class="main-banner-data">
-        <div class="card-data">
-          <i class="fas fa-user"></i>
-          <h1>Data User</h1>
+        <div class="main-banner-data">
+            <div class="card-data">
+                <i class="fas fa-user"></i>
+                <h1>Data User</h1>
+            </div>
         </div>
-      </div>
+  
+        <section class="table-container">
+          <div class="table-btn">
+              <div class="left-btn">
+                  <button class="fa fa-plus" onclick="popupOpenForm()">Add</button>
+                  <button class="fa fa-eraser">Delete</button>
+              </div>
+          </div>
+        </section>
 
-      <section class="table-container">
-        <div class="table-btn">
-            <div class="left-btn">
-          <button><i class="fa fa-plus"></i>
-            Add</button>
-          <button><i class="fa fa-eraser"></i>
-            Delete</button>
-            </div>
-            <div class="right-btn">
-          <i class="fa fa-search"></i>
-            <input type="text" id="empId" placeholder="Type Here">
-            <button>Search</button>
-            </div>
-        </div>
-      </section>
-
-            <div class="boxtb">
-                <div class="table-box">
-                    <table>
-                        <tr>
-                            <th>No</th>
-                            <th>Username</th>
-                            <th>Password</th>
-                            <th>Status</th>
-                            <th>Action</th>
-                        </tr>
-                        <tr>
-                            <td>1</td>
-                            <td>contoh</td>
-                            <td>abcde</td>
-                            <td>admin</td>
-                            <td>
-                                <div class="table-btn">
-                                <button style="background-color: rgb(255, 136, 39);"><i class="fa fa-eye"></i></button>
-                                <button style="background-color: red;"><i class="fa fa-trash"></i></button>
-                                </div>
-                            </td>
-                        </tr>
-                    </table>
-                </div>
+        <div class="boxtb">
+            <div class="table-box">
+                <table>
+                    <tr>
+                      <th>No</th>
+                      <th>Username or Email</th>
+                      <th>Password</th>
+                      <th>Action</th>
+                    </tr>
+                    <tr>
+                      <td>1</td>
+                      <td>Exampel</td>
+                      <td>123456</td>
+                      <td>admin</td>
+                    </tr>
+                </table>
             </div>
         </div>
-      </section>
     </section>
-  </div>
+</div>
 </body>
 </html>

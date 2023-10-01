@@ -30,46 +30,35 @@ nav{
 }
 
 .logo{
-  text-align: center;
+  width: 18%;
+  margin-top: 20px;
+  font-size: 22px;
+  font-weight: 600;
+}
+
+li {
   display: flex;
-  margin: 10px 0 0 10px;
+  align-items: start;
+  text-align: left;
+  width: 100%;
+  padding: 10px 0px 0px 20px;
 }
 
-.logo img{
-  width: 20%;
-  padding: 10 10 10 10;
-  margin-right: -15px;
-}
-
-.logo span{
-  font-weight: bold;
-  padding-left: 15px;
-  font-size: 18px;
-  text-transform: uppercase;
-}
-
-a{
-  position: relative;
-  color: rgb(85, 83, 83);
-  font-size: 14px;
-  display: table;
-  width: 280px;
-  padding: 10px;
+li > a {
+  display: flex;
+  text-align: left;
+  font-size: 16px;
+  font-weight: 600;
+  color: #000000;
 }
 
 nav .fas{
   position: relative;
-  width: 70px;
+  width: 50px;
   height: 40px;
-  top: 14px;
+  top: 20px;
   font-size: 20px;
   text-align: center;
-}
-
-.nav-logo{
-    position: relative;
-    top: 8px;
-    margin-left: 10px;
 }
 
 .nav-item{
@@ -78,7 +67,7 @@ nav .fas{
   margin-left: 10px;
 }
 
-a:hover{
+li:hover{
   background: #eee;
 }
 
@@ -109,6 +98,8 @@ a:hover{
 
 .main-banner{
   display: flex;
+  justify-content: center;
+  align-items: center;
   margin-top: 20px;
 }
 
@@ -228,6 +219,61 @@ a:hover{
   color: rgb(28, 98, 179);
 }
 
+/* Pop Up Form */
+#addForm {
+  display: none;
+  background-color: #F8DED3;
+  position: fixed;
+  top: 30px;
+  border-radius: 20px;
+  width: 28%;
+  left: 40%;
+}
+
+h1 {    
+  margin: 20px;
+  font-size: 20px;
+  font-weight: 600;
+  text-align: center;
+}
+
+form {
+  margin: 10px 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: left;
+}
+
+label {
+  font-size: 14px;
+  font-weight: 400;
+}
+
+input , select , a{
+  width: 100%;
+  padding: 10px 20px;
+  border-radius: 20px;
+  margin: 10px;
+  text-decoration: none;
+  text-align: center;
+  border: none;
+}
+
+.sendForm,
+.cancelForm {
+  background-color: #DB7979 ;
+  color: white;
+  font-size: 16px;
+  font-weight: 500;
+  letter-spacing: 10px;
+}
+
+.sendForm:hover,
+.cancelForm:hover {
+  background-color: #352F44;
+}
+
 @media screen and (max-width: 992px) {
     div.main-banner .card h1{
       font-size: 35px;
@@ -281,6 +327,7 @@ a:hover{
 .main-banner-data .card-data i{
   font-size: 50px;
   float: right;
+  margin-top: 24px;
 }
 
 .main-banner-data .card-data img{
@@ -311,13 +358,20 @@ a:hover{
 .table-btn button{
   background: #175cf1;
   color: #fff;
-  padding: 7px 10px;
+  padding: 10px 20px;
   border-radius: 10px;
   cursor: pointer;
+  text-align: center;
 }
 
 .table-btn button:hover{
   background: rgba(68, 127, 255, 0.842);
+}
+
+.left-btn {
+  display: flex;
+  width: 20%;
+  gap: 50px;
 }
 
 .table-btn input{
@@ -330,14 +384,6 @@ a:hover{
 
 .table-btn input, textarea{
   background-color: transparent;
-}
-
-.left-btn{
-  float: left;
-}
-
-.right-btn{
-  margin-left: 200px;
 }
 
 .boxtb{
@@ -358,6 +404,7 @@ a:hover{
 .table-box table tr th{
   width: 100%;
   padding: 30px 0px 0px;
+  text-align: center;
   background-color: #fff3eb;
 }
 
