@@ -7,17 +7,17 @@
 }
 
 body {
-    background-color: #9593FF ;
+    background-color: #9593FF;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 }
 
-main  {
+main {
     background-color: #e9e9f7 ;
-    margin: 14%;
     padding: 40px 60px;
+    margin: calc(10%);
     border-radius: 20px;
 }
 

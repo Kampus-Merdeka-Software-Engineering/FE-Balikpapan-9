@@ -23,7 +23,7 @@ function showDivs(n) {
 // Hamburger Button
 
 function openNav() {
-  document.getElementById("sideNav").style.width = "380px";
+  document.getElementById("sideNav").style.width = "360px";
 }
 
 function closeNav() {
