@@ -24,16 +24,18 @@ nav{
   height: 100vh;
   left: 0;
   background: #fff;
-  width: 330px;
+  width: 16%;
   overflow: hidden;
   box-shadow: 0 20px 35px rgba(0, 0, 0, 0.1);
 }
 
-.logo{
+.dashboard > img{
   width: 18%;
-  margin-top: 20px;
-  font-size: 22px;
-  font-weight: 600;
+  margin-top: 16px;
+}
+
+.dashboard > a {
+  font-weight: 700;
 }
 
 li {
@@ -80,7 +82,7 @@ li:hover{
 .main{
   position: relative;
   padding: 20px;
-  width: 100%;
+  width: 95%;
 }
 
 .main-top{
@@ -220,6 +222,7 @@ li:hover{
 }
 
 /* Pop Up Form */
+
 #addForm {
   display: none;
   background-color: #F8DED3;
@@ -274,32 +277,6 @@ input , select , a{
   background-color: #352F44;
 }
 
-@media screen and (max-width: 992px) {
-    div.main-banner .card h1{
-      font-size: 35px;
-    }
-    div.main-banner .card p{
-        font-size: 15px;
-        margin-top: 120px;
-    }
-    div.main-banner .card i{
-        font-size: 35px;
-    }
-}
-
-@media screen and (max-width: 768px) {
-    div.main-banner .card h1{
-      font-size: 20px;
-    }
-    div.main-banner .card p{
-        font-size: 15px;
-        margin-top: 120px;
-    }
-    div.main-banner .card i{
-        font-size: 30px;
-    }
-}
-
 /*Data Tabel*/
 
 .main-banner-data{
@@ -336,15 +313,7 @@ input , select , a{
   float: left;
 }
     
-@media screen and (max-width: 800px) {
-    .main-banner-data .card-data h1{
-        font-size: 20px;
-        margin-right: 20px;
-    }
-    .main-banner-data .card-data i{
-        font-size: 30px;
-    }
-}
+/* Table */
 
 .table-container{
   width: 100%;
@@ -352,13 +321,13 @@ input , select , a{
 }
 
 .table-btn{
-  margin: 20px;
+  margin: 10px;
 }
 
 .table-btn button{
   background: #175cf1;
   color: #fff;
-  padding: 10px 20px;
+  padding: 10px;
   border-radius: 10px;
   cursor: pointer;
   text-align: center;
@@ -369,14 +338,16 @@ input , select , a{
 }
 
 .left-btn {
-  display: flex;
-  width: 20%;
-  gap: 50px;
+  width: 40%;
+}
+
+.left-btn button {
+  padding: 10px 20px;
 }
 
 .table-btn input{
   width: 20%;
-  padding: 13px;
+  padding: 6px;
   outline: none;
   border: none;
   border-bottom: 3px solid #292929;
@@ -403,16 +374,107 @@ input , select , a{
 
 .table-box table tr th{
   width: 100%;
-  padding: 30px 0px 0px;
+  padding: 10px;
   text-align: center;
   background-color: #fff3eb;
 }
 
 .table-box table tr td{
   width: 100%;
-  padding: 10px 0px 10px;
+  padding: 6px;
+  font-size: 14px;
   text-align: center;
   background-color: #f5f4ff;
 }
 
+/* Tablet */
+
+@media (max-width: 992px) {
+
+  .container{
+    display: flex;
+    flex-direction: column;
+  }
+
+
+  nav {
+    width: 100%;
+    height: auto;
+  }
+
+  ul {
+    display: flex;
+  }
+
+  li > a {
+    font-size: 10px;
+    font-weight: 400;
+    padding: 0px;
+  }
+
+  nav .fas{
+    display: none;
+  }
+
+  .dashboard > img {
+    margin-top: 6px;
+  }
+
+  .logout{
+    position: relative;
+    top: 0;
+  }
+
+  .main {
+    width: 100%;
+  }
+  
+  div.main-banner .card h1{
+    font-size: 35px;
+  }
+  div.main-banner .card p{
+      font-size: 15px;
+      margin-top: 120px;
+  }
+  div.main-banner .card i{
+      font-size: 35px;
+  }
+
+  .table-btn{
+    margin: 5px;
+  }
+  
+  .table-btn button{
+    background: #175cf1;
+    color: #fff;
+    padding: 8px;
+    border-radius: 5px;
+    font-size: 10px;
+    cursor: pointer;
+    text-align: center;
+  }
+
+  .table-box table tr th{
+    font-size: 14px;
+  }
+  
+  .table-box table tr td{
+    font-size: 8px;
+  }
+}
+
+/* Mobile */
+
+@media screen and (max-width: 768px) {
+  div.main-banner .card h1{
+    font-size: 20px;
+  }
+  div.main-banner .card p{
+      font-size: 15px;
+      margin-top: 120px;
+  }
+  div.main-banner .card i{
+      font-size: 30px;
+  }
+}
 
