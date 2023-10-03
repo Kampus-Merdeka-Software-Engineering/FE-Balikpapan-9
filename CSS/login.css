@@ -20,6 +20,8 @@ body {
     left: 0;
     width: 100%;
     z-index: -1;
+    object-fit: cover;
+    height: 120%;
 }
 
 main {
@@ -77,27 +79,3 @@ input[type=submit]:hover,
 a:hover {
     background-color: #352F44;
 }
-
-
-
-/* Tablet (max-width : 992px) */
-@media (max-width:992px) {
-    #video-bg {
-        position: absolute;
-        left: -250px;
-        width: 150%;
-    }
-}
-
-
-
-/* Mobile (max-width : 768px */
-@media (max-width:768px) {
-    #video-bg {
-        position: absolute;
-        left: -390px;
-        width: 200%;
-    }
-}
-
-
