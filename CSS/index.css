@@ -1,19 +1,498 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    color: #000000;
-    font-family: 'Inter', sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  color: #000000;
+  font-family: "Inter", sans-serif;
 }
 
 body {
-    overflow-x: hidden;
+  overflow-x: hidden;
 }
 
 /* Dekstop */
 
 /* Navbar */
 nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: sticky;
+  z-index: 10;
+  top: 0;
+  background-color: rgba(255, 255, 255, 0.75);
+  padding: 10px 150px;
+}
+
+.Logo img {
+  width: 70%;
+}
+
+.itemMenu {
+  justify-content: space-around;
+  align-items: center;
+  text-decoration: none;
+  padding: 20px 30px;
+  margin: 0 10px;
+  font-size: 20px;
+  font-weight: 500;
+  border-radius: 50px;
+  transition-duration: 200ms;
+}
+
+.itemMenu:hover {
+  background-color: #ff833d;
+  border-radius: 50px;
+  color: white;
+}
+
+.itemLogin {
+  align-items: center;
+  text-decoration: none;
+  padding: 15px 70px;
+  background-color: #ff833d;
+  border-radius: 60px;
+  font-size: 20px;
+  font-weight: 700;
+  transition-duration: 200ms;
+}
+
+.itemLogin > a {
+  text-decoration: none;
+  color: #ffffff;
+}
+
+.itemLogin:hover {
+  background-color: #ffa672;
+  cursor: pointer;
+}
+
+header {
+  display: none;
+}
+
+/* Main Section */
+
+.mainImage {
+  display: flex;
+  justify-content: right;
+  margin-top: 30px;
+}
+
+.mainImage img {
+  position: absolute;
+  z-index: -1;
+  width: 50%;
+}
+
+.main {
+  margin: 50px 150px 100px;
+}
+
+.titleCaption > h1 {
+  font-size: 72px;
+  font-weight: 700;
+  padding-bottom: 40px;
+  width: 60%;
+}
+
+.titleCaption > p {
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 38px;
+  color: #424242;
+  width: 40%;
+}
+
+.test {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 20px 100px;
+  margin-top: 250px;
+  border-radius: 32px;
+  background: linear-gradient(269.68deg, #5673dd 27.42%, #341fb8 74.25%);
+  filter: drop-shadow(0px 8px 30px rgba(0, 0, 0, 0.25));
+}
+
+.test > p {
+  font-size: 34px;
+  font-weight: 700;
+  color: #ffffff;
+  line-height: 1.2;
+  width: 85%;
+}
+
+.itemTest {
+  background: linear-gradient(180deg, #ff965a 0%, #ff650e 100%);
+  padding: 15px 50px;
+  border-radius: 60px;
+  text-align: left;
+  width: 30%;
+}
+
+.itemTest > a {
+  font-size: 30px;
+  font-weight: 700;
+  text-decoration: none;
+  color: #ffffff;
+  text-align: start;
+}
+
+.test img {
+  width: 6%;
+  position: absolute;
+  top: 12%;
+  right: 6%;
+}
+
+/* Course Section */
+
+.courseTitle {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.courseTitle > p {
+  font-size: 30px;
+  font-weight: 400;
+  letter-spacing: 10px;
+}
+
+.courseTitle > h3 {
+  font-size: 56px;
+  font-weight: 700;
+}
+
+.course {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 100px 50px;
+}
+
+.itemCourse {
+  text-decoration: none;
+  min-width: 280px;
+  background-color: #f1f1fd;
+  width: 22%;
+  margin: auto;
+  border-radius: 24px;
+  text-align: center;
+  transition-duration: 300ms;
+  box-shadow: 4px 4px 15px rgba(0, 0, 0, 0.15);
+}
+
+.itemCourse:hover {
+  box-shadow: 4px 4px 15px rgba(0, 0, 0, 0.2);
+  transform: scale(1.07);
+}
+
+.itemCourse img {
+  width: 100%;
+  border-radius: 24px;
+  padding-bottom: 20px;
+}
+
+.itemCourse > h3 {
+  font-size: 26px;
+  font-weight: 700px;
+  padding: 0px 30px 10px 30px;
+  text-decoration: none;
+}
+
+.itemCourse h6 {
+  font-size: 20px;
+  font-weight: 700px;
+  color: #717bac;
+  padding: 0px 30px 20px 30px;
+}
+
+/* Information Section */
+
+.informationSection {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background-image: url(../img/InformationSection.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin: 0;
+  height: 480px;
+  width: auto;
+  background-color: #424242;
+}
+
+.informationSection > h3 {
+  font-size: 62px;
+  font-weight: 700;
+  color: #ffffff;
+}
+
+.informationSection > p {
+  font-size: 22px;
+  line-height: 1.5;
+  font-weight: 400;
+  color: #ffffff;
+  margin-top: 20px;
+  width: 30%;
+}
+
+.informationSection > a {
+  text-decoration: none;
+  font-size: 26px;
+  font-weight: bold;
+  background-color: #ff650e;
+  color: #ffffff;
+  border-radius: 50px;
+  padding: 15px 60px;
+  margin-top: 50px;
+  transition-duration: 200ms;
+}
+
+.informationSection > a:hover {
+  transform: scale(1.05);
+  background-color: #ff7525;
+}
+
+/* Comment Section */
+
+.comentarSection {
+  background: linear-gradient(
+    124.24deg,
+    #8e8ad7 29.75%,
+    rgba(142, 138, 215, 0.87) 53.18%,
+    #6663a9 81.45%
+  );
+  height: 700px;
+  display: flex;
+  padding: 0px 40px;
+  margin: 0;
+  justify-content: space-between;
+}
+
+.background {
+  width: 40%;
+  background-color: #5452c8;
+  margin-left: 120px;
+}
+
+.comment-img {
+  position: absolute;
+  z-index: 2;
+  padding-top: 10px;
+}
+
+.comment-img img {
+  height: 690px;
+}
+
+.comment {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-left: 50px;
+  width: 70%;
+}
+
+.comment h3 {
+  font-size: 65px;
+  font-weight: 500px;
+  color: #ffffff;
+  text-align: center;
+}
+
+.comment-item p {
+  font-size: 24px;
+  font-weight: 500;
+  margin: 20px 100px;
+  padding: 20px;
+  text-align: center;
+  color: #686868;
+  background-color: #ffffff;
+  border-radius: 50px;
+}
+
+/* Alumni Information */
+
+.alumniSection {
+  display: flex;
+  justify-content: center;
+}
+
+.alumniSection-img img {
+  position: absolute;
+  z-index: -1;
+  width: 100%;
+}
+
+.alumniInformation {
+  position: absolute;
+  z-index: 2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 100px 500px;
+  border-radius: 50px;
+  background: linear-gradient(
+    97.69deg,
+    rgba(255, 133, 64, 0.91) 11.67%,
+    rgba(214, 77, 0, 0.9) 49.18%
+  );
+  box-shadow: 3px 4px 10px rgba(0, 0, 0, 0.3);
+  width: 83%;
+}
+
+.alumniInformation-title > h1 {
+  font-size: 68px;
+  font-weight: 700px;
+  color: #ffffff;
+  padding: 50px 70px;
+}
+
+.profileInformation {
+  background-color: #ffffff;
+  border-radius: 50px;
+  padding: 50px 70px;
+  width: 130%;
+}
+
+.testimonials {
+  display: none;
+}
+
+.alumniProfile {
+  display: flex;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+.alumniProfile img {
+  width: 13%;
+}
+
+.alumniProfile-title {
+  padding-left: 30px;
+}
+
+.alumniProfile-title h3 {
+  font-size: 36px;
+  font-weight: 700;
+}
+
+.alumniProfile-title p {
+  font-size: 24px;
+  font-weight: 500;
+}
+
+.alumniExperience p {
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 1.5;
+}
+
+.plus {
+  width: 10%;
+  position: absolute;
+  top: 32%;
+  right: -65px;
+  cursor: pointer;
+}
+
+.minus {
+  display: none;
+}
+
+/* Footer */
+
+footer {
+  display: flex;
+  justify-content: space-between;
+  padding: 0px 100px 70px;
+  margin-top: 700px;
+}
+
+.sectionFooter img {
+  width: 40%;
+}
+
+.sectionFooter > h3 {
+  font-size: 28px;
+  font-weight: 700;
+  line-height: 2;
+}
+
+.sectionFooter > h4 {
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.sectionFooter > h5 {
+  font-size: 18px;
+  font-weight: 500;
+  color: #bebebe;
+}
+
+.sectionFooter > a {
+  display: flex;
+  flex-direction: column;
+  font-size: 18px;
+  font-weight: 500;
+  color: #545454;
+  line-height: 2;
+  text-decoration: none;
+}
+
+.sectionFooter > a:hover {
+  color: #ff833d;
+  text-decoration-line: underline;
+}
+
+.tim > h4 {
+  font-size: 18px;
+  font-weight: 500;
+  margin: 15px 0px;
+  padding: 5px 12px;
+  border-left: 7px solid #d9d9d9;
+}
+
+/* Contact */
+
+.contact {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  position: sticky;
+  bottom: 4%;
+  z-index: 3;
+  margin-left: 84%;
+  margin-right: 4%;
+  padding: 10px;
+  background-color: #424242;
+  border-radius: 20px;
+}
+
+.contact:hover {
+  background-color: #ff833d;
+  transform: scale(1.04);
+}
+
+.contact a {
+  text-decoration: none;
+  color: #ffffff;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+/* Tablet */
+
+@media (max-width: 992px) {
+  /* Navbar */
+  nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -21,1205 +500,727 @@ nav {
     z-index: 10;
     top: 0;
     background-color: rgba(255, 255, 255, 0.75);
-    padding: 10px 150px;
-}
+    padding: 20px 70px;
+  }
 
-.Logo img {
-    width: 70%;
-}
+  .Logo img {
+    width: 60%;
+  }
 
-.itemMenu {
-    justify-content: space-around;
-    align-items: center;
-    text-decoration: none;
-    padding: 20px 30px;
-    margin: 0 10px;
-    font-size: 20px;
-    font-weight: 500;
-    border-radius: 50px;
-    transition-duration: 200ms;
-}
-
-.itemMenu:hover {
-    background-color: #FF833D;
-    border-radius: 50px;
-    color: white;
-}
-
-.itemLogin {
-    align-items: center;
-    text-decoration: none;
-    padding: 15px 70px;
-    background-color: #FF833D;
-    border-radius: 60px;
-    font-size: 20px;
-    font-weight: 700;
-    transition-duration: 200ms;
-}
-
-.itemLogin > a {
-    text-decoration: none;
-    color: #FFFFFF;
-}
-
-.itemLogin:hover {
-    background-color: #ffa672 ;
-    cursor: pointer;
-}   
-
-header {
+  .itemMenu {
     display: none;
-}
+  }
 
-/* Main Section */
+  .itemLogin {
+    display: none;
+  }
 
-.mainImage {
-    display: flex;
-    justify-content: right;
-    margin-top: 30px;
-}
+  /* Hamburger Button */
 
-.mainImage img {
-    position: absolute;
-    z-index: -1;
-    width: 50%;
-}
+  header {
+    display: contents;
+  }
 
-.main {
-    margin: 50px 150px 100px;
-}
+  header > img {
+    width: 5%;
+    cursor: pointer;
+  }
 
-.titleCaption > h1 {
-    font-size: 72px;
-    font-weight: 700;
-    padding-bottom: 40px;  
-    width: 60%; 
-}
-
-.titleCaption > p {
-    font-size: 24px;
-    font-weight: 500;
-    line-height: 38px;
-    color: #424242;
-    width: 40%; 
-}
-
-.test {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    padding: 20px 100px;
-    margin-top: 250px;
-    border-radius: 32px;
-    background: linear-gradient(269.68deg, #5673DD 27.42%, #341FB8 74.25%);
-    filter: drop-shadow(0px 8px 30px rgba(0, 0, 0, 0.25));
-}
-
-.test > p {
-    font-size: 34px;
-    font-weight: 700;
-    color: #FFFFFF;
-    line-height: 1.2;
-    width: 85%;
-}
-
-.itemTest {
-    background: linear-gradient(180deg, #FF965A 0%, #FF650E 100%);
-    padding: 15px 50px;
-    border-radius: 60px;
-    text-align: left;
-    width: 30%;
-}
-
-.itemTest > a {
-    font-size: 30px;
-    font-weight: 700;
-    text-decoration: none;
-    color: #FFFFFF;
-    text-align: start;
-}
-
-.test img {
-    width: 6%;
-    position: absolute;
-    top: 12%;
-    right: 6%;
-}
-
-/* Course Section */
-
-.courseTitle {
+  .hamburgerBtn {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    right: 0;
+    background-color: #fff2ec;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 200px;
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
+  }
 
-.courseTitle > p {
-    font-size: 30px;
-    font-weight: 400;
-    letter-spacing: 10px;
-}
+  .closeBtn {
+    margin-right: 20px;
+  }
 
-.courseTitle > h3 {
-    font-size: 56px;
+  .hamburgerBtn > img {
+    position: absolute;
+    top: 80px;
+    right: 20px;
+    width: 50px;
+    height: 50px;
+    fill: #000000;
+    cursor: pointer;
+  }
+
+  .hamburgerBtn > a {
+    text-decoration: none;
+    text-align: left;
+    font-size: 26px;
     font-weight: 700;
-}
+    line-height: 30px;
+    margin: 35px 50px 20px;
+    color: #db7979;
+  }
 
-.course {
+  .hamburgerBtn > a:hover {
+    color: #eeaf8c;
+    transform: scale(1.02);
+  }
+
+  .hamburgerBtn > div {
+    width: 250px;
+    height: 2px;
+    margin: 0px 50px;
+    background-color: #f8ded3;
+  }
+
+  .hamburgerLogin {
+    display: contents;
+    justify-content: center;
+  }
+
+  .hamburgerLogin > a {
+    padding: 20px 30px;
+    text-decoration: none;
+    text-align: center;
+    font-size: 24px;
+    font-weight: 700;
+    letter-spacing: 10px;
+    background-color: #4c3d3d;
+    color: #ffffff;
+    border-radius: 30px;
+    margin: 40px 60px;
+  }
+
+  .hamburgerLogin > a:hover {
+    background-color: #db7979;
+    transform: scale(1.02);
+  }
+
+  .hamburgerBtn > p {
+    font-size: 12px;
+    font-weight: 600;
+    line-height: 30px;
+    margin: 32px 50px 0px;
+    text-align: right;
+    color: #e5adad;
+  }
+
+  .hamburgerBtn > h5 {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 30px;
+    margin: 0px 50px;
+    text-align: right;
+    color: #e5adad;
+  }
+
+  /* Main Section */
+
+  .mainImage {
+    margin-top: 30px;
+    margin-right: 40px;
+  }
+
+  .mainImage img {
+    position: absolute;
+    z-index: -1;
+    width: 42%;
+    top: 300px;
+    object-fit: cover;
+  }
+
+  .main {
+    margin: 100px 70px;
+  }
+
+  .titleCaption > h1 {
+    font-size: 64px;
+    padding-bottom: 30px;
+  }
+
+  .titleCaption > p {
+    font-size: 24px;
+    width: 100%;
+  }
+
+  .test {
     display: flex;
+    background: transparent;
+  }
+
+  .test > p {
+    display: none;
+  }
+
+  .itemTest {
+    position: absolute;
+    text-align: center;
+    width: 280px;
+    top: -180px;
+    left: 40px;
+  }
+
+  .itemTest a {
+    font-size: 26px;
+    font-weight: 700;
+    text-decoration: none;
+    color: #ffffff;
+  }
+
+  .test img {
+    display: none;
+  }
+
+  /* Course Section */
+
+  .titleCaption h1 {
+    font-size: 60px;
+  }
+
+  .titleCaption p {
+    font-size: 20px;
+    padding-right: 500px;
+  }
+
+  .courseTitle {
+    margin-top: -150px;
+  }
+
+  .courseTitle > p {
+    font-size: 20px;
+    letter-spacing: 10px;
+  }
+
+  .courseTitle > h3 {
+    font-size: 52px;
+  }
+
+  .course {
     flex-wrap: wrap;
     justify-content: space-between;
-    margin: 100px 50px;
-}
+    margin: 50px 20px 80px 30px;
+  }
 
-.itemCourse {
-    text-decoration: none;
-    min-width: 280px;
-    background-color:#f1f1fd;
-    width: 22%;
-    margin: auto;
-    border-radius: 24px;
-    text-align: center;
-    transition-duration: 300ms;
-    box-shadow: 4px 4px 15px rgba(0, 0, 0, 0.15);
-}
+  .itemCourse {
+    min-width: 200px;
+    width: 20%;
+    margin: 6px;
+  }
 
-.itemCourse:hover {
-    box-shadow: 4px 4px 15px rgba(0, 0, 0, 0.2);
-    transform: scale(1.07);
-}
-
-.itemCourse img {
-    width: 100%;
-    border-radius: 24px;
-    padding-bottom: 20px;
-}
-
-.itemCourse > h3 {
-    font-size: 26px;
-    font-weight: 700px;
-    padding: 0px 30px 10px 30px;
-    text-decoration: none;
-}
-
-.itemCourse h6 {
+  .itemCourse > h3 {
     font-size: 20px;
-    font-weight: 700px;
-    color: #717BAC;
-    padding: 0px 30px 20px 30px;
-}
+    padding: 0px 20px 10px 20px;
+  }
 
-/* Information Section */
+  .itemCourse h6 {
+    font-size: 14px;
+    padding: 0px 20px 16px 20px;
+  }
 
-.informationSection {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    background-image: url(../img/InformationSection.png);
-    background-repeat: no-repeat;
-    background-size: cover;
+  /* Information Section */
+
+  .informationSection {
     margin: 0;
-    height: 480px;
-    width: auto;
-    background-color: #424242;
-}
+    height: 300px;
+  }
 
-.informationSection > h3 {
-    font-size: 62px;
-    font-weight: 700;
-    color: #FFFFFF;
-}
+  .informationSection > h3 {
+    font-size: 40px;
+  }
 
-.informationSection > p {
-    font-size: 22px;
-    line-height: 1.5;
-    font-weight: 400;
-    color: #FFFFFF;
-    margin-top: 20px;
-    width: 30%;
-}
+  .informationSection > p {
+    font-size: 12px;
+    margin-top: 15px;
+  }
 
-.informationSection > a {
-    text-decoration: none;
-    font-size: 26px;
-    font-weight: bold;
-    background-color: #FF650E;
-    color: #FFFFFF;
+  .informationSection > a {
+    font-size: 20px;
     border-radius: 50px;
-    padding: 15px 60px;
-    margin-top: 50px;
-    transition-duration: 200ms;
-}
+    padding: 10px 26px;
+    margin-top: 36px;
+  }
 
-.informationSection > a:hover {
-    transform: scale(1.05);
-    background-color: #ff7525;
-}
+  /* Comment Section */
 
-/* Comment Section */
-
-.comentarSection {
-    background: linear-gradient(124.24deg, #8E8AD7 29.75%, rgba(142, 138, 215, 0.87) 53.18%, #6663A9 81.45%);
-    height: 700px;
-    display: flex;
+  .comentarSection {
+    height: 500px;
     padding: 0px 40px;
-    margin: 0;
-    justify-content: space-between;
-}
+  }
 
-.background {
-    width: 40%;
-    background-color: #5452C8;
-    margin-left: 120px;
-}
+  .background {
+    width: 50%;
+    margin-left: 100px;
+  }
 
-.comment-img {
+  .comment-img {
     position: absolute;
     z-index: 2;
+    margin-left: 30px;
     padding-top: 10px;
-}
+  }
 
-.comment-img img{
-    height: 690px;
-}
+  .comment-img img {
+    height: 400px;
+    width: 400px;
+    margin-left: -40px;
+    margin-top: 90px;
+  }
 
-.comment {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+  .comment {
     padding-left: 50px;
-    width: 70%;
-}
+    width: 100%;
+  }
 
-.comment h3 {
-    font-size: 65px;
-    font-weight: 500px;
-    color: #FFFFFF;
-    text-align: center;
-}
+  .comment h3 {
+    font-size: 34px;
+    margin-bottom: 20px;
+  }
 
-.comment-item p {
-    font-size: 24px;
-    font-weight: 500;
-    margin: 20px 100px;
-    padding: 20px;
-    text-align: center;
-    color: #686868;
-    background-color: #FFFFFF;
+  .comment-item p {
+    font-size: 20px;
+    margin: 10px;
+    padding: 10px 18px;
     border-radius: 50px;
-}
+  }
 
-/* Alumni Information */
+  /* Alumni Information */
 
-.alumniSection {
-    display: flex;
-    justify-content: center;
-}
-
-.alumniSection-img img {
-    position: absolute  ;
+  .alumniSection-img img {
+    position: absolute;
     z-index: -1;
     width: 100%;
-}
+  }
 
-.alumniInformation {
-    position: absolute;
+  .alumniInformation {
     z-index: 2;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 100px 500px;
+    margin: 40px 60px;
     border-radius: 50px;
-    background: linear-gradient(97.69deg, rgba(255, 133, 64, 0.91) 11.67%, rgba(214, 77, 0, 0.9) 49.18%);
-    box-shadow: 3px 4px 10px rgba(0, 0, 0, 0.3);
-    width: 83%;
-}
+    width: 880px;
+    height: 240px;
+  }
 
-.alumniInformation-title > h1 {
-    font-size: 68px;
-    font-weight: 700px;
-    color: #FFFFFF;
-    padding: 50px 70px;
+  .alumniInformation-title > h1 {
+    font-size: 40px;
+    padding: 38px 48px;
+  }
 
-}
-
-.profileInformation {
-    background-color: #FFFFFF;
+  .profileInformation {
     border-radius: 50px;
-    padding: 50px 70px;
-    width: 130%;
-}
+    padding: 26px 40px;
+    width: 140%;
+  }
 
-.testimonials {
+  .testimonials {
     display: none;
-}
+  }
 
-.alumniProfile {
-    display: flex;
-    align-items: center;
+  .alumniProfile {
     margin-bottom: 30px;
-}
+  }
 
-.alumniProfile img {
+  .alumniProfile img {
     width: 13%;
-}
+  }
 
-.alumniProfile-title {
-    padding-left: 30px;
-}
+  .alumniProfile-title {
+    padding-left: 16px;
+  }
 
-.alumniProfile-title h3 {
-    font-size: 36px;
-    font-weight: 700;
-}
+  .alumniProfile-title h3 {
+    font-size: 22px;
+  }
 
-.alumniProfile-title p {
-    font-size: 24px;
-    font-weight: 500;
-}
+  .alumniProfile-title p {
+    font-size: 18px;
+  }
 
-.alumniExperience p {
-    font-size: 20px;
-    font-weight: 500;
-    line-height: 1.5;
-}
+  .alumniExperience p {
+    font-size: 16px;
+    line-height: 22px;
+  }
 
-.plus {
+  .vector img {
     width: 10%;
     position: absolute;
-    top:32%;
-    right:-65px;
+    top: 32%;
+    right: -40px;
     cursor: pointer;
-}
+  }
 
-.minus {
-    display: none;
-}
+  /* Footer */
 
-/* Footer */
+  footer {
+    padding: 0px 80px 50px;
+    margin-top: 400px;
+  }
 
-footer {
-    display: flex;
-    justify-content: space-between;
-    padding: 0px 100px 70px;
-    margin-top: 700px;
-}
-
-.sectionFooter img {
+  .sectionFooter img {
     width: 40%;
-}
+  }
 
-.sectionFooter > h3 {
-    font-size: 28px;
-    font-weight: 700;
+  .sectionFooter > h3 {
+    font-size: 16px;
     line-height: 2;
-}
+  }
 
-.sectionFooter > h4{
-    font-size: 18px;
-    font-weight: 500;
-}
+  .sectionFooter > h4 {
+    font-size: 12px;
+  }
 
-.sectionFooter > h5 {
-    font-size: 18px;
-    font-weight: 500;
-    color: #BEBEBE;
-}
+  .sectionFooter > h5 {
+    font-size: 12px;
+    color: #bebebe;
+  }
 
-.sectionFooter > a {
-    display: flex;
-    flex-direction: column;
-    font-size: 18px;
-    font-weight: 500;
-    color: #545454;
-    line-height: 2;
-    text-decoration: none;
-}
+  .sectionFooter > a {
+    font-size: 12px;
+  }
 
-.sectionFooter > a:hover {
-    color: #FF833D;
-    text-decoration-line: underline;
-}
-
-.tim > h4 {
-    font-size: 18px;
-    font-weight: 500;
+  .tim > h4 {
+    font-size: 12px;
     margin: 15px 0px;
     padding: 5px 12px;
-    border-left: 7px solid #D9D9D9;
-}
+  }
 
-/* Contact */
-
-.contact {
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-    position: sticky;
-    bottom: 4%;
-    z-index: 3;
-    margin-left:84%;
+  .contact {
+    margin-left: 76%;
     margin-right: 4%;
-    padding: 10px;
-    background-color: #424242;
-    border-radius: 20px;
+  }
 }
-
-.contact:hover {
-    background-color: #FF833D;
-    transform: scale(1.04);
-}
-
-.contact a {
-    text-decoration: none;
-    color: #FFFFFF;
-    font-size: 16px;
-    font-weight: 600;
-}
-
-/* Tablet */
-
-@media (max-width:992px) {
-
-    /* Navbar */
-    nav {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        position: sticky;
-        z-index: 10;
-        top: 0;
-        background-color: rgba(255, 255, 255, 0.75);
-        padding: 20px 70px;
-    }
-    
-    .Logo img {
-        width: 60%;
-    }
-    
-    .itemMenu {
-        display: none;
-    }
-    
-    .itemLogin {
-        display: none;
-    }
-
-    /* Hamburger Button */
-    
-    header {
-        display: contents;
-    }
-
-    header > img {
-        width: 5%;
-        cursor: pointer;
-    }
-
-    .hamburgerBtn {
-        height: 100%;
-        width: 0;
-        position: fixed;
-        z-index: 1;
-        top: 0;
-        right: 0;
-        background-color: #FFF2EC;
-        overflow-x: hidden;
-        transition: 0.5s;
-        padding-top: 200px;
-        display: flex;
-        flex-direction: column;
-    }
-
-    .closeBtn {
-        margin-right: 20px;
-    }
-
-    .hamburgerBtn > img {
-        position: absolute;
-        top: 80px;
-        right: 20px;
-        width: 50px;
-        height: 50px;
-        fill: #000000;
-        cursor: pointer;
-    }
-
-    .hamburgerBtn > a {
-        text-decoration: none;
-        text-align: left;
-        font-size: 26px;
-        font-weight: 700;
-        line-height: 30px;
-        margin: 35px 50px 20px;
-        color: #DB7979;
-    }
-
-    .hamburgerBtn > a:hover {
-        color: #EEAF8C;
-        transform: scale(1.02);
-    }
-
-    .hamburgerBtn > div {
-        width: 250px;
-        height: 2px;
-        margin: 0px 50px;
-        background-color: #F8DED3;
-    }
-
-    .hamburgerLogin {
-        display: contents;
-        justify-content: center;
-    }
-    
-    .hamburgerLogin > a {
-        padding: 20px 30px;
-        text-decoration: none;
-        text-align: center;
-        font-size: 24px;
-        font-weight: 700;
-        letter-spacing: 10px;
-        background-color: #4C3D3D;
-        color: #FFFFFF;
-        border-radius: 30px;
-        margin: 40px 60px;
-    }
-
-    .hamburgerLogin > a:hover{
-        background-color: #DB7979;
-        transform: scale(1.02);
-    }
-
-    .hamburgerBtn > p {
-        font-size: 12px;
-        font-weight: 600;
-        line-height: 30px;
-        margin: 32px 50px 0px; 
-        text-align: right;
-        color: #E5ADAD;
-    }
-
-    .hamburgerBtn > h5{
-        font-size: 14px;
-        font-weight: 400;
-        line-height: 30px;
-        margin: 0px 50px;
-        text-align: right;
-        color: #E5ADAD;
-    }
-
-    /* Main Section */
-    
-    .mainImage {
-        margin-top: 30px;
-        margin-right: 40px;
-    }
-    
-    .mainImage img {
-        position: absolute;
-        z-index: -1;
-        width: 42%;
-        top: 300px;
-        object-fit: cover;
-    }
-    
-    .main {
-        margin: 100px 70px;
-    }
-    
-    .titleCaption > h1 {
-        font-size: 64px;
-        padding-bottom: 30px;   
-    }
-    
-    .titleCaption > p {
-        font-size: 24px;
-        width: 100%;
-    }
-    
-    .test {
-        display: flex;
-        background: transparent;
-    }
-
-    .test > p {
-        display: none;
-    }
-
-    .itemTest {
-        position: absolute;
-        text-align: center;
-        width: 280px;
-        top: -180px;
-        left: 40px;
-    }
-    
-    .itemTest a {
-        font-size: 26px;
-        font-weight: 700;
-        text-decoration: none;
-        color: #FFFFFF;
-    }
-
-    .test img {
-        display: none;
-    }
-    
-    /* Course Section */
-
-    .titleCaption h1 {
-        font-size: 60px;
-    }
-
-    .titleCaption p {
-        font-size: 20px;
-        padding-right: 500px;
-    }
-
-    .courseTitle {
-        margin-top: -150px;
-    }
-
-    .courseTitle > p {
-        font-size: 20px;
-        letter-spacing: 10px;
-    }
-
-    .courseTitle > h3 {
-        font-size: 52px;
-    }
-
-    .course {
-        flex-wrap: wrap;
-        justify-content: space-between;
-        margin: 50px 20px 80px 30px;
-    }
-
-    .itemCourse {
-        min-width: 200px;
-        width: 20%;
-        margin: 6px;
-    }
-
-    .itemCourse > h3 {
-        font-size: 20px;
-        padding: 0px 20px 10px 20px;
-    }
-
-    .itemCourse h6 {
-        font-size: 14px;
-        padding: 0px 20px 16px 20px;
-    }
-
-    /* Information Section */
-
-    .informationSection {
-        margin: 0;
-        height: 300px
-    }
-    
-    .informationSection > h3 {
-        font-size: 40px;
-    }
-    
-    .informationSection > p {
-        font-size: 12px;
-        margin-top: 15px;
-    }
-    
-    .informationSection > a {
-        font-size: 20px;
-        border-radius: 50px;
-        padding: 10px 26px;
-        margin-top: 36px;
-    }
-
-    /* Comment Section */
-
-    .comentarSection {
-        height: 500px;
-        padding: 0px 40px;
-    }
-
-    .background {
-        width: 50%;
-        margin-left: 100px;
-    }
-
-    .comment-img {
-        position: absolute;
-        z-index: 2;
-        margin-left: 30px;
-        padding-top: 10px;
-    }
-
-    .comment-img img{
-        height: 400px;
-        width: 400px;
-        margin-left: -40px;
-        margin-top: 90px;
-    }
-
-    .comment {
-        padding-left: 50px;
-        width: 100%;
-    }
-
-    .comment h3 {
-        font-size: 34px;
-        margin-bottom: 20px;
-    }
-
-    .comment-item p {
-        font-size: 20px;
-        margin: 10px;
-        padding: 10px 18px;
-        border-radius: 50px;
-    }
-
-    /* Alumni Information */
-
-    .alumniSection-img img {
-        position: absolute  ;
-        z-index: -1;
-        width: 100%;
-    }
-
-    .alumniInformation {
-        z-index: 2;
-        margin: 40px 60px;
-        border-radius: 50px;
-        width: 880px;
-        height: 240px;
-    }
-
-    .alumniInformation-title > h1 {
-        font-size: 40px;
-        padding: 38px 48px;
-    }
-
-    .profileInformation {
-        border-radius: 50px;
-        padding: 26px 40px;
-        width: 140%;
-    }
-
-    .testimonials {
-        display: none;
-    }
-
-    .alumniProfile {
-        margin-bottom: 30px;
-    }
-
-    .alumniProfile img {
-        width: 13%;
-    }
-
-    .alumniProfile-title {
-        padding-left: 16px;
-    }
-
-    .alumniProfile-title h3 {
-        font-size: 22px;
-    }
-
-    .alumniProfile-title p {
-        font-size: 18px;
-    }
-
-    .alumniExperience p {
-        font-size: 16px;
-        line-height: 22px;
-    }
-
-    .vector img {
-        width: 10%;
-        position: absolute;
-        top:32%;
-        right:-40px;
-        cursor: pointer;
-    }
-
-    /* Footer */
-
-    footer {
-        padding: 0px 80px 50px;
-        margin-top: 400px;
-    }
-
-    .sectionFooter img {
-        width: 40%;
-    }
-
-    .sectionFooter > h3 {
-        font-size: 16px;
-        line-height: 2;
-    }
-
-    .sectionFooter > h4{
-        font-size: 12px;
-    }
-
-    .sectionFooter > h5 {
-        font-size: 12px;
-        color: #BEBEBE;
-    }
-
-    .sectionFooter > a {
-        font-size: 12px;
-    }
-
-    .tim > h4 {
-        font-size: 12px;
-        margin: 15px 0px;
-        padding: 5px 12px;
-    }
-
-    .contact {
-        margin-left:76%;
-        margin-right: 4%;
-    }
-}
-
 
 /* Mobile */
 
-@media (max-width:768px) {
+@media (max-width: 768px) {
+  /* Main Section */
 
-    /* Main Section */
+  .mainImage {
+    display: flex;
+    justify-content: center;
+  }
 
-    .mainImage {
-        display: flex;
-        justify-content: center;
-    }
+  .mainImage img {
+    position: absolute;
+    z-index: -1;
+    width: 70%;
+    margin-top: 25%;
+  }
 
-    .mainImage img {
-        position: absolute;
-        z-index: -1;
-        width: 70%;
-        margin-top: 25%;
-    }
+  .main {
+    margin: 100px;
+    text-align: center;
+  }
 
-    .main {
-        margin: 100px;
-        text-align: center;
-    }
+  .titleCaption {
+    margin-top: -60px;
+  }
 
-    .titleCaption {
-        margin-top: -60px;
-    }
+  .titleCaption > h1 {
+    text-align: center;
+    font-size: 56px;
+    padding-bottom: 30px;
+    width: auto;
+  }
 
-    .titleCaption > h1 {
-        text-align: center;
-        font-size: 56px;
-        padding-bottom: 30px;
-        width: auto;
-    }
+  .titleCaption > p {
+    font-size: 20px;
+    margin-right: 0;
+    padding-right: 0;
+  }
 
-    .titleCaption > p {
-        font-size: 20px;
-        margin-right: 0;
-        padding-right: 0;
-    }
-    
-    .test {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        margin-top: 600px;
-        background: transparent;
-        box-shadow: none;
-    }
+  .test {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 600px;
+    background: transparent;
+    box-shadow: none;
+  }
 
-    .test > p {
-        display: none;
-    }
+  .test > p {
+    display: none;
+  }
 
-    .itemTest {
-        margin-left: 60px;
-        margin-top: 30%;
-        border-radius: 60px;
-        width: 60%;
-    }
-    
-    .itemTest a {
-        font-size: 34px;
-        width: 100%;
-    }
+  .itemTest {
+    margin-left: 60px;
+    margin-top: 30%;
+    border-radius: 60px;
+    width: 60%;
+  }
 
-    .test img {
-        display: none;
-    }
+  .itemTest a {
+    font-size: 34px;
+    width: 100%;
+  }
 
-    /* Course Section */
+  .test img {
+    display: none;
+  }
 
-    .courseTitle {
-        margin-top: 20px;
-    }
-    
-    .courseTitle > p {
-        font-size: 20px;
-    }
-    
-    .courseTitle > h3 {
-        font-size: 46px;
-    }
-    
-    .course {
-        justify-content: center;
-        gap: 20px;
-    }
-    
-    .itemCourse {
-        min-width: 230px;
-        width: 22%;
-        margin: 20px;
-        border-radius: 30px;
-    }
-    
-    .itemCourse img {
-        width: 100%;
-        border-radius: 30px;
-        padding-bottom: 20px;
-    }
-    
-    .itemCourse > h3 {
-        font-size: 22px;
-        padding: 0px 30px 10px 30px;
-    }
-    
-    .itemCourse h6 {
-        font-size: 16px;
-        padding: 0px 30px 20px 30px;
-    }
+  /* Course Section */
 
-    /* Information Section */
+  .courseTitle {
+    margin-top: 20px;
+  }
 
-    .informationSection {
-        height: 230px;
-    }
-    
-    .informationSection > h3 {
-        font-size: 30px;
-    }
-    
-    .informationSection > p {
-        font-size: 12px;
-        margin-top: 10px;
-    }
-    
-    .informationSection > a {
-        font-size: 14px;
-        border-radius: 50px;
-        padding: 10px 30px;
-        margin-top: 22px;
-    }
-    
-    
-    .informationSection > a:hover {
-        transform: scale(1.05);
-        background-color: #ff7525;
-    }
+  .courseTitle > p {
+    font-size: 20px;
+  }
 
+  .courseTitle > h3 {
+    font-size: 46px;
+  }
 
+  .course {
+    justify-content: center;
+    gap: 20px;
+  }
 
+  .itemCourse {
+    min-width: 230px;
+    width: 22%;
+    margin: 20px;
+    border-radius: 30px;
+  }
 
-    .informationSection > a:hover {
-        transform: scale(1.05);
-        background-color: #ff7525;
-    }
+  .itemCourse img {
+    width: 100%;
+    border-radius: 30px;
+    padding-bottom: 20px;
+  }
 
+  .itemCourse > h3 {
+    font-size: 22px;
+    padding: 0px 30px 10px 30px;
+  }
 
+  .itemCourse h6 {
+    font-size: 16px;
+    padding: 0px 30px 20px 30px;
+  }
 
-    /* Comment Section */
+  /* Information Section */
 
-    .comentarSection {
-        height: 800px;
-        margin: 0;
-        display: flex;
-        position: relative;
-    }
+  .informationSection {
+    height: 230px;
+  }
 
-    .background {
-        margin: 50px;
-        width: 800px;
-        border-radius: 50px;
-    }
+  .informationSection > h3 {
+    font-size: 30px;
+  }
 
-    .comment-img {
-        position: absolute;
-        z-index: 3;
-        margin-top: 330px;
-        margin-left: 30%;
-    }
+  .informationSection > p {
+    font-size: 12px;
+    margin-top: 10px;
+  }
 
-    .comment-img img{
-        width: auto;
-        height: 320px;
-    }
+  .informationSection > a {
+    font-size: 14px;
+    border-radius: 50px;
+    padding: 10px 30px;
+    margin-top: 22px;
+  }
 
-    .comment {
-        position: absolute;
-        z-index: 2;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        top: 70px;
-        left: -15px;
-    }
+  .informationSection > a:hover {
+    transform: scale(1.05);
+    background-color: #ff7525;
+  }
 
-    .comment h3 {
-        font-size: 45px;
-        font-weight: 500px;
-        margin-bottom: 15px;
-    }
+  .informationSection > a:hover {
+    transform: scale(1.05);
+    background-color: #ff7525;
+  }
 
-    .comment-item p {
-        font-size: 18px;
-        padding: 10px;
-        margin: 7px;
-        border-radius: 50px;
-        width: 100%;
-    }
+  /* Comment Section */
 
-    /* Alumni Information */
+  .comentarSection {
+    height: 800px;
+    margin: 0;
+    display: flex;
+    position: relative;
+  }
 
-    .alumniSection {
-        display: flex;
-        justify-content: center;
-        transform: scale(0.5);
-        margin-top: 140px;
-    }
+  .background {
+    margin: 50px;
+    width: 800px;
+    border-radius: 50px;
+  }
 
-    .alumniSection-img{
-        display: flex;
-    }
+  .comment-img {
+    position: absolute;
+    z-index: 3;
+    margin-top: 330px;
+    margin-left: 30%;
+  }
 
-    .alumniSection-img img {
-        position: absolute;
-        width: 100%;
-        height: 60%;
-        object-fit: cover;
-    }
+  .comment-img img {
+    width: auto;
+    height: 320px;
+  }
 
-    .alumniInformation {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        width: 150%;
-        padding: 50px;
-        background: transparent;
-        box-shadow: none;
-    }
-    
-    .alumniInformation-title > h1 {
-        font-size: 60px;
-        padding: 40px 100px;
-        background: linear-gradient(97.69deg, rgba(255, 133, 64, 0.91) 11.67%, rgba(214, 77, 0, 0.9) 49.18%);;
-        border-radius: 50px;
-        margin-bottom: 50px;
-    }
+  .comment {
+    position: absolute;
+    z-index: 2;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    top: 70px;
+    left: -15px;
+  }
 
-    .profileInformation {
-        border-radius: 50px;
-        padding: 50px 100px;
-        width: 105%;
-    }
+  .comment h3 {
+    font-size: 45px;
+    font-weight: 500px;
+    margin-bottom: 15px;
+  }
 
-    .testimonials {
-        display: none;
-    }
+  .comment-item p {
+    font-size: 18px;
+    padding: 10px;
+    margin: 7px;
+    border-radius: 50px;
+    width: 100%;
+  }
 
-    .alumniProfile {
-        display: flex;
-        align-items: center;
-        margin-bottom: 30px;
-    }
+  /* Alumni Information */
 
-    .alumniProfile img {
-        width: 14%;
-    }
+  .alumniSection {
+    display: flex;
+    justify-content: center;
+    transform: scale(0.5);
+    margin-top: 140px;
+  }
 
-    .alumniProfile-title {
-        padding-left: 40px;
-    }
+  .alumniSection-img {
+    display: flex;
+  }
 
-    .alumniProfile-title h3 {
-        font-size: 46px;
-    }
+  .alumniSection-img img {
+    position: absolute;
+    width: 100%;
+    height: 60%;
+    object-fit: cover;
+  }
 
-    .alumniProfile-title p {
-        font-size: 30px;
-    }
+  .alumniInformation {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 150%;
+    padding: 50px;
+    background: transparent;
+    box-shadow: none;
+  }
 
-    .alumniExperience p {
-        font-size: 28px;
-        line-height: 1.5;
-    }
+  .alumniInformation-title > h1 {
+    font-size: 60px;
+    padding: 40px 100px;
+    background: linear-gradient(
+      97.69deg,
+      rgba(255, 133, 64, 0.91) 11.67%,
+      rgba(214, 77, 0, 0.9) 49.18%
+    );
+    border-radius: 50px;
+    margin-bottom: 50px;
+  }
 
-    .vector img {
-        width: 14%;
-        top: 70%;
-    }
+  .profileInformation {
+    border-radius: 50px;
+    padding: 50px 100px;
+    width: 105%;
+  }
 
-    .plus {
-        display: block;
-        position: absolute;
-        right: -60px;
-        cursor: pointer;
-    }
+  .testimonials {
+    display: none;
+  }
 
-    .minus {
-        display: block;
-        position: absolute;
-        cursor: pointer;
-        left: -60px;
-    }
+  .alumniProfile {
+    display: flex;
+    align-items: center;
+    margin-bottom: 30px;
+  }
 
+  .alumniProfile img {
+    width: 14%;
+  }
 
+  .alumniProfile-title {
+    padding-left: 40px;
+  }
 
-    /* Footer */
+  .alumniProfile-title h3 {
+    font-size: 46px;
+  }
 
-    footer {
-        padding: 0px 50px 120px;
-        margin-top: 400px;
-        margin-left: 0;
-    }
+  .alumniProfile-title p {
+    font-size: 30px;
+  }
 
-    .lastChild {
-        position: absolute;
-        top: 60%;
-        right: 140px;
-    }
+  .alumniExperience p {
+    font-size: 28px;
+    line-height: 1.5;
+  }
 
-    .sectionFooter img {
-        width: 40%;
-    }
+  .vector img {
+    width: 14%;
+    top: 70%;
+  }
 
-    .sectionFooter > h3 {
-        font-size: 22px;
-    }
+  .plus {
+    display: block;
+    position: absolute;
+    right: -60px;
+    cursor: pointer;
+  }
 
-    .sectionFooter > h4{
-        font-size: 16px;
-    }
+  .minus {
+    display: block;
+    position: absolute;
+    cursor: pointer;
+    left: -60px;
+  }
 
-    .sectionFooter > h5 {
-        font-size: 16px;
-    }
+  /* Footer */
 
-    .sectionFooter > a {
-        font-size: 16px;
-    }
+  footer {
+    padding: 0px 50px 120px;
+    margin-top: 400px;
+    margin-left: 0;
+  }
 
-    .tim > h4 {
-        font-size: 16px;
-        margin: 15px 0px;
-        padding: 5px 12px;
-    }
+  .lastChild {
+    position: absolute;
+    top: 60%;
+    right: 140px;
+  }
+
+  .sectionFooter img {
+    width: 40%;
+  }
+
+  .sectionFooter > h3 {
+    font-size: 22px;
+  }
+
+  .sectionFooter > h4 {
+    font-size: 16px;
+  }
+
+  .sectionFooter > h5 {
+    font-size: 16px;
+  }
+
+  .sectionFooter > a {
+    font-size: 16px;
+  }
+
+  .tim > h4 {
+    font-size: 16px;
+    margin: 15px 0px;
+    padding: 5px 12px;
+  }
 }

@@ -1,5 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700");
-*{
+* {
   margin: 0;
   padding: 0;
   outline: none;
@@ -9,15 +9,15 @@
   font-family: "Poppins", sans-serif;
 }
 
-body{
+body {
   background: #f7efff;
 }
 
-.container{
+.container {
   display: flex;
 }
 
-nav{
+nav {
   position: relative;
   top: 0;
   bottom: 0;
@@ -29,7 +29,7 @@ nav{
   box-shadow: 0 20px 35px rgba(0, 0, 0, 0.1);
 }
 
-.dashboard > img{
+.dashboard > img {
   width: 18%;
   margin-top: 16px;
 }
@@ -54,7 +54,7 @@ li > a {
   color: #000000;
 }
 
-nav .fas{
+nav .fas {
   position: relative;
   width: 50px;
   height: 40px;
@@ -63,34 +63,34 @@ nav .fas{
   text-align: center;
 }
 
-.nav-item{
+.nav-item {
   position: relative;
   top: 12px;
   margin-left: 10px;
 }
 
-li:hover{
+li:hover {
   background: #eee;
 }
 
-.logout{
+.logout {
   position: absolute;
   bottom: 0;
 }
 
 /* Main Section */
-.main{
+.main {
   position: relative;
   padding: 20px;
   width: 95%;
 }
 
-.main-top{
+.main-top {
   display: flex;
   width: 100%;
 }
 
-.main-top i{
+.main-top i {
   position: absolute;
   right: 0;
   margin: 10px 30px;
@@ -98,14 +98,14 @@ li:hover{
   cursor: pointer;
 }
 
-.main-banner{
+.main-banner {
   display: flex;
   justify-content: center;
   align-items: center;
   margin-top: 20px;
 }
 
-.main-banner .card{
+.main-banner .card {
   width: 100%;
   margin: 10px;
   background: #fff;
@@ -115,37 +115,37 @@ li:hover{
   box-shadow: 0 20px 35px rgba(73, 48, 141, 0.1);
 }
 
-.main-banner .card h1{
+.main-banner .card h1 {
   text-transform: capitalize;
   margin: 60px 20px 0px 0px;
   font-size: 50px;
   float: right;
 }
 
-.main-banner .card p{
+.main-banner .card p {
   font-size: 25px;
   margin: 140px 0px 40px 40px;
 }
 
-.main-banner .card i{
+.main-banner .card i {
   margin-top: 65px;
   font-size: 50px;
   float: right;
 }
 
-.main-banner .card img{
+.main-banner .card img {
   width: 200px;
   height: 200px;
   float: left;
 }
 
 /* Container Data Pendaftar Course */
-.main-course{
-  margin-top:20px ;
+.main-course {
+  margin-top: 20px;
   text-transform: capitalize;
 }
 
-.course-box{
+.course-box {
   width: 100%;
   height: 450px;
   padding: 20px 50px 40px 50px;
@@ -155,35 +155,35 @@ li:hover{
   box-shadow: 0 20px 35px rgba(0, 0, 0, 0.1);
 }
 
-.course-box h2{
-    color: #000000;
-    margin-top: 1rem;
-    cursor: pointer;
-    float: left;
+.course-box h2 {
+  color: #000000;
+  margin-top: 1rem;
+  cursor: pointer;
+  float: left;
 }
 
-.course-box button{
-    background: #000;
-    color: #fff;
-    padding: 7px 10px;
-    border-radius: 10px;
-    margin-top: 1rem;
-    float: right;
-    cursor: pointer;
+.course-box button {
+  background: #000;
+  color: #fff;
+  padding: 7px 10px;
+  border-radius: 10px;
+  margin-top: 1rem;
+  float: right;
+  cursor: pointer;
 }
 
 #my-chart.column {
-    height: 90%;
-    max-width: auto;
-    margin: 0 auto;
-    --labels-size: 4rem;
+  height: 90%;
+  max-width: auto;
+  margin: 0 auto;
+  --labels-size: 4rem;
 }
 
-#my-chart.column .data{
-    margin-top: 5px;
+#my-chart.column .data {
+  margin-top: 5px;
 }
 
-.box{
+.box {
   width: 100%;
   padding: 60px;
   border-radius: 20px;
@@ -194,30 +194,30 @@ li:hover{
   height: 300px;
 }
 
-.box p{
+.box p {
   font-size: 12px;
   margin-top: 5px;
 }
 
-.box button:hover{
+.box button:hover {
   background: rgba(0, 0, 0, 0.842);
 }
 
-.box i{
+.box i {
   font-size: 7rem;
   float: right;
   margin: -20px 20px 20px 0;
 }
 
-.html{
+.html {
   color: rgb(25, 94, 54);
 }
 
-.css{
+.css {
   color: rgb(104, 179, 35);
 }
 
-.js{
+.js {
   color: rgb(28, 98, 179);
 }
 
@@ -225,7 +225,7 @@ li:hover{
 
 #addForm {
   display: none;
-  background-color: #F8DED3;
+  background-color: #f8ded3;
   position: fixed;
   top: 30px;
   border-radius: 20px;
@@ -233,7 +233,7 @@ li:hover{
   left: 40%;
 }
 
-h1 {    
+h1 {
   margin: 20px;
   font-size: 20px;
   font-weight: 600;
@@ -253,7 +253,9 @@ label {
   font-weight: 400;
 }
 
-input , select , a{
+input,
+select,
+a {
   width: 100%;
   padding: 10px 20px;
   border-radius: 20px;
@@ -265,7 +267,7 @@ input , select , a{
 
 .sendForm,
 .cancelForm {
-  background-color: #DB7979 ;
+  background-color: #db7979;
   color: white;
   font-size: 16px;
   font-weight: 500;
@@ -274,17 +276,17 @@ input , select , a{
 
 .sendForm:hover,
 .cancelForm:hover {
-  background-color: #352F44;
+  background-color: #352f44;
 }
 
 /*Data Tabel*/
 
-.main-banner-data{
-    display: flex;
-    margin-top: 20px;
+.main-banner-data {
+  display: flex;
+  margin-top: 20px;
 }
 
-.main-banner-data .card-data{
+.main-banner-data .card-data {
   width: 100%;
   margin: 10px;
   background: #fff;
@@ -294,37 +296,37 @@ input , select , a{
   box-shadow: 0 20px 35px rgba(73, 48, 141, 0.1);
 }
 
-.main-banner-data .card-data h1{
+.main-banner-data .card-data h1 {
   text-transform: capitalize;
   font-size: 45px;
   margin-right: 40px;
   float: right;
 }
 
-.main-banner-data .card-data i{
+.main-banner-data .card-data i {
   font-size: 50px;
   float: right;
   margin-top: 24px;
 }
 
-.main-banner-data .card-data img{
+.main-banner-data .card-data img {
   width: 200px;
   height: 200px;
   float: left;
 }
-    
+
 /* Table */
 
-.table-container{
+.table-container {
   width: 100%;
   margin: 0px 0px 0px 20px;
 }
 
-.table-btn{
+.table-btn {
   margin: 10px;
 }
 
-.table-btn button{
+.table-btn button {
   background: #175cf1;
   color: #fff;
   padding: 10px;
@@ -333,7 +335,7 @@ input , select , a{
   text-align: center;
 }
 
-.table-btn button:hover{
+.table-btn button:hover {
   background: rgba(68, 127, 255, 0.842);
 }
 
@@ -345,7 +347,7 @@ input , select , a{
   padding: 10px 20px;
 }
 
-.table-btn input{
+.table-btn input {
   width: 20%;
   padding: 6px;
   outline: none;
@@ -353,11 +355,12 @@ input , select , a{
   border-bottom: 3px solid #292929;
 }
 
-.table-btn input, textarea{
+.table-btn input,
+textarea {
   background-color: transparent;
 }
 
-.boxtb{
+.boxtb {
   width: 100%;
   border-radius: 20px;
   padding: 30px;
@@ -367,19 +370,19 @@ input , select , a{
   height: 600px;
 }
 
-.table-box table{
+.table-box table {
   width: 100%;
   table-layout: fixed;
 }
 
-.table-box table tr th{
+.table-box table tr th {
   width: 100%;
   padding: 10px;
   text-align: center;
   background-color: #fff3eb;
 }
 
-.table-box table tr td{
+.table-box table tr td {
   width: 100%;
   padding: 6px;
   font-size: 14px;
@@ -390,12 +393,10 @@ input , select , a{
 /* Tablet */
 
 @media (max-width: 992px) {
-
-  .container{
+  .container {
     display: flex;
     flex-direction: column;
   }
-
 
   nav {
     width: 100%;
@@ -412,7 +413,7 @@ input , select , a{
     padding: 0px;
   }
 
-  nav .fas{
+  nav .fas {
     display: none;
   }
 
@@ -420,7 +421,7 @@ input , select , a{
     margin-top: 6px;
   }
 
-  .logout{
+  .logout {
     position: relative;
     top: 0;
   }
@@ -428,23 +429,23 @@ input , select , a{
   .main {
     width: 100%;
   }
-  
-  div.main-banner .card h1{
+
+  div.main-banner .card h1 {
     font-size: 35px;
   }
-  div.main-banner .card p{
-      font-size: 15px;
-      margin-top: 120px;
+  div.main-banner .card p {
+    font-size: 15px;
+    margin-top: 120px;
   }
-  div.main-banner .card i{
-      font-size: 35px;
+  div.main-banner .card i {
+    font-size: 35px;
   }
 
-  .table-btn{
+  .table-btn {
     margin: 5px;
   }
-  
-  .table-btn button{
+
+  .table-btn button {
     background: #175cf1;
     color: #fff;
     padding: 8px;
@@ -454,11 +455,11 @@ input , select , a{
     text-align: center;
   }
 
-  .table-box table tr th{
+  .table-box table tr th {
     font-size: 14px;
   }
-  
-  .table-box table tr td{
+
+  .table-box table tr td {
     font-size: 8px;
   }
 }
@@ -466,15 +467,14 @@ input , select , a{
 /* Mobile */
 
 @media screen and (max-width: 768px) {
-  div.main-banner .card h1{
+  div.main-banner .card h1 {
     font-size: 20px;
   }
-  div.main-banner .card p{
-      font-size: 15px;
-      margin-top: 120px;
+  div.main-banner .card p {
+    font-size: 15px;
+    margin-top: 120px;
   }
-  div.main-banner .card i{
-      font-size: 30px;
+  div.main-banner .card i {
+    font-size: 30px;
   }
 }
-

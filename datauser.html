@@ -1,84 +1,92 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <title>EduNine | Admin Dashboard</title>
-  <link rel="icon" type="img" href="img/edu9 logo.png">
-  <link rel="stylesheet" href="CSS/admin-dashboard.css" />
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/charts.css/dist/charts.min.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"/>
-</head>
-<body>
-  <div class="container">
-    <nav>
+  <head>
+    <meta charset="UTF-8" />
+    <title>EduNine | Admin Dashboard</title>
+    <link rel="icon" type="img" href="img/edu9 logo.png" />
+    <link rel="stylesheet" href="CSS/admin-dashboard.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/charts.css/dist/charts.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <nav>
         <ul>
-            <li class="dashboard">
-                <img src="img/logo.png" alt="EduNine">
-                <a href="index.html">DASHBOARD</a>
-            </li>
-            <li>
-                <i class="fas fa-home"></i>
-                <a href="admin-dashboard.html">Home</a>
-            </li>
-            <li>
-                <i class="fas fa-user"></i>
-                <a href="datauser.html">Data User</a>
-            </li>
-            <li>
-                <i class="fas fa-database"></i>
-                <a href="datapeserta.html">Data Peserta</a>
-            </li>
-            <li>
-                <i class="fas fa-graduation-cap"></i>
-                <a href="datacourse.html">Data Course</a>
-            </li>
-            <li class="logout"> 
-                <i class="fas fa-sign-out-alt"></i>
-                <a href="index.html">Log out</a>
-            </li>
+          <li class="dashboard">
+            <img src="img/logo.png" alt="EduNine" />
+            <a href="index.html">DASHBOARD</a>
+          </li>
+          <li>
+            <i class="fas fa-home"></i>
+            <a href="admin-dashboard.html">Home</a>
+          </li>
+          <li>
+            <i class="fas fa-user"></i>
+            <a href="datauser.html">Data User</a>
+          </li>
+          <li>
+            <i class="fas fa-database"></i>
+            <a href="datapeserta.html">Data Peserta</a>
+          </li>
+          <li>
+            <i class="fas fa-graduation-cap"></i>
+            <a href="datacourse.html">Data Course</a>
+          </li>
+          <li class="logout">
+            <i class="fas fa-sign-out-alt"></i>
+            <a href="index.html">Log out</a>
+          </li>
         </ul>
-    </nav>
+      </nav>
 
-    <section class="main">
+      <section class="main">
         <div class="main-banner-data">
-            <div class="card-data">
-                <i class="fas fa-user"></i>
-                <h1>Data User</h1>
-            </div>
+          <div class="card-data">
+            <i class="fas fa-user"></i>
+            <h1>Data User</h1>
+          </div>
         </div>
-  
+
         <section class="table-container">
           <div class="table-btn">
-              <div class="left-btn">
-                  <button class="fa fa-plus" onclick="popupOpenForm()">Add</button>
-              </div>
+            <div class="left-btn">
+              <button class="fa fa-plus" onclick="popupOpenForm()">Add</button>
+            </div>
           </div>
         </section>
 
         <div class="boxtb">
-            <div class="table-box">
-                <table>
-                    <tr>
-                        <th>No</th>
-                        <th>Username or Email</th>
-                        <th>Password</th>
-                        <th>Action</th>
-                    </tr>
-                    <tr>
-                        <td>1</td>
-                        <td>Exampel</td>
-                        <td>123456</td>
-                        <td>
-                            <div class="table-btn">
-                                <button class="fa fa-pen"></button>
-                                <button class="fa fa-trash"></button>
-                            </div>
-                        </td>
-                    </tr>
-                </table>
-            </div>
+          <div class="table-box">
+            <table>
+              <tr>
+                <th>No</th>
+                <th>Username</th>
+                <th>Email</th>
+                <th>Password</th>
+                <th>Action</th>
+              </tr>
+              <tr>
+                <td>1</td>
+                <td>Exampel</td>
+                <td>Exampel@gmail.com</td>
+                <td>123456</td>
+                <td>
+                  <div class="table-btn">
+                    <button class="fa fa-pen"></button>
+                    <button class="fa fa-trash"></button>
+                  </div>
+                </td>
+              </tr>
+            </table>
+          </div>
         </div>
-    </section>
-</div>
-</body>
+      </section>
+    </div>
+  </body>
 </html>
