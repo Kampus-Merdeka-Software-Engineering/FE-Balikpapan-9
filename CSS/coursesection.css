@@ -764,3 +764,128 @@ footer {
         padding: 5px 12px;
     }
 }
+
+@media (max-width: 480px) {
+    .Logo img {
+        width: 20%;
+    }
+  
+    /* Course Information */
+  
+    .informationCourse {
+        margin: 50px 30px ;
+    }
+  
+    .leftImages {
+        width: 100%;
+    }
+  
+    .dateInformation > p {
+        font-size: 10px;
+        margin-left: 10px;
+    }
+  
+    .rightTitleInformation{
+        margin-top: 0px;
+    }   
+  
+    .rightTitleInformation > p {
+        font-size: 10px;
+    }
+  
+    .rightTitleInformation > h1 {
+        font-size: 24px;
+    }
+  
+    .rightTitleInformation > h4 {
+        font-size: 12px;
+        margin-bottom: 40px;
+    }
+  
+    .rightTitleInformation > a {
+        font-size: 14px;
+        border-radius: 48px;
+        padding: 15px 30px;
+    }
+  
+    /* Benefit & Profile */
+  
+    main {
+        margin: 0px 30px;
+    }
+  
+    .materialCourse > p {
+        font-size: 10px;
+        margin-bottom: 20px;
+    }
+  
+    .materialCourse > h1 {
+        font-size: 20px;
+        margin-bottom: 22px;
+    }
+  
+    .materialCourse > ul {
+        font-size: 12px;
+        line-height: 2;
+        margin-left: 30px;
+    }
+  
+    .instructorProfile {
+        margin-top: 50px;
+    }
+  
+    .instructor {
+        padding: 10px;
+        padding-right: 100px;
+        margin: 10px 0px;
+        width: 100%;
+    }
+  
+    .dataProfile > h3 {
+        font-size: 14px;
+        margin-bottom: 10px;
+    }
+  
+    .dataProfile > p {
+        font-size: 10px;
+    }
+  
+    /* Footer */
+  
+    footer {
+        padding: 0px 20px 80px;
+        margin: 0px 20px;
+    }
+  
+    .lastChild {
+        position: absolute;
+        top: 48%;
+        right: 66px;
+    }
+  
+    .sectionFooter img {
+        width: 30%;
+    }
+  
+    .sectionFooter > h3 {
+        font-size: 12px;
+    }
+  
+    .sectionFooter > h4 {
+        font-size: 10px;
+    }
+  
+    .sectionFooter > h5 {
+        font-size: 10px;
+    }
+  
+    .sectionFooter > a {
+        font-size: 10px;
+    }
+  
+    .tim > h4 {
+        font-size: 10px;
+        margin: 15px 0px;
+        padding: 5px 12px;
+    }
+}

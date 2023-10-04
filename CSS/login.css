@@ -9,15 +9,25 @@
 body {
     background-color: #9593FF;
     display: flex;
-    flex-direction: column;
+    overflow: hidden;
     justify-content: center;
     align-items: center;
 }
 
+#video-bg {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: -1;
+    object-fit: cover;
+    height: 100%;
+}
+
 main {
     background-color: #e9e9f7 ;
+    margin-top: 120px;
     padding: 40px 60px;
-    margin: calc(10%);
     border-radius: 20px;
 }
 
@@ -42,6 +52,10 @@ label {
     margin: 10px;
 }
 
+input[type=submit]{
+    margin-top: 30px;
+}
+
 input , select , a{
     width: 100%;
     padding: 10px 20px;
@@ -58,7 +72,7 @@ a {
     color: white;
     font-size: 20px;
     font-weight: 600;
-    letter-spacing: 10px;
+    /* letter-spacing: 10px; */
 }
 
 input[type=submit]:hover,

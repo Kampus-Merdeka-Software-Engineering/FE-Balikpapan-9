@@ -507,3 +507,63 @@ footer {
         padding: 5px 12px;
     }
 }
+
+@media (max-width: 480px) {
+    .Logo img {
+        width: 20%;
+    }
+  
+    /* Main Section */
+  
+    main {
+        margin: 50px;
+    }
+  
+    main > h1 {
+        font-size: 24px;
+        margin: 0px 40px 30px;
+    }
+  
+    main > p {
+        font-size: 12px;
+    }
+  
+    /* Footer */
+  
+    footer {
+        padding: 0px 20px 80px;
+        margin: 0px 20px;
+    }
+  
+    .lastChild {
+        position: absolute;
+        top: 48%;
+        right: 66px;
+    }
+  
+    .sectionFooter img {
+        width: 30%;
+    }
+  
+    .sectionFooter > h3 {
+        font-size: 12px;
+    }
+  
+    .sectionFooter > h4 {
+        font-size: 10px;
+    }
+  
+    .sectionFooter > h5 {
+        font-size: 10px;
+    }
+  
+    .sectionFooter > a {
+        font-size: 10px;
+    }
+  
+    .tim > h4 {
+        font-size: 10px;
+        margin: 15px 0px;
+        padding: 5px 12px;
+    }
+}
