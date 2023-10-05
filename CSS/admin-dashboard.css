@@ -223,11 +223,40 @@ li:hover{
 
 /* Pop Up Form */
 
-#addForm {
+.popup {
   display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7); /* Warna hitam dengan tingkat transparansi 0.5 */
+  z-index: 1;
+}
+
+#addFormUser {
   background-color: #F8DED3;
   position: fixed;
-  top: 30px;
+  z-index: 2;
+  top: 25%;
+  border-radius: 20px;
+  width: 28%;
+  left: 40%;
+}
+#addFormPeserta {
+  background-color: #F8DED3;
+  position: fixed;
+  z-index: 2;
+  top: 3%;
+  border-radius: 20px;
+  width: 28%;
+  left: 40%;
+}
+#addFormMateri {
+  background-color: #F8DED3;
+  position: fixed;
+  z-index: 2;
+  top: 30%;
   border-radius: 20px;
   width: 28%;
   left: 40%;
@@ -269,7 +298,6 @@ input , select , a{
   color: white;
   font-size: 16px;
   font-weight: 500;
-  letter-spacing: 10px;
 }
 
 .sendForm:hover,

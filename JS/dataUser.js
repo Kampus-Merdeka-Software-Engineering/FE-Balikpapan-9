@@ -1,16 +1,18 @@
+const popup = document.querySelector(".popup")
 // Pop Up Dashboard
 function popupOpenForm() {
-    document.getElementById("addForm").style.display = "block";
+    popup.style.display = "block";
 }
-  
+
 function popupCloseForm() {
-    document.getElementById("addForm").style.display = "none";
+    popup.style.display = "none";
 }
 
 
-const tBody = document.querySelector('.userTable');
 
 // READ - GET Method
+const tBody = document.querySelector('.userTable');
+
 const READ = () => {
     fetch('https://be-balikpapan-9-production.up.railway.app/user')
     .then(response => response.json())
@@ -42,3 +44,37 @@ const READ = () => {
 };
 
 READ()
+
+
+
+// POST - CREATE Method
+const username = document.getElementById('Username');
+const email = document.getElementById('Email');
+const password = document.getElementById('Password');
+const submitForm = document.querySelector('.sendForm');
+
+submitForm.addEventListener('click', popupCloseForm);
+
+submitForm.addEventListener('click', () => {
+    const data = {
+        username: username.value,
+        email: email.value,
+        password: password.value
+    }
+
+    fetch('https://be-balikpapan-9-production.up.railway.app/user', {
+        method: 'POST',
+        headers: {
+        'Content-Type': 'application/json'
+        },
+        body: JSON.stringify(data)
+    })
+    .then(response => response.json())
+    .then(result => {
+        console.log(result);
+        READ()
+    })
+    .catch(error => {
+        console.error('Error:', error);
+    });
+})
