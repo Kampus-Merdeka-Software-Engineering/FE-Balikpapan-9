@@ -1,7 +1,7 @@
 // Slide Home Alumni
 
 let slideIndex = 1;
-showDivs(slideIndex);
+  showDivs(slideIndex);
 
 function plusDivs(n) {
   showDivs(slideIndex += n);
