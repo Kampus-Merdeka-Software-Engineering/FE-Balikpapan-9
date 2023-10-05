@@ -47,4 +47,7 @@ READ()
 
 
 // POST - CREATE Method
+const username = document.getElementById('Username');
+const email = document.getElementById('Email');
+const password = document.getElementById('Password');
  
