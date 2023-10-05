@@ -1,5 +1,14 @@
-const tBody = document.querySelector('.pesertaTable');
+// Pop Up Dashboard
+function popupOpenForm() {
+    document.getElementById("addForm").style.display = "block";
+}
+  
+function popupCloseForm() {
+    document.getElementById("addForm").style.display = "none";
+}
 
+
+const tBody = document.querySelector('.pesertaTable');
 
 const READ = () => {
     fetch('https://be-balikpapan-9-production.up.railway.app/peserta')

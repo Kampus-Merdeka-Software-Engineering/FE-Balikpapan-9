@@ -240,7 +240,7 @@ h1 {
   text-align: center;
 }
 
-form {
+#daftar {
   margin: 10px 30px;
   display: flex;
   flex-direction: column;

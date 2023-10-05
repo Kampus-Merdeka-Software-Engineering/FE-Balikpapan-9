@@ -1,3 +1,13 @@
+// Pop Up Dashboard
+function popupOpenForm() {
+    document.getElementById("addForm").style.display = "block";
+}
+  
+function popupCloseForm() {
+    document.getElementById("addForm").style.display = "none";
+}
+
+
 const tBody = document.querySelector('.userTable');
 
 // READ - GET Method
