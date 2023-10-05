@@ -1,10 +1,11 @@
+const popup = document.querySelector(".popup")
 // Pop Up Dashboard
 function popupOpenForm() {
-    document.getElementById("addFormMateri").style.display = "block";
+    popup.style.display = "block";
 }
-  
+
 function popupCloseForm() {
-    document.getElementById("addFormMateri").style.display = "none";
+    popup.style.display = "none";
 }
 
 
