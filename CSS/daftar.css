@@ -65,3 +65,45 @@ input[type=submit]:hover,
 a:hover {
     background-color: #352F44;
 }
+
+.popup{
+    width: 400px;
+    background: white;
+    border-radius: 40px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+    padding: 0 30px 30px;
+    color: #333;
+    visibility: hidden;
+    transition: 0.5s;
+}
+
+.open-popup{
+    visibility: visible;
+}
+
+
+.popup img{
+    width: 150px;
+    margin-top: -50px;
+}
+.popup h2{
+    font-size: 38px;
+    font-weight: 500;
+    margin: 30px 0 10px;
+}
+
+.popup button{
+    width: 100%;
+    margin-top: 50px;
+    padding: 10px 0;
+    background: rgb(78, 78, 187);
+    border: 0;
+    outline: none;
+    font-size: 18px;
+    border-radius: 40px;
+    cursor: pointer;
+}

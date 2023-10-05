@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
 </head>
 <body>
     <main>
@@ -43,9 +44,31 @@
                 <option value="FE">Front End Dev</option>
                 <option value="DA">Data Analyst</option>
             </select>
-            <input type="submit" value="SEND">
+            <input type="submit" value="SEND" onclick="openPopup()">
             <a href="course.html">CANCEL</a>
         </form>
+
+<!-- belum menemukan titik terang untuk bisa popup setelah submit
+ini soalnya dia popupnya sblm submit fetch-->
+        <div class="popup" id="popup">
+            <img src="./img/centang.png">
+            <h2>Thank You!</h2>
+            <p>Your details has been successfully submitted.</p>
+            <button type="button" onclick="closePopup()">Join The Class Server Now</button>
+        </div>
+
+        <script>
+            let popup = document.getElementById("popup");
+
+            function openPopup(){
+                popup.classList.add("open-popup")
+            }
+
+            function closePopup(){
+                popup.classList.remove("open-popup")
+            }
+        </script>
+
     </main>
 </body>
 </html>
