@@ -223,11 +223,37 @@ li:hover{
 
 /* Pop Up Form */
 
-#addForm {
+/* .popup {
+  background-color: #000000;
+  width: 100%;
+} */
+
+#addFormUser {
   display: none;
   background-color: #F8DED3;
   position: fixed;
-  top: 30px;
+  z-index: 10;
+  top: 25%;
+  border-radius: 20px;
+  width: 28%;
+  left: 40%;
+}
+#addFormPeserta {
+  display: none;
+  background-color: #F8DED3;
+  position: fixed;
+  z-index: 10;
+  top: 3%;
+  border-radius: 20px;
+  width: 28%;
+  left: 40%;
+}
+#addFormMateri {
+  display: none;
+  background-color: #F8DED3;
+  position: fixed;
+  z-index: 10;
+  top: 30%;
   border-radius: 20px;
   width: 28%;
   left: 40%;
