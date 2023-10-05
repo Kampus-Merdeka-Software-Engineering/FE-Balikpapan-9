@@ -48,7 +48,7 @@ h1 {
     box-sizing: border-box;  
 }
 
-form .txt_field{
+div > .txt_field{
     position: relative;
     border-bottom: 2px solid #adadad;
     margin: 50px 0;
@@ -99,7 +99,7 @@ form .txt_field{
 
 }
 
-input[type="submit"]{
+#submit{
     width: 100%;
     height: 80px;
     border: 4px solid;
@@ -112,7 +112,7 @@ input[type="submit"]{
     outline: none;
 }
 
-input[type="submit"]:hover{
+#submit:hover{
     background-color: #9a6ae7;
     transition: .5s;
 

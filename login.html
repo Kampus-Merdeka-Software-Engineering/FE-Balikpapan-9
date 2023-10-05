@@ -17,16 +17,13 @@
         <source src="./img/bgvideo.mp4" type="video/mp4">
     </video> 
     <main>
-        <center>
         <img src="./img/edunine-logo.png">
-        </center>
         <br>
         <br>
         <br>
         
         <div class="formlogin">
-        <form action="#" method="post" id="login">
-           
+        <div id="login">
             <div class="txt_field">
                 <input type="text" id="Username" name="Username" required>
                 <span></span>
@@ -39,14 +36,16 @@
                 <label for="Password">Password</label>
             </div>
 
-        </div>
-            <input type="submit" value="Login">
-        
-        <div class="backhome">
-            <a href="index.html">You wanna go back to home page? Click Me!</a>
-        </div>
-
-    </form>     
+            </div>
+            <button id="submit">Login</button>
+            <div class="backhome">
+                <a href="index.html">You wanna go back to home page? Click Me!</a>
+            </div>
+        </div>     
     </main>
+
+
+    <!-- Javascript -->
+    <script src="./JS/login.js"></script>
 </body>
 </html>
