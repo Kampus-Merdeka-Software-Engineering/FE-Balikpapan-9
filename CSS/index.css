@@ -886,7 +886,7 @@ footer {
 }
 
 
-/* Mobile */
+/* Mobile Landscape */
 
 @media (max-width:768px) {
 
@@ -1223,6 +1223,8 @@ footer {
         padding: 5px 12px;
     }
 }
+
+/* Mobile Portait */
 
 @media (max-width: 480px) {
     .Logo img {
