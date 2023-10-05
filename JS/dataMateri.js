@@ -14,8 +14,8 @@ const READ = () => {
             const materiData = document.getElementsByClassName('materiData');
             materiData[i].innerHTML = `
                 <td>${[i + 1]}</td>
-                <td>${Data[i].materi}</td>
                 <td>${Data[i].course.title}</td>
+                <td>${Data[i].materi}</td>
                 <td>
                     <div class="table-btn">
                         <button id="${Data[i].id}" class="fa fa-pen"></button>
