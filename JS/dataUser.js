@@ -8,9 +8,10 @@ function popupCloseForm() {
 }
 
 
-const tBody = document.querySelector('.userTable');
 
 // READ - GET Method
+const tBody = document.querySelector('.userTable');
+
 const READ = () => {
     fetch('https://be-balikpapan-9-production.up.railway.app/user')
     .then(response => response.json())
@@ -42,3 +43,8 @@ const READ = () => {
 };
 
 READ()
+
+
+
+// POST - CREATE Method
+ 

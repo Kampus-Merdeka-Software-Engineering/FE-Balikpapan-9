@@ -8,7 +8,31 @@
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/charts.css/dist/charts.min.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"/>
 </head>
-    <body>
+<body>
+
+    <!-- Popup -->
+    <div class="popup">
+        <div id="addFormMateri">
+            <h1 class="titleform"> Daftar Course </h1>
+            <div id="daftar" name="daftar">
+                <label for="Course">Course:</label>
+                <select id="Course" name="Course" placeholder="Select Course" required>
+                    <option value="" disabled selected>Select Course</option>
+                    <option value="UI/UX">UI/UX Designer</option>
+                    <option value="BE">Back End Dev</option>
+                    <option value="FE">Front End Dev</option>
+                    <option value="DA">Data Analyst</option>
+                </select>
+    
+                <label for="Name">Materi:</label>
+                <input type="text" id="Materi" name="Materi" placeholder="Inputkan Materi" required>
+
+                <input type="submit" value="SEND" class="sendForm">
+                <a href="#" class="cancelForm" onclick="popupCloseForm()">CANCEL</a>
+            </div>
+        </div>
+    </div>
+
     <div class="container">
         <nav>
             <ul>
@@ -55,24 +79,6 @@
                 </div>
             </section>
 
-            <div id="addFormMateri">
-                <h1 class="titleform"> Daftar Course </h1>
-                <div id="daftar" name="daftar">
-
-                    <label for="Course">Course:</label>
-                    <select id="Course" name="Course" placeholder="Select Course" required>
-                        <option value="" disabled selected>Select Course</option>
-                        <option value="UI/UX">UI/UX Designer</option>
-                        <option value="BE">Back End Dev</option>
-                        <option value="FE">Front End Dev</option>
-                        <option value="DA">Data Analyst</option>
-                    </select>
-
-                    <label for="Name">Materi:</label>
-                    <input type="text" id="Materi" name="Materi" placeholder="Inputkan Materi" required>
-        
-                </div>
-            </div>
 
             <div class="boxtb">
                 <div class="table-box">

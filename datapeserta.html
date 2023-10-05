@@ -9,6 +9,47 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"/>
 </head>
 <body>
+
+    <!-- Popup -->
+    <div class="popup">
+        <div id="addFormPeserta">
+            <h1 class="titleform"> Daftar Course </h1>
+            <div id="daftar" name="daftar">
+                <label for="Name">Name:</label>
+                <input type="text" id="Name" name="Name" placeholder="First and last name" required>
+    
+                <label for="Age">Age:</label>
+                <input type="number" min="17" id="Age" name="Age" placeholder="Age" required> 
+    
+                <label for="Gender">Gender:</label>
+                <select id="Gender" name="Gender" placeholder="Select Gender" required>
+                    <option value="" disabled selected>Select Gender</option>
+                    <option value="Female">Female</option>
+                    <option value="Male">Male</option>
+                </select>
+    
+                <label for="Email">Email Address:</label>
+                <input type="email" id="Email" name="Email" placeholder="Exampel@gmail.com" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" required>
+    
+                <label for="WhatsApp">WhatsApp:</label>
+                <input type="tel" id="WhatsApp" name="WhatsApp" placeholder="0812-5708-408" pattern="(\+62|62|0)8[0-9][0-9]{6,9}$" required>
+            
+                <label for="Course">What are you interested in?</label>
+                <select id="Course" name="Course" placeholder="Select Course" required>
+                    <option value="" disabled selected>Select Course</option>
+                    <option value="UI/UX">UI/UX Designer</option>
+                    <option value="BE">Back End Dev</option>
+                    <option value="FE">Front End Dev</option>
+                    <option value="DA">Data Analyst</option>
+                </select>
+                
+                <input type="submit" value="SEND" class="sendForm">
+                <a href="#" class="cancelForm" onclick="popupCloseForm()">CANCEL</a>
+            </div>
+        </div>
+    </div>
+
+
     <div class="container">
         <nav>
             <ul>
@@ -55,40 +96,6 @@
                 </div>
             </section>
 
-            <div id="addFormPeserta">
-                <h1 class="titleform"> Daftar Course </h1>
-                <div id="daftar" name="daftar">
-                    <label for="Name">Name:</label>
-                    <input type="text" id="Name" name="Name" placeholder="First and last name" required>
-        
-                    <label for="Age">Age:</label>
-                    <input type="number" min="17" id="Age" name="Age" placeholder="Age" required> 
-        
-                    <label for="Gender">Gender:</label>
-                    <select id="Gender" name="Gender" placeholder="Select Gender" required>
-                        <option value="" disabled selected>Select Gender</option>
-                        <option value="Female">Female</option>
-                        <option value="Male">Male</option>
-                    </select>
-        
-                    <label for="Email">Email Address:</label>
-                    <input type="email" id="Email" name="Email" placeholder="Exampel@gmail.com" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" required>
-        
-                    <label for="WhatsApp">WhatsApp:</label>
-                    <input type="tel" id="WhatsApp" name="WhatsApp" placeholder="0812-5708-408" pattern="(\+62|62|0)8[0-9][0-9]{6,9}$" required>
-                
-                    <label for="Course">What are you interested in?</label>
-                    <select id="Course" name="Course" placeholder="Select Course" required>
-                        <option value="" disabled selected>Select Course</option>
-                        <option value="UI/UX">UI/UX Designer</option>
-                        <option value="BE">Back End Dev</option>
-                        <option value="FE">Front End Dev</option>
-                        <option value="DA">Data Analyst</option>
-                    </select>
-                    <input type="submit" value="SEND" class="sendForm">
-                    <a href="#" class="cancelForm" onclick="popupCloseForm()">CANCEL</a>
-                </div>
-            </div>
 
             <div class="boxtb">
                 <div class="table-box">
