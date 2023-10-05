@@ -14,20 +14,39 @@
 </head>
 <body>
     <video id="video-bg" autoplay loop muted>
-        <source src="./img/background_login.mp4" type="video/mp4">
+        <source src="./img/bgvideo.mp4" type="video/mp4">
     </video> 
     <main>
-        <h1 class="titleform">Login to your account</h1>
-        <form action="#" method="post" id="login">
-            <label for="Username">Username or Email</label>
-            <input type="text" id="Username" name="Username" placeholder="Username or Email" required> 
+        <center>
+        <img src="./img/edunine-logo.png">
+        </center>
+        <br>
+        <br>
+        <br>
         
-            <label for="Password">Password</label>
-            <input type="password" id="Password" name="Password" placeholder="Password" required>
-            
-            <input type="submit" value="LOGIN">
-            <a href="index.html">CANCEL</a>
-        </form>
+        <div class="formlogin">
+        <form action="#" method="post" id="login">
+           
+            <div class="txt_field">
+                <input type="text" id="Username" name="Username" required>
+                <span></span>
+                <label for="Username">Username or Email</label>
+            </div>
+
+            <div class="txt_field">
+                <input type="password" id="Password" name="Password" required>
+                <span></span>
+                <label for="Password">Password</label>
+            </div>
+
+        </div>
+            <input type="submit" value="Login">
+        
+        <div class="backhome">
+            <a href="index.html">You wanna go back to home page? Click Me!</a>
+        </div>
+
+    </form>     
     </main>
 </body>
 </html>
