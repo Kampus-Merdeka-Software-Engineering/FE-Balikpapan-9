@@ -8,77 +8,110 @@
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/charts.css/dist/charts.min.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"/>
 </head>
-<body>
-  <div class="container">
-    <nav>
-        <ul>
-            <li class="dashboard">
-                <img src="img/logo.png" alt="EduNine">
-                <a href="index.html">DASHBOARD</a>
-            </li>
-            <li>
-                <i class="fas fa-home"></i>
-                <a href="admin-dashboard.html">Home</a>
-            </li>
-            <li>
-                <i class="fas fa-user"></i>
-                <a href="datauser.html">Data User</a>
-            </li>
-            <li>
-                <i class="fas fa-database"></i>
-                <a href="datapeserta.html">Data Peserta</a>
-            </li>
-            <li>
-                <i class="fas fa-graduation-cap"></i>
-                <a href="datamateri.html">Data Materi</a>
-            </li>
-            <li class="logout"> 
-                <i class="fas fa-sign-out-alt"></i>
-                <a href="index.html">Log out</a>
-            </li>
-        </ul>
-    </nav>
+    <body>
+    <div class="container">
+        <nav>
+            <ul>
+                <li class="dashboard">
+                    <img src="img/logo.png" alt="EduNine">
+                    <a href="index.html">DASHBOARD</a>
+                </li>
+                <li>
+                    <i class="fas fa-home"></i>
+                    <a href="admin-dashboard.html">Home</a>
+                </li>
+                <li>
+                    <i class="fas fa-user"></i>
+                    <a href="datauser.html">Data User</a>
+                </li>
+                <li>
+                    <i class="fas fa-database"></i>
+                    <a href="datapeserta.html">Data Peserta</a>
+                </li>
+                <li>
+                    <i class="fas fa-graduation-cap"></i>
+                    <a href="datamateri.html">Data Materi</a>
+                </li>
+                <li class="logout"> 
+                    <i class="fas fa-sign-out-alt"></i>
+                    <a href="index.html">Log out</a>
+                </li>
+            </ul>
+        </nav>
 
-    <section class="main">
-        <div class="main-banner-data">
-            <div class="card-data">
-                <i class="fas fa-graduation-cap"></i>
-                <h1>Data Course Materi</h1>
+        <section class="main">
+            <div class="main-banner-data">
+                <div class="card-data">
+                    <i class="fas fa-database"></i>
+                    <h1>Data Peserta</h1>
+                </div>
             </div>
-        </div>
-  
-        <section class="table-container">
-          <div class="table-btn">
-              <div class="left-btn">
-                  <button class="fa fa-plus" onclick="popupOpenForm()">Add</button>
-              </div>
-          </div>
+      
+            <section class="table-container">
+                <div class="table-btn">
+                    <div class="left-btn">
+                        <button class="fa fa-plus" onclick="popupOpenForm()">Add</button>
+                    </div>
+                </div>
+            </section>
+
+            <div id="addForm">
+                <h1 class="titleform"> Daftar Course </h1>
+                <div id="daftar" name="daftar">
+                    <label for="Name">Name:</label>
+                    <input type="text" id="Name" name="Name" placeholder="First and last name" required>
+        
+                    <label for="Age">Age:</label>
+                    <input type="number" min="17" id="Age" name="Age" placeholder="Age" required> 
+        
+                    <label for="Gender">Gender:</label>
+                    <select id="Gender" name="Gender" placeholder="Select Gender" required>
+                        <option value="" disabled selected>Select Gender</option>
+                        <option value="Female">Female</option>
+                        <option value="Male">Male</option>
+                    </select>
+        
+                    <label for="Email">Email Address:</label>
+                    <input type="email" id="Email" name="Email" placeholder="Exampel@gmail.com" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" required>
+        
+                    <label for="WhatsApp">WhatsApp:</label>
+                    <input type="tel" id="WhatsApp" name="WhatsApp" placeholder="0812-5708-408" pattern="(\+62|62|0)8[0-9][0-9]{6,9}$" required>
+                
+                    <label for="Course">What are you interested in?</label>
+                    <select id="Course" name="Course" placeholder="Select Course" required>
+                        <option value="" disabled selected>Select Course</option>
+                        <option value="UI/UX">UI/UX Designer</option>
+                        <option value="BE">Back End Dev</option>
+                        <option value="FE">Front End Dev</option>
+                        <option value="DA">Data Analyst</option>
+                    </select>
+                    <input type="submit" value="SEND" class="sendForm">
+                    <a href="#" class="cancelForm" onclick="popupCloseForm()">CANCEL</a>
+                </div>
+            </div>
+
+            <div class="boxtb">
+                <div class="table-box">
+                    <table>
+                        <thead class="headTable">
+                            <tr>
+                                <th>No</th>
+                                <th>Course</th>
+                                <th>Materi</th>
+                                <th>Action</th>
+                            </tr>
+                        </thead>
+                        <tbody class="materiTable">
+                        </tbody>
+                    </table>
+                </div>
+            </div>
         </section>
+    </div>
 
-        <div class="boxtb">
-            <div class="table-box">
-                <table>
-                    <tr>
-                        <th>No</th>
-                        <th>Course</th>
-                        <th>Materi</th>
-                        <th>Action</th>
-                    </tr>
-                    <tr>
-                        <td>1</td>
-                        <td>Frond end</td>
-                        <td>HTML CSS</td>
-                        <td>
-                            <div class="table-btn">
-                                <button class="fa fa-pen"></button>
-                                <button class="fa fa-trash"></button>
-                            </div>
-                        </td>
-                    </tr>
-                </table>
-            </div>
-        </div>
-    </section>
-</div>
+
+
+    <!-- javascript -->
+    <script src="./JS/dataMateri.js"></script>
 </body>
 </html>

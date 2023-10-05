@@ -240,7 +240,7 @@ h1 {
   text-align: center;
 }
 
-form {
+#daftar {
   margin: 10px 30px;
   display: flex;
   flex-direction: column;
@@ -364,7 +364,6 @@ input , select , a{
   background: rgb(255, 255, 255);
   box-shadow: 0 10px 35px rgba(0, 0, 0, 0.1);
   margin-top: 30px;
-  height: 600px;
 }
 
 .table-box table{
