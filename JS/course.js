@@ -14,7 +14,7 @@ const GET = () => {
                     <h3>${aCourse[i].title.replace(/\sDeveloper$/, ' Dev')}</h3>
                     <p>Sudah ${100 * aCourse[i].id}+ Alumni!</p>
                     <div class="date">
-                        <img src="img/CalendarCheck.png" alt="">
+                        <img src="img/CalendarCheck.png" alt="calendar">
                         <h6>${aCourse[i].start_date}</h6>
                     </div>
                 `;
