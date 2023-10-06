@@ -1,27 +1,8 @@
-const materiAjar = document.querySelector('.materialCourse');
+const materialCourse = document.querySelector('.materialCourse');
 const upperInformation = document.querySelector('.informationCourse')
 
 const GET = () => {
-    fetch ('https://be-balikpapan-9-production.up.railway.app/materi/course/2')
-    .then((response) => response.json())
-    .then(data => {
-        const list = data.data;
-        
-        for (let i = 0; i < list.length; i++) {
-            const ulMateri = document.createElement('ul');
-            ulMateri.setAttribute('class', 'listMateri');
-            materiAjar.appendChild(ulMateri);
-            const listMateri = document.getElementsByClassName('listMateri');
-            listMateri[i].innerHTML = `
-                <li>${list[i].materi}</li>
-            `
-        }
-    })
-.   catch(error => {
-        console.log(error);
-    })
-
-
+    
     fetch ('https://be-balikpapan-9-production.up.railway.app/course')
     .then((response) => response.json())
     .then(data => {
@@ -46,6 +27,26 @@ const GET = () => {
         </div>`;
     })
     .catch(error => {
+        console.log(error);
+    })
+
+
+    fetch ('https://be-balikpapan-9-production.up.railway.app/materi/course/2')
+    .then((response) => response.json())
+    .then(data => {
+        const list = data.data;
+        
+        for (let i = 0; i < list.length; i++) {
+            const ulMateri = document.createElement('ul');
+            ulMateri.setAttribute('class', 'listMateri');
+            materialCourse.appendChild(ulMateri);
+            const listMateri = document.getElementsByClassName('listMateri');
+            listMateri[i].innerHTML = `
+                <li>${list[i].materi}</li>
+            `
+        }
+    })
+.   catch(error => {
         console.log(error);
     })
 }
