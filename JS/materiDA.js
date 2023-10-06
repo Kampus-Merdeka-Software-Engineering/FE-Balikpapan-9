@@ -37,12 +37,10 @@ const GET = () => {
         
         for (let i = 0; i < list.length; i++) {
             const ulMateri = document.createElement('ul');
-            ulMateri.setAttribute('class', 'listMateri');
+            const liMateri = document.createElement('li');
+            liMateri.textContent = list[i].materi;
+            ulMateri.appendChild(liMateri);
             materialCourse.appendChild(ulMateri);
-            const listMateri = document.getElementsByClassName('listMateri');
-            listMateri[i].innerHTML = `
-                <li>${list[i].materi}</li>
-            `
         }
     })
     .catch(error => {

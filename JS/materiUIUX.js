@@ -35,13 +35,11 @@ const GET = () => {
         const list = data.data;
         
         for (let i = 0; i < list.length; i++) {
-            let ulMateri = document.createElement('ul');
-            ulMateri.setAttribute('class', 'listMateri');
+            const ulMateri = document.createElement('ul');
+            const liMateri = document.createElement('li');
+            liMateri.textContent = list[i].materi;
+            ulMateri.appendChild(liMateri);
             materialCourse.appendChild(ulMateri);
-            let listMateri = document.getElementsByClassName('listMateri');
-            listMateri[i].innerHTML = `
-                <li>${list[i].materi}</li>
-            `
         }
     })
 .   catch(error => {
