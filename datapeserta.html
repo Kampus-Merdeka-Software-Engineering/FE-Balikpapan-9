@@ -17,17 +17,17 @@
             <div id="daftar" name="daftar">
                 <label for="Name">Name:</label>
                 <input type="text" id="Name" name="Name" placeholder="First and last name" required>
-    
-                <label for="Age">Age:</label>
-                <input type="number" min="17" id="Age" name="Age" placeholder="Age" required> 
-    
+                
                 <label for="Gender">Gender:</label>
                 <select id="Gender" name="Gender" placeholder="Select Gender" required>
                     <option value="" disabled selected>Select Gender</option>
                     <option value="Female">Female</option>
                     <option value="Male">Male</option>
                 </select>
-    
+
+                <label for="Age">Age:</label>
+                <input type="number" min="17" id="Age" name="Age" placeholder="Age" required> 
+                
                 <label for="Email">Email Address:</label>
                 <input type="email" id="Email" name="Email" placeholder="Exampel@gmail.com" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" required>
     
@@ -37,10 +37,10 @@
                 <label for="Course">What are you interested in?</label>
                 <select id="Course" name="Course" placeholder="Select Course" required>
                     <option value="" disabled selected>Select Course</option>
-                    <option value="UI/UX">UI/UX Designer</option>
-                    <option value="BE">Back End Dev</option>
-                    <option value="FE">Front End Dev</option>
-                    <option value="DA">Data Analyst</option>
+                    <option value="UI/UX Designer">UI/UX Designer</option>
+                    <option value="Back End Developer">Back End Dev</option>
+                    <option value="Front End Developer">Front End Dev</option>
+                    <option value="Data Analyst">Data Analyst</option>
                 </select>
                 
                 <input type="submit" value="SEND" class="sendForm">
@@ -104,8 +104,8 @@
                             <tr>
                                 <th>No</th>
                                 <th>Name</th>
-                                <th>Age</th>
                                 <th>Gender</th>
+                                <th>Age</th>
                                 <th>Email</th>
                                 <th>WhatsApp</th>
                                 <th>Course</th>
