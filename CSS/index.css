@@ -179,6 +179,7 @@ header {
     background-color:#f1f1fd;
     width: 22%;
     margin: auto;
+    height: auto;
     border-radius: 24px;
     text-align: center;
     transition-duration: 300ms;
@@ -203,11 +204,15 @@ header {
     text-decoration: none;
 }
 
-.itemCourse h6 {
+.itemCourse > p {
     font-size: 20px;
     font-weight: 700px;
     color: #717BAC;
     padding: 0px 30px 20px 30px;
+}
+
+.date{
+    display: none;
 }
 
 /* Information Section */
@@ -709,7 +714,7 @@ footer {
         padding: 0px 20px 10px 20px;
     }
 
-    .itemCourse h6 {
+    .itemCourse > p {
         font-size: 14px;
         padding: 0px 20px 16px 20px;
     }
@@ -992,7 +997,7 @@ footer {
         padding: 0px 30px 10px 30px;
     }
     
-    .itemCourse h6 {
+    .itemCourse > p {
         font-size: 16px;
         padding: 0px 30px 20px 30px;
     }
