@@ -18,7 +18,7 @@ const READ = () => {
 
         const Data = data.data;
         for (let i = 0; i < Data.length; i++) {
-            const tableRow = document.createElement('tr');
+            const tableRow = document.createElement('tr'); 
             tableRow.setAttribute('class', 'materiData');
             tBody.appendChild(tableRow);
             const materiData = document.getElementsByClassName('materiData');
@@ -41,3 +41,35 @@ const READ = () => {
 };
 
 READ()
+
+
+
+// POST CREATE Method
+const course = document.querySelector('#Course');
+const materi = document.querySelector('#Materi');
+const submitForm = document.querySelector('.sendForm');
+
+submitForm.addEventListener('click', popupCloseForm);
+
+submitForm.addEventListener('click', () => {
+    const data = {
+        materi: materi.value,
+        title: course.value
+    }
+
+    fetch('https://be-balikpapan-9-production.up.railway.app/materi', {
+        method: 'POST',
+        headers: {
+        'Content-Type': 'application/json'
+        },
+        body: JSON.stringify(data)
+    })
+    .then(response => response.json())
+    .then(result => {
+        console.log(result);
+        READ()
+    })
+    .catch(error => {
+        console.error('Error:', error);
+    });
+})
