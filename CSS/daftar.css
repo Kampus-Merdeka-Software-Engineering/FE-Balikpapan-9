@@ -28,7 +28,7 @@ h1 {
     text-align: center;
 }
 
-form {
+#daftar {
     margin: auto;
     display: flex;
     flex-direction: column;
@@ -58,7 +58,6 @@ input[type=submit],
     color: white;
     font-size: 20px;
     font-weight: 600;
-    letter-spacing: 10px;
 }
 
 input[type=submit]:hover,
@@ -67,10 +66,14 @@ input[type=submit]:hover,
 }
 
 .popup{
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     width: 400px;
     background: white;
     border-radius: 40px;
-    position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%,-50%);
@@ -88,7 +91,7 @@ input[type=submit]:hover,
 
 .popup img{
     width: 150px;
-    margin-top: -50px;
+    margin-top: 50px;
 }
 .popup h2{
     font-size: 38px;
@@ -96,7 +99,7 @@ input[type=submit]:hover,
     margin: 30px 0 10px;
 }
 
-.popup button {
+.popup > a > button {
     width: 100%;
     margin: 20px 0px;
     padding: 10px 0;
@@ -110,7 +113,7 @@ input[type=submit]:hover,
     cursor: pointer;
 }
 
-.popup button:hover{
+.popup > a > button:hover{
     background: #9593FF;
 }
 
@@ -125,6 +128,7 @@ input[type=submit]:hover,
     font-size: 14px;
     color: #000000;
     background: none;
+    border: none;
 }
 
 .backhome button:hover{

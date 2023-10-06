@@ -17,7 +17,7 @@ const no_telepon = document.getElementById('WhatsApp');
 const course = document.getElementById('Course');
 const submitForm = document.querySelector('.sendForm');
 
-submitForm.addEventListener('click', popupCloseForm);
+// submitForm.addEventListener('click', popupCloseForm);
 
 submitForm.addEventListener('click', () => {
     const data = {
@@ -38,7 +38,7 @@ submitForm.addEventListener('click', () => {
     })
     .then(response => response.json())
     .then(data => {
-        if (data.message === 'Daftar Course Success') {
+        if (data.message === 'Success POST/CREATE Peserta') {
             // Daftar berhasil, tampilkan popup berhasil dan link join discord
             openPopup();
         } else {
