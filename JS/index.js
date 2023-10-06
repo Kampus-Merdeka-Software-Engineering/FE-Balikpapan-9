@@ -19,15 +19,6 @@ function showDivs(n) {
   x[slideIndex-1].style.display = "block";
 }
 
-
-// Coba Events Listener
-// const openHamburger = document.querySelector("#openNav img")
-// const navHamburger = document.querySelector("#sideNav")
-
-// openHamburger.addEventListener("click" , (event) => {
-//   navHamburger.style.width = "360px";
-// });
-
 // Hamburger Button
 function openNav() {
   document.getElementById("sideNav").style.width = "360px";

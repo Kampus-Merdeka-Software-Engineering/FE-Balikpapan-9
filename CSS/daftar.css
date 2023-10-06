@@ -53,7 +53,7 @@ input , select , a{
 }
 
 input[type=submit],
-a {
+#daftar a {
     background-color: #8E8AD7 ;
     color: white;
     font-size: 20px;
@@ -62,7 +62,7 @@ a {
 }
 
 input[type=submit]:hover,
-a:hover {
+#daftar a:hover {
     background-color: #352F44;
 }
 
@@ -96,14 +96,40 @@ a:hover {
     margin: 30px 0 10px;
 }
 
-.popup button{
+.popup button {
     width: 100%;
-    margin-top: 50px;
+    margin: 20px 0px;
     padding: 10px 0;
     background: rgb(78, 78, 187);
+    color: #FFF;
     border: 0;
     outline: none;
     font-size: 18px;
+    font-weight: 600;
     border-radius: 40px;
     cursor: pointer;
+}
+
+.popup button:hover{
+    background: #9593FF;
+}
+
+.backhome{
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.backhome button{
+    text-decoration: none;
+    cursor: pointer;
+    font-size: 14px;
+    color: #000000;
+    background: none;
+}
+
+.backhome button:hover{
+    align-items: center;
+    color: #f58033;
+    transition: .5s;
+    background: none;
 }
