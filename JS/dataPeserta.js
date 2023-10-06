@@ -1,12 +1,19 @@
-const popup = document.querySelector(".popup")
+const popup = document.querySelector(".popup");
+const addData = document.querySelector(".add");
+const cancel = document.querySelector(".cancelForm");
+
 // Pop Up Dashboard
 function popupOpenForm() {
     popup.style.display = "block";
 }
-
 function popupCloseForm() {
     popup.style.display = "none";
 }
+
+// Show Popup Add Data
+addData.addEventListener('click', popupOpenForm);
+// Close Popup
+cancel.addEventListener('click', popupCloseForm);
 
 
 // POST - CREATE Method
