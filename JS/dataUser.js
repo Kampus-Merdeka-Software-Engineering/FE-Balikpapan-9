@@ -2,7 +2,7 @@ const popup = document.querySelector(".popup");
 const addData = document.querySelector(".add");
 const cancel = document.querySelector(".cancelForm");
 
-// Pop Up Dashboard
+// Pop Up Form
 function popupOpenForm() {
     popup.style.display = "block";
 }

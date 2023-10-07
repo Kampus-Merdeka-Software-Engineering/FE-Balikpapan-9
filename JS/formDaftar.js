@@ -1,5 +1,6 @@
 let popup = document.getElementById("popup");
 
+// Pop Up Confirmation + Discord
 function openPopup(){
     popup.classList.add("open-popup")
 }
@@ -16,8 +17,6 @@ const email = document.getElementById('Email');
 const no_telepon = document.getElementById('WhatsApp');
 const course = document.getElementById('Course');
 const submitForm = document.querySelector('.sendForm');
-
-// submitForm.addEventListener('click', popupCloseForm);
 
 submitForm.addEventListener('click', () => {
     const data = {

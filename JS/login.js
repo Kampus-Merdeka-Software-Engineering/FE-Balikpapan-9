@@ -1,6 +1,6 @@
 const submit = document.getElementById('submit');
 const username = document.getElementById('Username');
-const password = document.getElementById('Password')
+const password = document.getElementById('Password');
 
 submit.addEventListener('click', () => {
     const data = {

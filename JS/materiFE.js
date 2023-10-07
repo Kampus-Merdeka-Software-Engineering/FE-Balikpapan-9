@@ -1,8 +1,8 @@
 const materialCourse = document.querySelector('.materialCourse');
-const upperInformation = document.querySelector('.informationCourse')
+const upperInformation = document.querySelector('.informationCourse');
 
+// GET - READ Method
 const GET = () => {
-    
     fetch ('https://be-balikpapan-9-production.up.railway.app/course')
     .then((response) => response.json())
     .then(data => {
