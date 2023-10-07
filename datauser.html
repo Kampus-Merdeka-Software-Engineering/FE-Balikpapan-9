@@ -11,7 +11,7 @@
 <body>
 
     <!-- Popup Form -->
-    <div class="popup">
+    <div class="addData">
         <div id="addFormUser">
             <h1 class="titleform"> Daftar Course </h1>
             <div id="daftar" name="daftar">
@@ -26,6 +26,26 @@
     
                 <input type="submit" value="SEND" class="sendForm">
                 <a href="#" class="cancelForm">CANCEL</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Edit Data -->
+    <div class="editData">
+        <div id="editFormUser">
+            <h1 class="titleform"> User </h1>
+            <div id="edit" name="edit">
+                <label for="Name">Username:</label>
+                <input type="text" id="editUsername" name="editUsername" placeholder="Inputkan Username" required>
+                
+                <label for="Name">Email:</label>
+                <input type="email" id="editEmail" name="editEmail" placeholder="Inputkan Email" required>
+    
+                <label for="Name">Password:</label>
+                <input type="password" id="editPassword" name="editPassword" placeholder="Inputkan Password" required>
+    
+                <input type="submit" value="SEND" class="sendEdit">
+                <a href="#" class="cancelEdit">CANCEL</a>
             </div>
         </div>
     </div>

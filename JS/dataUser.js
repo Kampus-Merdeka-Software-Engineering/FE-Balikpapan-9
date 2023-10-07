@@ -1,19 +1,31 @@
-const popup = document.querySelector(".popup");
+// Add Data
+const popupAddData = document.querySelector(".addData");
 const addData = document.querySelector(".add");
-const cancel = document.querySelector(".cancelForm");
+const cancelAdd = document.querySelector(".cancelForm");
 
-// Pop Up Form
+// Edit Data
+const popupEditData = document.querySelector(".editData");
+const cancelEdit = document.querySelector('.cancelEdit');
+
+// Pop Up Add Data
 function popupOpenForm() {
-    popup.style.display = "block";
+    popupAddData.style.display = "block";
 }
 function popupCloseForm() {
-    popup.style.display = "none";
+    popupAddData.style.display = "none";
+}
+
+// Pop Up Edit Data
+function popupCloseEdit() {
+    popupEditData.style.display = "none";
 }
 
 // Show Popup Add Data
 addData.addEventListener('click', popupOpenForm);
-// Close Popup
-cancel.addEventListener('click', popupCloseForm);
+// Close Popup Add Data
+cancelAdd.addEventListener('click', popupCloseForm);
+// Close Popup Edit Data
+cancelEdit.addEventListener('click', popupCloseEdit);
 
 
 
@@ -76,6 +88,8 @@ fetch('https://be-balikpapan-9-production.up.railway.app/user')
                 </div>
             </td>
         `
+        // Update
+        updateButton()
         // Delete
         deleteButton()
     };
@@ -83,6 +97,52 @@ fetch('https://be-balikpapan-9-production.up.railway.app/user')
 .catch(error => {
     console.error('Error:', error);
 })
+
+
+
+// PATCH - UPDATE Method
+function updateButton() {
+    const updateData = document.querySelectorAll('.edit');
+    updateData.forEach((e) => {
+        e.addEventListener('click', function() {
+            popupEditData.style.display = "block";
+            // GET ID
+            const dataId = this.getAttribute('data-id')
+
+            // Element Data
+            const username = document.getElementById('editUsername');
+            const email = document.getElementById('editEmail');
+            const password = document.getElementById('editPassword');
+            const submitForm = document.querySelector('.sendEdit');
+
+            submitForm.addEventListener('click', popupCloseEdit);
+
+            submitForm.addEventListener('click', function() {
+                const data = {
+                    username: username.value,
+                    email: email.value,
+                    password: password.value
+                }
+            
+                fetch(`https://be-balikpapan-9-production.up.railway.app/user/${dataId}`, {
+                    method: 'PATCH',
+                    headers: {
+                    'Content-Type': 'application/json'
+                    },
+                    body: JSON.stringify(data)
+                })
+                .then(response => response.json())
+                .then(result => {
+                    console.log(result);
+                    location.reload();
+                })
+                .catch(error => {
+                    console.error('Error:', error);
+                });
+            })
+        })
+    })
+}
 
 
 
