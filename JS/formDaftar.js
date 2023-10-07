@@ -19,6 +19,13 @@ const course = document.getElementById('Course');
 const submitForm = document.querySelector('.sendForm');
 
 submitForm.addEventListener('click', () => {
+    // Validasi formulir
+    if (!nama.checkValidity() || !gender.checkValidity() || !age.checkValidity() || !email.checkValidity() || !no_telepon.checkValidity() || !course.checkValidity()) {
+        // Validasi gagal, tampilkan pesan atau lakukan sesuatu
+        alert('Silakan isi semua field dengan benar.');
+        return; // Hentikan proses submit formulir
+    }
+    
     const data = {
         nama: nama.value,
         gender: gender.value,
