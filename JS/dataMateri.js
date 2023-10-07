@@ -42,6 +42,12 @@ submitForm.addEventListener('click', () => {
         title: course.value
     }
 
+    // Validasi sebelum mengirim formulir
+    if (!validateForm()) {
+        submitForm.preventDefault(); // Mencegah pengiriman formulir jika tidak valid
+        return;
+    }
+
     fetch('https://be-balikpapan-9-production.up.railway.app/materi', {
         method: 'POST',
         headers: {
@@ -106,6 +112,12 @@ function updateButton() {
             // GET ID
             const dataId = this.getAttribute('data-id')
 
+            // Validasi sebelum mengirim formulir
+            if (!validateForm()) {
+                submitForm.preventDefault(); // Mencegah pengiriman formulir jika tidak valid
+                return;
+            }
+
             // Element Data
             const course = document.querySelector('#editCourse');
             const materi = document.querySelector('#editMateri');
@@ -162,4 +174,19 @@ function deleteButton() {
             });
         })
     })
+}
+
+// Validasi Formulir
+function validateForm() {
+    if (materi.value.trim() === '') {
+        alert('Materi harus diisi.');
+        return false;
+    }
+
+    if (course.value === '') {
+        alert('Pilih course.');
+        return false;
+    }
+
+    return true;
 }
