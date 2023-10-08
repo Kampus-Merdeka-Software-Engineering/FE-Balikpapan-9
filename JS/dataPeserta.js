@@ -136,13 +136,6 @@ function updateButton() {
             submitForm.addEventListener('click', popupCloseEdit);
 
             submitForm.addEventListener('click', function() {               
-                // Validasi formulir
-                if (!nama.checkValidity() || !gender.checkValidity() || !age.checkValidity() || !email.checkValidity() || !no_telepon.checkValidity() || !course.checkValidity()) {
-                    // Validasi gagal, tampilkan pesan atau lakukan sesuatu
-                    alert('Silakan isi semua field dengan benar.');
-                    return; // Hentikan proses submit formulir
-                }
-
                 const data = {
                     nama: nama.value,
                     gender: gender.value,
@@ -151,7 +144,14 @@ function updateButton() {
                     no_telepon: no_telepon.value,
                     title: course.value 
                 }
-            
+                
+                // Validasi formulir
+                if (!nama.checkValidity() || !gender.checkValidity() || !age.checkValidity() || !email.checkValidity() || !no_telepon.checkValidity() || !course.checkValidity()) {
+                    // Validasi gagal, tampilkan pesan atau lakukan sesuatu
+                    alert('Silakan isi semua field dengan benar.');
+                    return; // Hentikan proses submit formulir
+                }
+                        
                 fetch(`https://be-balikpapan-9-production.up.railway.app/peserta/${dataId}`, {
                     method: 'PATCH',
                     headers: {

@@ -38,6 +38,13 @@ const submitForm = document.querySelector('.sendForm');
 submitForm.addEventListener('click', popupCloseForm);
 
 submitForm.addEventListener('click', () => {
+    // Validasi formulir
+    if (!username.checkValidity() || !email.checkValidity() || !password.checkValidity()){
+        // Validasi gagal, tampilkan pesan atau lakukan sesuatu
+        alert('Silakan isi semua field dengan benar.');
+        return; // Hentikan proses submit formulir
+    }
+    
     const data = {
         username: username.value,
         email: email.value,
@@ -122,6 +129,13 @@ function updateButton() {
                     username: username.value,
                     email: email.value,
                     password: password.value
+                }
+
+                // Validasi formulir
+                if (!username.checkValidity() || !email.checkValidity() || !password.checkValidity()){
+                    // Validasi gagal, tampilkan pesan atau lakukan sesuatu
+                    alert('Silakan isi semua field dengan benar.');
+                    return; // Hentikan proses submit formulir
                 }
             
                 fetch(`https://be-balikpapan-9-production.up.railway.app/user/${dataId}`, {
