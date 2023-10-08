@@ -30,7 +30,7 @@ const GET = () => {
         console.log(error);
     })
 
-    fetch ('https://be-balikpapan-9-production.up.railway.app/materi/course/3')
+    fetch ('https://be-balikpapan-9-production.up.railway.app/materi/course/2')
     .then((response) => response.json())
     .then(data => {
         const list = data.data;
