@@ -7,7 +7,7 @@ const GET = () => {
     .then((response) => response.json())
     .then(data => {
         const information = data.data
-        const courseId = 2
+        const courseId = 3
         
         const courseData = information.find(course => course.id === courseId);
 
