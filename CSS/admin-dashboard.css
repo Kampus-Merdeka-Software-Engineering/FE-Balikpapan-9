@@ -23,6 +23,7 @@ nav{
   bottom: 0;
   height: 100vh;
   left: 0;
+  z-index: 2;
   background: #fff;
   width: 16%;
   overflow: hidden;
