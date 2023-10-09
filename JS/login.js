@@ -8,6 +8,13 @@ submit.addEventListener('click', () => {
         plainPassword: password.value
     };
 
+    // Validasi formulir
+    if (!username.checkValidity() || !password.checkValidity() ){
+        // Validasi gagal, tampilkan pesan atau lakukan sesuatu
+        alert('Silakan isi semua field dengan benar.');
+        return; // Hentikan proses submit formulir
+    }
+
     fetch('https://be-balikpapan-9-production.up.railway.app/login', {
         method: 'POST',
         headers: {
@@ -21,6 +28,8 @@ submit.addEventListener('click', () => {
             // Login berhasil, arahkan pengguna ke Google.com
             window.location.href = 'https://kampus-merdeka-software-engineering.github.io/FE-Balikpapan-9/admin-dashboard';
         } else {
+            // Login gagal, tampilkan pesan kesalahan
+            alert('Login gagal. Periksa kembali username dan password Anda.');
             // Login gagal atau respons tidak sesuai
             console.error('Login failed:', data.message);
         }
