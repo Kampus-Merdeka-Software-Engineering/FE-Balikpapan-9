@@ -1,8 +1,7 @@
 <h1>GROUP 9 - BALIKPAPAN SECTION</h1>
 
-<h2>PROGRESS STATUS = Code Implementation From UI/UX Design (99%)</h2>
-UI Design ✅ 
-Front End ✅
+<h2>COMPLETED! GROUP 9 GOT FIRST PLACE, THANK YOU</h2>
+
 
 [Check Out Our Figma (Click Me!)](https://www.figma.com/file/FiQ19DswsD940ouuPWrgHo/BALIKPAPAN---GROUP-9-CAPSTONE-PROJECT?type=design&node-id=0%3A1&mode=design&t=WwoVIIRS9t1Vx5iy-1)
 
